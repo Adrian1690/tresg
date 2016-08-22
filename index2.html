@@ -38,10 +38,7 @@
             <nav class="list-unstyled">
                 <li class="generaciones">
                     <a href="#generations_section">
-                        <div class="icon_menu">
-
-
-               </div>
+                        <div class="icon_menu"></div>
                         <span>Nuestra Historia</span>
                     </a>
                 </li>
@@ -87,9 +84,6 @@
 
 
 
-
-
-
 <header id="header_desktop">
     <div class="logo">
         <img src="img/logo.png" alt=""/>
@@ -104,33 +98,46 @@
                 <li class="generaciones">
                     <a href="#generations_section">
                         <div class="icon_menu">
-                            <span>Tres  Generaciones</span>
                         </div>
+                        <span>Tres </span><br>
+                        <span>Generaciones</span>
                     </a>
                 </li>
                 <li class="productos">
                     <a href="#products_section">
-                        <span class="icon_menu"><span>Productos</span> </span>
-                        </a>
+                        <div class="icon_menu">
+                        </div>
+                        <span>Productos</span> 
+                    </a>
                 </li>
                 <li class="cocteleria">
                     <a href="#cocteleria_section">
-                        <span class="icon_menu"><span>Coctelería</span></span>
-                        </a>
+                        <div class="icon_menu">
+                        </div>
+                        <span>Coctelería</span>
+                    </a>
                 </li>
                 <li class="regalos">
                     <a href="#regalos_section">
-                        <span class="icon_menu"><span>Regalos </span>
-                        <span>Corporativos</span></span>
-
+                        <div class="icon_menu">
+                        </div>
+                        <span>Regalos </span>
+                        <span>Corporativos</span>
                     </a>
                 </li>
                 <li class="ubicanos">
                     <a href="#ubicanos_section">
-                        <span class="icon_menu"><span>Ubícanos</span></span>
-                        </a>
+                        <div class="icon_menu">
+                        </div>
+                        <span>Ubícanos</span>
+                    </a>
                 </li>
-                <li class="social"><a id="youtube" href="https://www.youtube.com/channel/UCD23fGkJUDKpGl3rGWsXqaA"></a><a id="facebook" href="https://www.facebook.com/Pisco-Tres-Generaciones-947961388560264/?fref=ts"></a></li>
+                <li class="social">
+                    <div style="width:70%; margin:auto;">
+                        <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UCD23fGkJUDKpGl3rGWsXqaA"></a>
+                        <a id="facebook" target="_blank" href="https://www.facebook.com/Pisco-Tres-Generaciones-947961388560264/?fref=ts"></a>
+                    </div>
+                </li>
             </nav>
         </aside>
     </div>
@@ -141,13 +148,13 @@
     <div class="content-a">
         <div class="content-b">
             <div class="container">
-                <article class="col-lg-4 col-md-5 col-sm-6 row col-md-offset-1 intro-slogan wow slideInUp">
+                <article class="hidden-xs col-lg-4 col-md-5 col-sm-6 row  intro-slogan wow slideInUp">
                     <h2 class="desde ">Desde 1856</h2>
 
                     <div class="slogan "><img src="img/primera_vista_titulo.png" class="img-responsive"
                                               alt=""/></div>
                 </article>
-                <article class=" col-lg-4 col-md-4 col-sm-5 row intro wow slideInUp " data-wow-delay="1s">
+                <article class="hidden-xs col-lg-5 col-md-6 col-sm-5 row intro wow slideInUp " data-wow-delay="">
                     <p>Con tradición y esmero, la pureza del
                         pisco ha merecido reconocimiento
                         nacional e internacional y su secreto
@@ -156,8 +163,8 @@
                         cultivadas en el valle de Ica.</p>
                 </article>
             </div>
-            <article class=" imagen_pisco hidden-md hidden-sm hidden-xs wow slideInUp " data-wow-delay="1s">
-                <img class="img-responsive " src="img/primera_vista_botella.png" alt=""/>
+            <article class="imagen_pisco hidden-md hidden-sm hidden-xs wow slideInUp " data-wow-delay="1s">
+                <img id="botella_pisco" class="img-responsive " src="img/primera_vista_botella.png" alt=""/>
             </article>
         </div>
     </div>
@@ -450,6 +457,15 @@
          data-img-width="1400" data-img-height="510" data-diff="100">
     <div class="content-a" style="min-height: 510px;">
         <div class="content-b">
+            
+            <div class="visible-xs linea">
+                <div class="hijolinea">
+                    <img src="img/titulo_productos.png" class="img-responsive wow fadeInDown" data-wow-offset="150" alt="">
+
+                    <div class="izq"></div>
+                    <div class="der"></div>
+                </div>
+            </div>
 
             <div class="container_piscos">
 
@@ -481,7 +497,7 @@
                 </article>
             </div>
 
-            <div class="linea">
+            <div class="hidden-xs linea">
                 <div class="hijolinea">
                     <img src="img/titulo_productos.png" class="img-responsive wow fadeInDown" data-wow-offset="150" alt="">
 

@@ -214,6 +214,7 @@ $(document).ready(function(){
         
     });
 
+
 });
 
 
@@ -222,7 +223,7 @@ $('.si2').on('click', function(event) {
     $('#vista_seleccion').fadeOut('slow', function() {
         $("body").css({"overflow-y":"auto"});
            //Change-images
-       var i = 0;
+        var i = 0;
         var images = ['primera_vista_fondo1.jpg','primera_vista_fondo2.jpg','primera_vista_fondo3.jpg'];
         var intro = $('#generations_section');
 

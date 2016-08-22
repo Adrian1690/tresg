@@ -230,7 +230,7 @@ header .menu aside nav {
 }
 header .menu aside nav li {
   /*margin-bottom: 65%;*/
-  height: 14%;
+  height: 15.5%;
 }
 header .menu aside nav li a {
   text-align: center;
@@ -240,7 +240,8 @@ header .menu aside nav li a {
 header .menu aside nav li span {
   font-family: Conv_SIMPLIFICA Typeface;
   color: #666;
-  font-size: 12px;
+  font-size: 18px;
+  margin:0 auto;
   letter-spacing: 1px;
   text-align: center;
 }
@@ -264,6 +265,7 @@ header .menu aside nav li.generaciones .icon_menu {
 header .menu aside nav li.generaciones .icon_menu:hover {
   background-position: -69px -106px;
 }
+
 header .menu aside nav li.generaciones .icon_menu span {
   line-height: 12px;
   bottom: -37px;
@@ -295,7 +297,7 @@ header .menu aside nav li.cocteleria .icon_menu span {
   bottom: -34px;
 }
 header .menu aside nav li.regalos {
-  margin-bottom: 70%;
+  /*margin-bottom: 70%;*/
 }
 header .menu aside nav li.regalos .icon_menu {
   background-position: -8px -297px;
@@ -374,7 +376,7 @@ header .menu aside nav .close_menu:hover {
 #generations_section h2 {
   color: #1a1a15;
   font-size: 58px;
-  margin-top: 11px;
+  margin-top: 0px;
   font-family: Conv_SIMPLIFICA Typeface;
   text-align: center;
 }
@@ -389,9 +391,10 @@ header .menu aside nav .close_menu:hover {
   margin-top: 0px;
   color: #737277;
   font-family: Conv_VersaillesLTStd-Roman;
-  font-size: 16px;
-  text-align: left;
+  font-size: 22px;
+  text-align: justify;
 }
+
 #generations_section .imagen_pisco {
   overflow: hidden;
   bottom: 0px;
@@ -1132,7 +1135,7 @@ header .menu aside nav .close_menu:hover {
     /*margin-bottom: 98%;*/
   }
   header .menu aside nav li.regalos {
-    margin-bottom: 100%;
+    /*margin-bottom: 100%;*/
   }
 }
 @media (max-height: 660px) {
@@ -1336,6 +1339,12 @@ header .menu aside nav .close_menu:hover {
   }
   #vista_seleccion .advertencia {
     display: none;
+  }
+
+  #generations_section .intro p {
+    
+    font-size: 14px;
+    
   }
 }
 /* Custom, iPhone Retina */

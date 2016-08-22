@@ -214,6 +214,54 @@ $(document).ready(function(){
         
     });
 
+    var i = 0;
+
+    var windowW = $(window).width();
+    var intro = $('#generations_section');
+
+    if(windowW > 480){
+        var images = ['primera_vista_fondo1.jpg','primera_vista_fondo2.jpg','primera_vista_fondo3.jpg'];
+        intro.css('background-image','url(img/primera_vista_fondo1.jpg)');
+    }else{
+        var images = ['primera_vista_fondo1_mobile.jpg','primera_vista_fondo2_mobile.jpg','primera_vista_fondo3_mobile.jpg'];
+        intro.css('background-image','url(img/primera_vista_fondo1_mobile.jpg)');
+        intro.css('background-repeat','no-repeat');
+        intro.css('background-size','contain');
+        intro.css('background-position','center');
+    }
+    
+
+    setInterval(function(){
+
+        if (i == 1 || i == 2) {
+
+            $('.intro').fadeOut( 1300);
+            $('.intro-slogan').fadeOut( 1300);
+
+        }else{
+            $('.intro').fadeIn( 1300);
+            $('.intro-slogan').fadeIn( 1300);
+        };
+
+        intro.css('background-image','url(img/' + images[i ++] +')');
+        if(windowW < 480) {
+            //intro.css('background-size','100% auto');
+            intro.css('background-repeat','no-repeat');
+            intro.css('background-size','contain');
+            intro.css('background-position','center');
+
+
+            //alert('asdas');
+        }
+        if (i == images.length ) {
+            i = 0;
+        };
+        
+    },4000);
+    
+    var windowH = $(window).height();
+    $('#botella_pisco').css('height', windowH * 0.9);
+
 });
 
 
