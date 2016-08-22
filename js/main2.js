@@ -210,8 +210,6 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#pre-load-web").fadeOut(500,function() {
         $(this).remove();
-
-        
     });
 
     var i = 0;
