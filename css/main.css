@@ -218,15 +218,19 @@ header .menu aside {
   background-color: rgba(255,255,255,0.94);
   right: 0px;
   height: 100vh;
-  width: 120px;
+  /*width: 120px;*/
+  width: 7%;
 }
 header .menu aside nav {
   margin: 0 auto;
   display: block;
-  max-width: 78px;
+  /*max-width: 78px;*/
+  max-width: 80%;
+  height: 95%;
 }
 header .menu aside nav li {
-  margin-bottom: 65%;
+  /*margin-bottom: 65%;*/
+  height: 14%;
 }
 header .menu aside nav li a {
   text-align: center;
@@ -484,7 +488,7 @@ header .menu aside nav .close_menu:hover {
   margin: 0 auto;
 }
 #advertisement_section .container-carousel {
-  margin: 25% auto 0;
+  margin: 17% auto 0;
   max-width: 955px;
   width: 100%;
   display: block;
@@ -826,18 +830,23 @@ header .menu aside nav .close_menu:hover {
 }
 #cocteleria_section .content-b .container_cocteles ul li a#pisco_sour {
   background-image: url("../img/pisco_sour.jpg");
+  background-size: 100% auto;
 }
 #cocteleria_section .content-b .container_cocteles ul li a#pisco_punch {
-  background-image: url("../img/pisco_punch.jpg");
+  background-image: url("../img/pisco_punch_FONDO.jpg");
+  background-size: 100% auto;
 }
 #cocteleria_section .content-b .container_cocteles ul li a#pisco_sour_maracuya {
-  background-image: url("../img/pisco_sour_maracuya.jpg");
+  background-image: url("../img/pisco_sour_maracuya_FONDO.jpg");
+  background-size: 100% auto;
 }
 #cocteleria_section .content-b .container_cocteles ul li a#chilcano-clasico {
-  background-image: url("../img/chilcano.jpg");
+  background-image: url("../img/chilcano_FONDO.jpg");
+  background-size: 100% auto;
 }
 #cocteleria_section .content-b .container_cocteles ul li a#chilcano-frutos_rojos {
-  background-image: url("../img/chilcano_frutos_rojos.jpg");
+  background-image: url("../img/chilcano_frutos_rojos_FONDO.jpg");
+  background-size: 100% auto;
 }
 #regalos_section .content-b {
   background-color: transparent;
@@ -916,7 +925,7 @@ header .menu aside nav .close_menu:hover {
   text-transform: initial;
 }
 #regalos_section .content-b .container-promos .navegacion_vertical ul {
-  max-width: 90px;
+  max-width: 120px;
   display: block;
   width: 100%;
   margin: 0 auto;
@@ -1039,18 +1048,27 @@ header .menu aside nav .close_menu:hover {
 #contenedor_bottom .content-a .content-b #ubicanos_section .social li {
   letter-spacing: 2px;
 }
-#contenedor_bottom .content-a .content-b #ubicanos_section .social li .facebook {
+#contenedor_bottom .content-a .content-b #ubicanos_section .social li .youtube {
   background: url("../img/adornitos_ubicanos.png") no-repeat -4px -35px;
   width: 37px;
   display: block;
   height: 22px;
 }
-#contenedor_bottom .content-a .content-b #ubicanos_section .social li .youtube {
+#contenedor_bottom .content-a .content-b #ubicanos_section .social li .facebook {
   background: url("../img/adornitos_ubicanos.png") no-repeat -53px -35px;
   width: 35px;
   height: 22px;
   display: block;
 }
+
+/*#contenedor_bottom .content-a .content-b #ubicanos_section .social li .youtube:hover{
+  background-position: -74px -340px;
+}
+#contenedor_bottom .content-a .content-b #ubicanos_section .social li .facebook:hover {
+  background-position: -74px -340px;
+}*/
+
+
 #contenedor_bottom .content-a .content-b #mapa #map {
   min-height: 700px;
 }
@@ -1111,7 +1129,7 @@ header .menu aside nav .close_menu:hover {
 /*==========  Non-Mobile First Method  ==========*/
 @media (min-height: 767px) {
   header .menu aside nav li {
-    margin-bottom: 98%;
+    /*margin-bottom: 98%;*/
   }
   header .menu aside nav li.regalos {
     margin-bottom: 100%;
@@ -1345,13 +1363,15 @@ html, body {
 .fullscreen´{
   padding: 0px;
 }
-.fullscreen,.content-a {
+.fullscreen,
+.content-a {
   width:100%;
   min-height:767px;
   height:100%;
   overflow:hidden;
 }
-.fullscreen.overflow,.fullscreen.overflow .content-a {
+.fullscreen.overflow,
+.fullscreen.overflow .content-a {
   /*height:auto;*/
   /*min-height:100%;*/
   min-height:767px;

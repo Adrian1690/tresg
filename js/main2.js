@@ -195,7 +195,7 @@ linkInterno.on('click', function (e) {
 //Preloader
 $(document).ready(function(){
     //eliminamos el scroll de la pagina
-    $("body").css({"overflow-y":"hidden"});
+   // $("body").css({"overflow-y":"hidden"});
     //guardamos en una variable el alto del que tiene tu browser que no es lo mismo que del DOM
     var alto=$(window).height();
     //agregamos en el body un div que sera que ocupe toda la pantalla y se muestra encima de todo
@@ -217,44 +217,6 @@ $(document).ready(function(){
 });
 
 
-$('.si2').on('click', function(event) {
-
-    $('#vista_seleccion').fadeOut('slow', function() {
-        $("body").css({"overflow-y":"auto"});
-           //Change-images
-       var i = 0;
-        var images = ['primera_vista_fondo1.jpg','primera_vista_fondo2.jpg','primera_vista_fondo3.jpg'];
-        var intro = $('#generations_section');
-
-        intro.css('background-image','url(img/primera_vista_fondo1.jpg)');
-
-        setInterval(function(){
-
-            if (i == 1 || i == 2) {
-
-                $('.intro').fadeOut( 1300);
-                $('.intro-slogan').fadeOut( 1300);
-
-            }else{
-                $('.intro').fadeIn( 1300);
-                $('.intro-slogan').fadeIn( 1300);
-            };
-
-            intro.css('background-image','url(img/' + images[i ++] +')');
-
-            if (i == images.length ) {
-                i = 0;
-            };
-            
-
-
-        },10000);
-    });
-    event.preventDefault();
-
-
-    /* Act on the event */
-});
 
 
 
