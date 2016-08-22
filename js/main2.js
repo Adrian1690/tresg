@@ -158,11 +158,21 @@ btn_menu_open_resp.click(function(){
 
 
 
+$.fn.scrollStopped = function(callback) {
+  var that = this, $this = $(that);
+  $this.scroll(function(ev) {
+    clearTimeout($this.data('scrollTimeout'));
+    $this.data('scrollTimeout', setTimeout(callback.bind(that), 250, ev));
+  });
+};
+
+$(window).scrollStopped(function(ev){
+    $('.desktop_header').css({opacity: 1});
+});
 
 
 
 $(window).scroll(function(){
-
 
     var fromtop = $(document).scrollTop();       // pixels from top of screen
     $('.desktop_header').css({opacity: 100-fromtop}); // use a better formula for better fading
