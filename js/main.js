@@ -64,11 +64,6 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
 $(document).ready(function() {
 
 
@@ -201,17 +196,19 @@ $(document).ready(function(){
     //agregamos en el body un div que sera que ocupe toda la pantalla y se muestra encima de todo
     $("body").prepend("<div id='pre-load-web'><div id='imagen-load'><img id='logo_madera' src='img/logo_intro.png' alt=''/><img id='progreso' src='img/loader.png' /></div></div>");
         //le damos el alto
-        $("#pre-load-web").css({height:alto+"px"});
+        $("#pre-load-web").css({height:alto+"px", margin:'0 auto'});
+        
 
     $("#imagen-load").css({"margin-top":(alto/2)-100+"px"});
-    $("#vista_seleccion .content").css({"margin-top":(alto/2)-150+"px"});
+    
+
+    //alert(alto);
+    $("#vista_seleccion .content").css({"margin-top":alto * 0.25});
 });
 
 $(document).ready(function(){
     $("#pre-load-web").fadeOut(500,function() {
         $(this).remove();
-
-        
     });
 
 

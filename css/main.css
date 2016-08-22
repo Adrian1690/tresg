@@ -161,11 +161,9 @@
   z-index: 100000;
 }
 #pre-load-web #imagen-load {
-  left: 45%;
-  margin-left: -10px;
-  position: absolute;
-  display: block;
-  margin-bottom: 30px;
+    margin: auto;
+    margin-top: 411px;
+    width: 97px;
 }
 #pre-load-web #imagen-load #logo_madera {
   display: block;
