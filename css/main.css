@@ -1,0 +1,1410 @@
+@font-face {
+  font-family: 'Conv_SIMPLIFICA Typeface';
+  src: url("../fonts/SIMPLIFICA Typeface.eot");
+  src: url("../fonts/SIMPLIFICA Typeface.woff") format('woff'), url("../fonts/SIMPLIFICA Typeface.ttf") format('truetype'), url("../fonts/SIMPLIFICA Typeface.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_VersaillesLTStd-Roman';
+  src: url("../fonts/VersaillesLTStd-Roman.eot");
+  src: url("../fonts/VersaillesLTStd-Roman.woff") format('woff'), url("../fonts/VersaillesLTStd-Roman.ttf") format('truetype'), url("../fonts/VersaillesLTStd-Roman.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_MyriadPro-Bold';
+  src: url("../fonts/MyriadPro-Bold.eot");
+  src: url("../fonts/MyriadPro-Bold.woff") format('woff'), url("../fonts/MyriadPro-Bold.ttf") format('truetype'), url("../fonts/MyriadPro-Bold.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_MyriadPro-BoldCond';
+  src: url("../fonts/MyriadPro-BoldCond.eot");
+  src: url("../fonts/MyriadPro-BoldCond.woff") format('woff'), url("../fonts/MyriadPro-BoldCond.ttf") format('truetype'), url("../fonts/MyriadPro-BoldCond.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_MyriadPro-BoldCondIt';
+  src: url("../fonts/MyriadPro-BoldCondIt.eot");
+  src: url("../fonts/MyriadPro-BoldCondIt.woff") format('woff'), url("../fonts/MyriadPro-BoldCondIt.ttf") format('truetype'), url("../fonts/MyriadPro-BoldCondIt.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_MyriadPro-BoldIt';
+  src: url("../fonts/MyriadPro-BoldIt.eot");
+  src: url("../fonts/MyriadPro-BoldIt.woff") format('woff'), url("../fonts/MyriadPro-BoldIt.ttf") format('truetype'), url("../fonts/MyriadPro-BoldIt.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_MyriadPro-Cond';
+  src: url("../fonts/MyriadPro-Cond.eot");
+  src: url("../fonts/MyriadPro-Cond.woff") format('woff'), url("../fonts/MyriadPro-Cond.ttf") format('truetype'), url("../fonts/MyriadPro-Cond.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_MyriadPro-CondIt';
+  src: url("../fonts/MyriadPro-CondIt.eot");
+  src: url("../fonts/MyriadPro-CondIt.woff") format('woff'), url("../fonts/MyriadPro-CondIt.ttf") format('truetype'), url("../fonts/MyriadPro-CondIt.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_MyriadPro-It';
+  src: url("../fonts/MyriadPro-It.eot");
+  src: url("../fonts/MyriadPro-It.woff") format('woff'), url("../fonts/MyriadPro-It.ttf") format('truetype'), url("../fonts/MyriadPro-It.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_MyriadPro-Regular';
+  src: url("../fonts/MyriadPro-Regular.eot");
+  src: url("../fonts/MyriadPro-Regular.woff") format('woff'), url("../fonts/MyriadPro-Regular.ttf") format('truetype'), url("../fonts/MyriadPro-Regular.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_MyriadPro-Semibold';
+  src: url("../fonts/MyriadPro-Semibold.eot");
+  src: url("../fonts/MyriadPro-Semibold.woff") format('woff'), url("../fonts/MyriadPro-Semibold.ttf") format('truetype'), url("../fonts/MyriadPro-Semibold.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_MyriadPro-SemiboldIt';
+  src: url("../fonts/MyriadPro-SemiboldIt.eot");
+  src: url("../fonts/MyriadPro-SemiboldIt.woff") format('woff'), url("../fonts/MyriadPro-SemiboldIt.ttf") format('truetype'), url("../fonts/MyriadPro-SemiboldIt.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+#vista_seleccion {
+  width: 100%;
+  position: fixed;
+  background-image: url("../img/bg_intro.jpg");
+  background-position: center center;
+  background-size: cover;
+  left: 0px;
+  top: 0px;
+  z-index: 9999;
+  height: 100vh;
+}
+#vista_seleccion .content {
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  max-width: 960px;
+  display: block;
+  position: relative;
+}
+#vista_seleccion .content h6 {
+  font-family: Conv_VersaillesLTStd-Roman;
+  font-size: 12px;
+  margin-top: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#vista_seleccion .content h5 {
+  font-family: "Conv_SIMPLIFICA Typeface";
+  font-size: 25px;
+  margin-top: 36px;
+  letter-spacing: 2px;
+}
+#vista_seleccion .content ul {
+  max-width: 200px;
+  overflow: hidden;
+  margin: 78px auto 47px;
+  font-family: "Conv_VersaillesLTStd-Roman";
+  display: block;
+  font-size: 20px;
+}
+#vista_seleccion .content ul li {
+  cursor: pointer;
+  font-family: "Conv_VersaillesLTStd-Roman";
+}
+#vista_seleccion .content ul li a {
+  font-family: "Conv_VersaillesLTStd-Roman";
+  color: #fff;
+}
+#vista_seleccion .content ul li:hover {
+  text-decoration: underline;
+}
+#vista_seleccion .content ul li.si {
+  float: left;
+}
+#vista_seleccion .content ul li.no {
+  float: right;
+}
+#vista_seleccion .advertencia {
+  position: absolute;
+  bottom: 30px;
+  font-family: "Conv_SIMPLIFICA Typeface";
+  font-size: 31px;
+  color: #808080;
+  letter-spacing: 3px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+#pre-load-web {
+  width: 100%;
+  position: fixed;
+  background-image: url("../img/bg_intro.jpg");
+  background-position: center center;
+  background-size: cover;
+  left: 0px;
+  top: 0px;
+  z-index: 100000;
+}
+#pre-load-web #imagen-load {
+  left: 45%;
+  margin-left: -10px;
+  position: absolute;
+  display: block;
+  margin-bottom: 30px;
+}
+#pre-load-web #imagen-load #logo_madera {
+  display: block;
+  margin-bottom: 30px;
+}
+#pre-load-web #imagen-load #progreso {
+  -webkit-animation: pace-spinner 1000ms linear infinite;
+  -moz-animation: pace-spinner 1000ms linear infinite;
+  -ms-animation: pace-spinner 1000ms linear infinite;
+  -o-animation: pace-spinner 1000ms linear infinite;
+  animation: pace-spinner 1000ms linear infinite;
+  display: block;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#header_responsive {
+  display: none;
+}
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 10;
+}
+header .logo {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+}
+header .logo #titulo_logo {
+  transition: 0.5s ease all;
+}
+header .menu .btn_menu,
+header .menu .btn_menu_responsive {
+  position: absolute;
+  top: 50px;
+  right: 45px;
+  cursor: pointer;
+  width: 61px;
+  height: 57px;
+  background-image: url("../img/navegacion.png");
+}
+header .menu .btn_menu:hover,
+header .menu .btn_menu_responsive:hover {
+  background-position: -63px -3px;
+}
+header .menu aside {
+  position: absolute;
+  background-color: rgba(255,255,255,0.94);
+  right: 0px;
+  height: 100vh;
+  width: 120px;
+}
+header .menu aside nav {
+  margin: 0 auto;
+  display: block;
+  max-width: 78px;
+}
+header .menu aside nav li {
+  margin-bottom: 65%;
+}
+header .menu aside nav li a {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+header .menu aside nav li span {
+  font-family: Conv_SIMPLIFICA Typeface;
+  color: #666;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+header .menu aside nav li .icon_menu {
+  background-image: url("../img/navegacion.png");
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+}
+header .menu aside nav li .icon_menu span {
+  line-height: 10px;
+  display: block;
+  vertical-align: bottom;
+  position: relative;
+}
+header .menu aside nav li.generaciones .icon_menu {
+  background-position: 1.8px -106px;
+  width: 55px;
+  height: 30px;
+}
+header .menu aside nav li.generaciones .icon_menu:hover {
+  background-position: -69px -106px;
+}
+header .menu aside nav li.generaciones .icon_menu span {
+  line-height: 12px;
+  bottom: -37px;
+  right: -12px;
+  margin-left: -24px;
+}
+header .menu aside nav li.productos .icon_menu {
+  background-position: -7px -157px;
+  width: 41px;
+  height: 39px;
+}
+header .menu aside nav li.productos .icon_menu:hover {
+  background-position: -73px -157px;
+}
+header .menu aside nav li.productos .icon_menu span {
+  line-height: 12px;
+  bottom: -45px;
+}
+header .menu aside nav li.cocteleria .icon_menu {
+  background-position: -8px -215px;
+  width: 42px;
+  height: 30px;
+}
+header .menu aside nav li.cocteleria .icon_menu:hover {
+  background-position: -73px -215px;
+}
+header .menu aside nav li.cocteleria .icon_menu span {
+  line-height: 12px;
+  bottom: -34px;
+}
+header .menu aside nav li.regalos {
+  margin-bottom: 70%;
+}
+header .menu aside nav li.regalos .icon_menu {
+  background-position: -8px -297px;
+  width: 44px;
+  height: 37px;
+}
+header .menu aside nav li.regalos .icon_menu:hover {
+  background-position: -75px -297px;
+}
+header .menu aside nav li.regalos .icon_menu span {
+  line-height: 12px;
+  bottom: -39px;
+  margin-left: -10px;
+  right: -5px;
+}
+header .menu aside nav li.ubicanos .icon_menu {
+  background-position: -8px -263px;
+  width: 45px;
+  height: 23px;
+}
+header .menu aside nav li.ubicanos .icon_menu:hover {
+  background-position: -73px -263px;
+}
+header .menu aside nav li.ubicanos .icon_menu span {
+  line-height: 12px;
+  bottom: -27px;
+}
+header .menu aside nav li.social {
+  margin-top: 60px;
+  bottom: 0px;
+}
+header .menu aside nav li.social #youtube {
+  background-position: -8px -340px;
+  width: 36px;
+  height: 31px;
+  background-image: url("../img/navegacion.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 0 auto;
+}
+header .menu aside nav li.social #youtube:hover {
+  background-position: -74px -340px;
+}
+header .menu aside nav li.social #youtube span {
+  line-height: 12px;
+  bottom: -37px;
+}
+header .menu aside nav li.social #facebook {
+  background-position: -11px -373px;
+  width: 33px;
+  float: right;
+  height: 31px;
+  background-image: url("../img/navegacion.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+header .menu aside nav li.social #facebook:hover {
+  background-position: -76px -373px;
+}
+header .menu aside nav .close_menu {
+  width: 30px;
+  cursor: pointer;
+  height: 30px;
+  background-image: url("../img/navegacion.png");
+  background-repeat: no-repeat;
+  background-position: 3px -61px;
+  margin: 50px auto;
+  display: block;
+}
+header .menu aside nav .close_menu:hover {
+  background-position: -65px -63px;
+}
+#generations_section {
+  transition: 1.5s ease all;
+}
+#generations_section h2 {
+  color: #1a1a15;
+  font-size: 58px;
+  margin-top: 11px;
+  font-family: Conv_SIMPLIFICA Typeface;
+  text-align: center;
+}
+#generations_section .slogan {
+  margin-top: -42px;
+  display: block;
+}
+#generations_section .slogan img {
+  margin: 0 auto;
+}
+#generations_section .intro p {
+  margin-top: 0px;
+  color: #737277;
+  font-family: Conv_VersaillesLTStd-Roman;
+  font-size: 16px;
+  text-align: left;
+}
+#generations_section .imagen_pisco {
+  overflow: hidden;
+  bottom: 0px;
+  right: 115px;
+  position: absolute;
+}
+#generations_section .imagen_pisco img {
+  display: block;
+  position: relative;
+}
+#generations_section2 .content-b {
+  background-color: transparent;
+}
+#generations_section2 .biografia_imagen .texto {
+  font-family: Conv_SIMPLIFICA Typeface;
+  margin-top: 8px;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  line-height: 15px;
+  color: #85838a;
+}
+#generations_section2 .linea_superior {
+  width: 70px;
+  height: 2px;
+  background-color: #909500;
+  display: block;
+}
+#generations_section2 .linea_inferior {
+  width: 70px;
+  margin-top: 25px;
+  height: 2px;
+  background-color: #909500;
+  margin-bottom: 20px;
+  display: block;
+}
+#generations_section2 h2 {
+  font-family: Conv_SIMPLIFICA Typeface;
+  font-size: 40px;
+  color: #929721;
+  text-align: left;
+  margin: 25px 0px;
+  letter-spacing: 3px;
+}
+#generations_section2 h3 {
+  font-family: Conv_SIMPLIFICA Typeface;
+  font-size: 21px;
+  color: #929721;
+  text-align: left;
+  margin-top: -22px;
+  margin-bottom: 35px;
+}
+#generations_section2 p {
+  font-family: Conv_VersaillesLTStd-Roman;
+  text-align: justify;
+  color: #737277;
+  font-size: 15px;
+  padding-right: 20px;
+}
+#generations_section2 .tags {
+  text-align: left;
+}
+#generations_section2 .tags a {
+  font-family: Conv_SIMPLIFICA Typeface;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #929721;
+}
+#generations_section2 .tags span {
+  margin: 0px 10px;
+  vertical-align: top;
+  font-size: 16px;
+  margin-top: 7px;
+  color: #929721;
+}
+#advertisement_section {
+  position: relative;
+}
+#advertisement_section .titulo {
+  top: 45px;
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-family: "Conv_SIMPLIFICA Typeface";
+  font-size: 35px;
+  color: #929721;
+}
+#advertisement_section .titulo h2 {
+  font-size: 35px;
+  letter-spacing: 4px;
+  color: #929721;
+}
+#advertisement_section .titulo img {
+  margin: 0 auto;
+}
+#advertisement_section .container-carousel {
+  margin: 25% auto 0;
+  max-width: 955px;
+  width: 100%;
+  display: block;
+}
+#advertisement_section .container-carousel .owl-carousel .item .laurel {
+  background-size: 100% 100%;
+  margin: 0 auto;
+  max-width: 164px;
+  width: 100%;
+  height: 140px;
+  background-image: url("../img/laurel1.png");
+  background-position: center center;
+  padding: 15px 25px 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#advertisement_section .container-carousel .owl-carousel .item .laurel2 {
+  background-size: 100% 100%;
+  margin: 0 auto;
+  max-width: 164px;
+  width: 100%;
+  height: 140px;
+  background-image: url("../img/laurel2.png");
+  background-position: center center;
+  padding: 15px 25px 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#advertisement_section .container-carousel .owl-carousel .item .laurel3 {
+  background-size: 100% 100%;
+  margin: 0 auto;
+  max-width: 164px;
+  width: 100%;
+  height: 140px;
+  background-image: url("../img/laurel3.png");
+  background-position: center center;
+  padding: 15px 25px 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#advertisement_section .container-carousel .owl-carousel .item .laurel4 {
+  background-size: 100% 100%;
+  margin: 0 auto;
+  max-width: 164px;
+  width: 100%;
+  height: 140px;
+  background-image: url("../img/laurel4.png");
+  background-position: center center;
+  padding: 15px 25px 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#advertisement_section .container-carousel .owl-carousel .item .concurso_nombre {
+  font-size: 11px;
+  font-family: Conv_VersaillesLTStd-Roman;
+  color: #929721;
+}
+#advertisement_section .container-carousel .owl-carousel .item .concurso_fecha {
+  font-size: 8.8px;
+  color: #929721;
+  font-family: Conv_VersaillesLTStd-Roman;
+}
+#advertisement_section .container-carousel .owl-carousel .item .medalla_nombre {
+  text-align: center;
+  font-family: Conv_SIMPLIFICA Typeface;
+  font-size: 18px;
+  color: #929721;
+}
+#advertisement_section .container-carousel .owl-carousel .item .medalla_nombre p {
+  margin-top: 5px;
+  line-height: 15px;
+}
+#advertisement_section .owl-controls {
+  display: block;
+  margin-top: -15%;
+  width: 100%;
+  position: absolute;
+  font-weight: bold;
+}
+#advertisement_section .owl-controls .owl-prev {
+  width: 25px;
+  height: 40px;
+  float: left;
+  margin-left: -10%;
+  background-image: url("../img/flechitas.png");
+  font-size: 0px;
+  background-position: 0px center;
+}
+#advertisement_section .owl-controls .owl-next {
+  width: 25px;
+  height: 40px;
+  font-size: 0px;
+  background-position: 24px center;
+  float: right;
+  background-image: url("../img/flechitas.png");
+  margin-right: -10%;
+}
+#products_section .content-b {
+  background-color: transparent;
+}
+#products_section .content-b .linea {
+  padding: 0px 0px 34px 0px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+#products_section .content-b .linea .hijolinea {
+  position: relative;
+  display: inline-block;
+}
+#products_section .content-b .linea .hijolinea .izq {
+  position: absolute;
+  width: 2000px;
+  height: 40px;
+  background: url("../img/frutos-right.png") no-repeat center right;
+  right: 105%;
+  top: 50%;
+}
+#products_section .content-b .linea .hijolinea .der {
+  position: absolute;
+  width: 2000px;
+  height: 40px;
+  background: url("../img/frutos-left.png") no-repeat center left;
+  left: 100%;
+  top: 50%;
+}
+#products_section .content-b .container_cremas {
+  max-width: 900px;
+  margin: 0px auto 90px;
+  overflow: hidden;
+  font-family: Conv_SIMPLIFICA Typeface;
+  font-size: 30px;
+  text-transform: uppercase;
+  display: block;
+}
+#products_section .content-b .container_cremas h3 {
+  margin-top: 60px;
+  font-size: 30px;
+}
+#products_section .content-b .container_cremas ul {
+  margin-bottom: 0px;
+}
+#products_section .content-b .container_cremas ul li a {
+  background: url("../img/piscos/botellas.png") no-repeat;
+  display: block;
+  width: 50px;
+  height: 290px;
+}
+#products_section .content-b .container_cremas ul li a#crema-chirimoya {
+  background-position: -72px -754px;
+}
+#products_section .content-b .container_cremas ul li a#crema-chirimoya:hover {
+  background-position: -426px -815px;
+}
+#products_section .content-b .container_cremas ul li a#crema-lucuma {
+  background-position: -154px -754px;
+}
+#products_section .content-b .container_cremas ul li a#crema-lucuma:hover {
+  background-position: -520px -818px;
+}
+#products_section .content-b .container_cremas ul li a#crema-vainilla {
+  background-position: -72px -754px;
+}
+#products_section .content-b .container_cremas ul li a#crema-vainilla:hover {
+  background-position: -616px -816px;
+}
+#products_section .content-b .container_piscos {
+  max-width: 889px;
+  margin: 90px auto 0px;
+  overflow: hidden;
+  font-family: Conv_SIMPLIFICA Typeface;
+  font-size: 30px;
+  text-transform: uppercase;
+  display: block;
+}
+#products_section .content-b .container_piscos h3 {
+  margin-top: 60px;
+  font-size: 30px;
+}
+#products_section .content-b .container_piscos ul {
+  margin-bottom: 0px;
+}
+#products_section .content-b .container_piscos ul.third li a {
+  background: url("../img/piscos/botellas.png") no-repeat;
+  display: block;
+  width: 49px;
+  height: 225px;
+}
+#products_section .content-b .container_piscos ul.third li a#pisco-quebranta {
+  background-position: -28px -272px;
+}
+#products_section .content-b .container_piscos ul.third li a#pisco-quebranta:hover {
+  background-position: -380px -315px;
+}
+#products_section .content-b .container_piscos ul.third li a#pisco-torontel {
+  background-position: -109px -272px;
+}
+#products_section .content-b .container_piscos ul.third li a#pisco-torontel:hover {
+  background-position: -471px -315px;
+}
+#products_section .content-b .container_piscos ul.third li a#pisco-moscatel {
+  background-position: -194px -272px;
+}
+#products_section .content-b .container_piscos ul.third li a#pisco-moscatel:hover {
+  background-position: -568px -313px;
+}
+#products_section .content-b .container_piscos ul.third li a#pisco-acholado {
+  background-position: -274px -272px;
+}
+#products_section .content-b .container_piscos ul.third li a#pisco-acholado:hover {
+  background-position: -657px -313px;
+}
+#products_section .content-b .container_piscos ul.first li a {
+  background: url("../img/piscos/botellas.png") no-repeat;
+  display: block;
+  width: 50px;
+  height: 225px;
+}
+#products_section .content-b .container_piscos ul.first li a#pisco-mollar {
+  background-position: -77px -496px;
+}
+#products_section .content-b .container_piscos ul.first li a#pisco-mollar:hover {
+  background-position: -435px -567px;
+}
+#products_section .content-b .container_piscos ul.first li a#pisco-albilla {
+  background-position: -151px -496px;
+}
+#products_section .content-b .container_piscos ul.first li a#pisco-albilla:hover {
+  background-position: -519px -567px;
+}
+#products_section .content-b .container_piscos ul.first li a#pisco-italia {
+  background-position: -229px -496px;
+}
+#products_section .content-b .container_piscos ul.first li a#pisco-italia:hover {
+  background-position: -607px -568px;
+}
+#products_section .content-b .container_piscos ul.second li a {
+  background: url("../img/piscos/botellas.png") no-repeat;
+  width: 48px;
+  display: block;
+  height: 243px;
+}
+#products_section .content-b .container_piscos ul.second li a#pisco-mostoverde_acholado {
+  background-position: -62px -28px;
+}
+#products_section .content-b .container_piscos ul.second li a#pisco-mostoverde_acholado:hover {
+  background-position: -419px -38px;
+}
+#products_section .content-b .container_piscos ul.second li a#pisco-mostoverde_quebranta {
+  background-position: -147px -28px;
+}
+#products_section .content-b .container_piscos ul.second li a#pisco-mostoverde_quebranta:hover {
+  background-position: -515px -38px;
+}
+#products_section .content-b .container_piscos ul.second li a#pisco-mostoverde_torontel {
+  background-position: -244px -28px;
+}
+#products_section .content-b .container_piscos ul.second li a#pisco-mostoverde_torontel:hover {
+  background-position: -624px -38px;
+}
+#cocteleria_section .content-b {
+  background-color: transparent;
+}
+#cocteleria_section .content-b .titulo {
+  top: 97px;
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-family: "Conv_SIMPLIFICA Typeface";
+  font-size: 35px;
+  color: #929721;
+  text-transform: uppercase;
+}
+#cocteleria_section .content-b .titulo h2 {
+  margin-bottom: 0px;
+  margin-top: 20px;
+  font-size: 35px;
+  letter-spacing: 4px;
+}
+#cocteleria_section .content-b .titulo img {
+  margin: 0 auto;
+}
+#cocteleria_section .content-b .container_cocteles {
+  max-width: 930px;
+  text-transform: uppercase;
+  margin: 260px auto 80px;
+  overflow: hidden;
+  font-family: Conv_SIMPLIFICA Typeface;
+  font-size: 30px;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+#cocteleria_section .content-b .container_cocteles ul li .linea {
+  margin-bottom: 20px;
+  max-width: 212px;
+  border-top: 1px solid #929721;
+}
+#cocteleria_section .content-b .container_cocteles ul li a {
+  margin-bottom: 20px;
+  width: 167px;
+  overflow: hidden;
+  height: 250px;
+  text-decoration: none;
+  display: block;
+}
+#cocteleria_section .content-b .container_cocteles ul li a .hover {
+  padding-top: 20px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+  transition: 0.5s ease all;
+  background-color: rgba(255,255,255,0.86);
+  opacity: 0;
+}
+#cocteleria_section .content-b .container_cocteles ul li a .hover:hover {
+  opacity: 1;
+}
+#cocteleria_section .content-b .container_cocteles ul li a .hover h4 {
+  text-transform: uppercase;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  color: #1d1d1b;
+  font-size: 15px;
+  font-family: Conv_VersaillesLTStd-Roman;
+}
+#cocteleria_section .content-b .container_cocteles ul li a .hover .adornido {
+  display: block;
+  overflow: hidden;
+  height: auto;
+  margin-top: 12px;
+}
+#cocteleria_section .content-b .container_cocteles ul li a .hover .adornido img {
+  margin: 0 auto;
+  display: block;
+}
+#cocteleria_section .content-b .container_cocteles ul li a#pisco_sour {
+  background-image: url("../img/pisco_sour.jpg");
+}
+#cocteleria_section .content-b .container_cocteles ul li a#pisco_punch {
+  background-image: url("../img/pisco_punch.jpg");
+}
+#cocteleria_section .content-b .container_cocteles ul li a#pisco_sour_maracuya {
+  background-image: url("../img/pisco_sour_maracuya.jpg");
+}
+#cocteleria_section .content-b .container_cocteles ul li a#chilcano-clasico {
+  background-image: url("../img/chilcano.jpg");
+}
+#cocteleria_section .content-b .container_cocteles ul li a#chilcano-frutos_rojos {
+  background-image: url("../img/chilcano_frutos_rojos.jpg");
+}
+#regalos_section .content-b {
+  background-color: transparent;
+}
+#regalos_section .content-b .container-promos {
+  max-width: 1024px;
+  text-transform: uppercase;
+  margin: 260px auto 80px;
+  font-family: Conv_SIMPLIFICA Typeface;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+#regalos_section .content-b .container-promos .linea {
+  border-bottom: 1px solid #909500;
+  max-width: 286px;
+  margin-bottom: 23px;
+}
+#regalos_section .content-b .container-promos #formulario {
+  margin-top: -70px;
+}
+#regalos_section .content-b .container-promos #formulario .titulo {
+  font-family: "Conv_SIMPLIFICA Typeface";
+  line-height: 35px;
+  font-size: 35px;
+  color: #929721;
+  margin-top: 21px;
+  margin-bottom: 48px;
+}
+#regalos_section .content-b .container-promos #formulario label {
+  color: #808080;
+  font-family: Conv_VersaillesLTStd-Roman;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+#regalos_section .content-b .container-promos #formulario input {
+  height: 22px;
+  border: none;
+  background-color: #d6d6d6;
+  color: #fff;
+  margin-bottom: 10px;
+}
+#regalos_section .content-b .container-promos #formulario textarea {
+  min-height: 92px;
+  background-color: #d6d6d6;
+}
+#regalos_section .content-b .container-promos #formulario #enviar {
+  background-color: transparent;
+  border-bottom: 1px solid #929721;
+  border-top: 1px solid #929721;
+  color: #929721;
+  padding: 5px 10px;
+  font-family: Conv_SIMPLIFICA Typeface;
+  font-size: 18px;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+  margin-top: 20px;
+}
+#regalos_section .content-b .container-promos .img-container {
+  margin-top: -40px;
+  margin-bottom: 23px;
+  min-height: 470px;
+}
+#regalos_section .content-b .container-promos .img-container .bottom {
+  position: absolute;
+  bottom: 0;
+}
+#regalos_section .content-b .container-promos .img-container img {
+  margin: 0 auto;
+}
+#regalos_section .content-b .container-promos p {
+  color: #737277;
+  font-family: Conv_VersaillesLTStd-Roman;
+  text-align: left;
+  text-transform: initial;
+}
+#regalos_section .content-b .container-promos .navegacion_vertical ul {
+  max-width: 90px;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+#regalos_section .content-b .container-promos .navegacion_vertical ul li {
+  margin: 10px 0px;
+}
+#regalos_section .content-b .container-promos .navegacion_vertical ul li a {
+  font-size: 14px;
+  color: #909500;
+  background-color: #e9e9e9;
+  display: block;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 0.5s ease all;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+}
+#regalos_section .content-b .container-promos .navegacion_vertical ul li a:hover {
+  background-color: #1d1d1b;
+  color: #fff;
+}
+#regalos_section .content-b .container-promos .navegacion_vertical ul li a.active {
+  background-color: #1d1d1b;
+  color: #fff;
+}
+#regalos_section .content-b .container-promos .navegacion_vertical ul li.prev {
+  background: url("../img/vertical_buttons.png") no-repeat -6px -23px;
+  width: 38px;
+  height: 21px;
+  cursor: pointer;
+  margin: 34px auto 26px;
+}
+#regalos_section .content-b .container-promos .navegacion_vertical ul li.next {
+  cursor: pointer;
+  background: url("../img/vertical_buttons.png") no-repeat -6px -71px;
+  width: 38px;
+  height: 21px;
+  margin: 26px auto 20px;
+}
+#regalos_section .content-b .container-promos .navegacion_vertical .tittle {
+  padding: 7px 15px 7px;
+  font-size: 15px;
+  max-width: 120px;
+  margin: 0 auto;
+  color: #909500;
+  background-color: #e9e9e9;
+  cursor: pointer;
+}
+#regalos_section .content-b .container-promos .navegacion_vertical .tittle:hover {
+  background-color: #1d1d1b;
+  color: #fff;
+}
+#regalos_section .content-b .container-promos .navegacion_vertical .tittle.active {
+  background-color: #1d1d1b;
+  color: #fff;
+}
+#regalos_section .content-b .container-promos .navegacion_vertical .tittle h3 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+  margin-top: 0;
+}
+#regalos_section .content-b .container-promos .navegacion_vertical .tittle .adornito {
+  display: block;
+  background: url("../img/adornitos_ubicanos.png") no-repeat -4px -5px;
+  width: 34px;
+  margin: 0 auto;
+  height: 11px;
+}
+#contenedor_bottom {
+  position: relative;
+}
+#contenedor_bottom .content-a .content-b footer {
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  min-height: 62px;
+  display: block;
+  background-image: url("../img/footer_bg.jpg");
+  background-position: center center;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0px;
+}
+#contenedor_bottom .content-a .content-b footer p {
+  margin-top: 29px;
+  font-family: Conv_MyriadPro-Regular;
+  font-size: 10px;
+  color: #c8c8c8;
+  letter-spacing: 1.5px;
+}
+#contenedor_bottom .content-a .content-b #ubicanos_section {
+  z-index: 2;
+  min-height: 227px;
+  background-image: url("../img/ubicanosbg.jpg");
+  background-position: center center;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+#contenedor_bottom .content-a .content-b #ubicanos_section img {
+  margin-bottom: 15px;
+  margin-top: 38px;
+}
+#contenedor_bottom .content-a .content-b #ubicanos_section address {
+  color: #eee;
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-family: Conv_SIMPLIFICA Typeface;
+}
+#contenedor_bottom .content-a .content-b #ubicanos_section address span {
+  margin: 0px 5px;
+}
+#contenedor_bottom .content-a .content-b #ubicanos_section address ul li {
+  letter-spacing: 2px;
+}
+#contenedor_bottom .content-a .content-b #ubicanos_section .social li {
+  letter-spacing: 2px;
+}
+#contenedor_bottom .content-a .content-b #ubicanos_section .social li .facebook {
+  background: url("../img/adornitos_ubicanos.png") no-repeat -4px -35px;
+  width: 37px;
+  display: block;
+  height: 22px;
+}
+#contenedor_bottom .content-a .content-b #ubicanos_section .social li .youtube {
+  background: url("../img/adornitos_ubicanos.png") no-repeat -53px -35px;
+  width: 35px;
+  height: 22px;
+  display: block;
+}
+#contenedor_bottom .content-a .content-b #mapa #map {
+  min-height: 700px;
+}
+.tos-html .wrapper {
+  display: block;
+}
+.wrapper {
+  display: none;
+}
+.wrapper .maincontent {
+  max-width: 864px;
+  width: 100%;
+  display: block;
+}
+.wrapper .maincontent img {
+  margin: 0 auto;
+}
+.wrapper .maincontent .linea {
+  border-bottom: 1px solid #919600;
+  margin-top: 25px;
+  max-width: 216px;
+}
+.wrapper .maincontent h6 {
+  margin: 16px 0 21px;
+  font-family: Conv_VersaillesLTStd-Roman;
+  font-size: 13px;
+  color: #e6e9e9;
+}
+.wrapper .maincontent li {
+  font-family: Conv_VersaillesLTStd-Roman;
+  font-size: 13px;
+  color: #e6e9e9;
+}
+.wrapper .maincontent h5 {
+  font-family: "Conv_SIMPLIFICA Typeface";
+  color: #919600;
+  font-size: 33px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  margin-top: 13%;
+  border-bottom: 1px solid #919600;
+  display: inline-block;
+}
+.wrapper .maincontent h5.coctel {
+  margin-top: 4%;
+}
+.wrapper .maincontent .iconitos {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.wrapper .maincontent p {
+  font-size: 13.5px;
+  color: #e1e4e4;
+  font-family: Conv_VersaillesLTStd-Roman;
+  text-align: left;
+}
+/*==========  Non-Mobile First Method  ==========*/
+@media (min-height: 767px) {
+  header .menu aside nav li {
+    margin-bottom: 98%;
+  }
+  header .menu aside nav li.regalos {
+    margin-bottom: 100%;
+  }
+}
+@media (max-height: 660px) {
+  header .menu aside nav li {
+    margin-bottom: 30%;
+  }
+  header .menu aside nav li.regalos {
+    margin-bottom: 100%;
+  }
+}
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  #generations_section.fullscreen,
+  #generations_section .content-a {
+    min-height: 767px !important;
+    height: 100% !important;
+  }
+  #products_section .content-b .linea {
+    padding-top: 40px;
+  }
+  #generations_section2 {
+    padding: 45px 0px;
+  }
+  #generations_section2 .biografia_imagen {
+    margin-top: 40px;
+  }
+  .fullscreen,
+  .content-a {
+    height: auto !important;
+    min-height: auto !important;
+  }
+  #advertisement_section .container-carousel {
+    margin-bottom: 12%;
+  }
+  #regalos_section .content-b .container-promos {
+    margin-top: 10%;
+  }
+  #regalos_section .content-b .container-promos .img-container {
+    margin-top: 0px;
+  }
+  #regalos_section .content-b .container-promos #formulario {
+    margin-top: 40px;
+  }
+  #cocteleria_section .container_cocteles ul li .linea,
+  .content-b .container_cocteles ul li .linea {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #regalos_section .tittle {
+    display: none;
+  }
+  #regalos_section .content-b .container-promos .linea {
+    max-width: 100%;
+  }
+  #regalos_section .content-b .container-promos p {
+    text-align: center;
+  }
+  #regalos_section .content-b .container-promos .col-sm-12 {
+    overflow: hidden;
+  }
+  #regalos_section .content-b .container-promos .img-container .bottom {
+    position: relative;
+    bottom: 0;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  #regalos_section .content-b .container-promos .navegacion_vertical ul {
+    max-width: 100%;
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #regalos_section .content-b .container-promos .navegacion_vertical ul li {
+    margin: 10px 0px;
+    display: inline-block;
+  }
+  #regalos_section .content-b .container-promos .navegacion_vertical ul li.prev {
+    display: none;
+  }
+  #regalos_section .content-b .container-promos .navegacion_vertical ul li.next {
+    display: none;
+  }
+  #regalos_section .content-b .container-promos .navegacion_vertical ul li a {
+    padding: 10px;
+  }
+}
+/*   Small Devices, Tablets */
+@media only screen and (max-width: 600px) {
+  #products_section .content-b .container_cremas {
+    margin-bottom: 0px;
+  }
+  #advertisement_section .owl-controls {
+    margin-top: -32%;
+  }
+  #advertisement_section .owl-controls .owl-prev {
+    margin-left: 2%;
+  }
+  #advertisement_section .owl-controls .owl-next {
+    margin-right: 2%;
+  }
+  #advertisement_section .container-carousel {
+    margin-right: 10%;
+    margin-bottom: 10px;
+  }
+  #advertisement_section .titulo {
+    display: none;
+  }
+  #vista_seleccion .advertencia {
+    bottom: 12px;
+  }
+  #vista_seleccion .advertencia h2 {
+    font-size: 10px;
+  }
+  #header_desktop {
+    display: none;
+  }
+  #header_responsive {
+    display: block;
+    padding-top: 13px;
+    padding-bottom: 10px;
+    background-color: #fff;
+  }
+  #header_responsive .menu {
+    float: right;
+  }
+  #header_responsive .menu .btn_menu_responsive {
+    position: absolute;
+    background-color: #929821;
+    background-position: 13px 10px;
+    padding: 36px 41px;
+    top: 0px;
+    right: 0px;
+  }
+  #header_responsive .logo {
+    display: inline-block;
+    width: 212px;
+    float: left;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+  }
+  #header_responsive .logo #titulo_logo {
+    width: 63%;
+    margin-top: -7px;
+  }
+  #header_responsive .logo img {
+    margin-left: 15px;
+    margin-top: -8px;
+    width: 18%;
+  }
+  #header_responsive aside {
+    width: 100%;
+    top: 72px;
+  }
+  #header_responsive aside nav {
+    float: right;
+    width: 100%;
+    max-width: 100%;
+    text-align: right;
+  }
+  #header_responsive aside nav li {
+    float: right;
+    width: 100%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin: 0px;
+    cursor: pointer;
+  }
+  #header_responsive aside nav li:hover {
+    background-color: #f7f7f7;
+  }
+  #header_responsive aside nav li span {
+    font-family: Conv_SIMPLIFICA Typeface;
+    color: #666;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+    float: right;
+    margin-top: 5px;
+    margin-right: 24px;
+  }
+  #header_responsive aside nav li a .icon_menu {
+    float: right;
+    margin-right: 5%;
+  }
+  #generations_section .intro p {
+    max-width: 268px;
+    margin: 20px auto;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .tos-html {
+    padding: 20px 0px !important;
+  }
+  #vista_seleccion {
+    overflow-x: hidden;
+  }
+  #vista_seleccion .advertencia {
+    display: none;
+  }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  #regalos_section .content-b .container-promos #formulario label {
+    font-size: 10px;
+  }
+}
+
+/* background setup */
+.background {
+  background-repeat:no-repeat;
+  background-size:100%;
+  /* custom background-position */
+  background-position:50% 50%;
+  /* ie8- graceful degradation */
+  background-position:50% 50%9 !important;
+}
+
+/* fullscreen setup */
+html, body {
+  /* give this to all tags from html to .fullscreen */
+  height:100%;
+}
+.fullscreen´{
+  padding: 0px;
+}
+.fullscreen,.content-a {
+  width:100%;
+  min-height:767px;
+  height:100%;
+  overflow:hidden;
+}
+.fullscreen.overflow,.fullscreen.overflow .content-a {
+  /*height:auto;*/
+  /*min-height:100%;*/
+  min-height:767px;
+}
+
+/* content centering styles */
+.content-a {
+  display:table;
+}
+.content-b {
+  display:table-cell;
+  position:relative;
+  vertical-align:middle;
+  text-align:center;
+}
+@-moz-keyframes pace-spinner {
+  0% {
+    transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes pace-spinner {
+  0% {
+    transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes pace-spinner {
+  0% {
+    transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes pace-spinner {
+  0% {
+    transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=main.css.map */

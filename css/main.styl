@@ -1,0 +1,1241 @@
+@font-face
+  font-family: 'Conv_SIMPLIFICA Typeface'
+  src: url('../fonts/SIMPLIFICA Typeface.eot')
+  src: url('../fonts/SIMPLIFICA Typeface.woff') format('woff'), url('../fonts/SIMPLIFICA Typeface.ttf') format('truetype'), url('../fonts/SIMPLIFICA Typeface.svg') format('svg')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'Conv_VersaillesLTStd-Roman'
+  src: url('../fonts/VersaillesLTStd-Roman.eot')
+  src: url('../fonts/VersaillesLTStd-Roman.woff') format('woff'), url('../fonts/VersaillesLTStd-Roman.ttf') format('truetype'), url('../fonts/VersaillesLTStd-Roman.svg') format('svg')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'Conv_MyriadPro-Bold';
+  src: url('../fonts/MyriadPro-Bold.eot');
+  src: url('../fonts/MyriadPro-Bold.woff') format('woff'), url('../fonts/MyriadPro-Bold.ttf') format('truetype'), url('../fonts/MyriadPro-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+@font-face
+  font-family: 'Conv_MyriadPro-BoldCond';
+  src: url('../fonts/MyriadPro-BoldCond.eot');
+  src: url('../fonts/MyriadPro-BoldCond.woff') format('woff'), url('../fonts/MyriadPro-BoldCond.ttf') format('truetype'), url('../fonts/MyriadPro-BoldCond.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+@font-face
+  font-family: 'Conv_MyriadPro-BoldCondIt';
+  src: url('../fonts/MyriadPro-BoldCondIt.eot');
+  src: url('../fonts/MyriadPro-BoldCondIt.woff') format('woff'), url('../fonts/MyriadPro-BoldCondIt.ttf') format('truetype'), url('../fonts/MyriadPro-BoldCondIt.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+@font-face
+  font-family: 'Conv_MyriadPro-BoldIt';
+  src: url('../fonts/MyriadPro-BoldIt.eot');
+  src: url('../fonts/MyriadPro-BoldIt.woff') format('woff'), url('../fonts/MyriadPro-BoldIt.ttf') format('truetype'), url('../fonts/MyriadPro-BoldIt.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+@font-face
+  font-family: 'Conv_MyriadPro-Cond';
+  src: url('../fonts/MyriadPro-Cond.eot');
+  src: url('../fonts/MyriadPro-Cond.woff') format('woff'), url('../fonts/MyriadPro-Cond.ttf') format('truetype'), url('../fonts/MyriadPro-Cond.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+@font-face
+  font-family: 'Conv_MyriadPro-CondIt';
+  src: url('../fonts/MyriadPro-CondIt.eot');
+  src: url('../fonts/MyriadPro-CondIt.woff') format('woff'), url('../fonts/MyriadPro-CondIt.ttf') format('truetype'), url('../fonts/MyriadPro-CondIt.svg') format('svg');
+  font-weight: normal;
+  font-style: normal
+
+@font-face
+  font-family: 'Conv_MyriadPro-It';
+  src: url('../fonts/MyriadPro-It.eot');
+  src: url('../fonts/MyriadPro-It.woff') format('woff'), url('../fonts/MyriadPro-It.ttf') format('truetype'), url('../fonts/MyriadPro-It.svg') format('svg');
+  font-weight: normal;
+  font-style: normal
+
+@font-face
+  font-family: 'Conv_MyriadPro-Regular';
+  src: url('../fonts/MyriadPro-Regular.eot');
+  src: url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf') format('truetype'), url('../fonts/MyriadPro-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+@font-face
+  font-family: 'Conv_MyriadPro-Semibold';
+  src: url('../fonts/MyriadPro-Semibold.eot');
+  src: url('../fonts/MyriadPro-Semibold.woff') format('woff'), url('../fonts/MyriadPro-Semibold.ttf') format('truetype'), url('../fonts/MyriadPro-Semibold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+@font-face
+  font-family: 'Conv_MyriadPro-SemiboldIt';
+  src: url('../fonts/MyriadPro-SemiboldIt.eot');
+  src: url('../fonts/MyriadPro-SemiboldIt.woff') format('woff'), url('../fonts/MyriadPro-SemiboldIt.ttf') format('truetype'), url('../fonts/MyriadPro-SemiboldIt.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+#vista_seleccion
+  width:100%
+  position:fixed
+  background-image url(../img/bg_intro.jpg);
+  background-position center center
+  background-size cover
+  left:0px
+  top:0px
+  z-index:9999
+  height 100vh
+  .content
+    margin 0 auto
+    text-align center
+    color  #fff
+    max-width 960px
+    display block
+    position relative
+    h6
+      font-family: Conv_VersaillesLTStd-Roman
+      font-size: 12px
+      margin-top: 12px
+      text-transform uppercase
+      letter-spacing 1px
+    h5
+      font-family: "Conv_SIMPLIFICA Typeface"
+      font-size: 25px
+      margin-top: 36px
+      letter-spacing 2px
+    ul
+      max-width: 200px;
+      overflow hidden
+      margin: 78px auto 47px;
+      font-family: "Conv_VersaillesLTStd-Roman"
+      display block
+      font-size: 20px;
+      li
+        cursor pointer
+        font-family "Conv_VersaillesLTStd-Roman"
+        a
+          font-family "Conv_VersaillesLTStd-Roman"
+          color #fff
+        &:hover
+          text-decoration underline
+        &.si
+          float left
+        &.no
+          float right
+
+  .advertencia
+    position absolute
+    bottom 30px
+    font-family: "Conv_SIMPLIFICA Typeface"
+    font-size: 31px
+    color #808080
+    letter-spacing 3px
+    margin 0 auto
+    width  100%
+    text-align center
+#pre-load-web
+  width:100%
+  position:fixed
+  background-image url(../img/bg_intro.jpg);
+  background-position center center
+  background-size cover
+  left:0px
+  top:0px
+  z-index:100000
+  #imagen-load
+    left: 45%
+    margin-left: -10px
+    position: absolute
+    display: block
+    margin-bottom: 30px
+    #logo_madera
+      display: block
+      margin-bottom  30px
+    #progreso
+      -webkit-animation: pace-spinner 1000ms linear infinite
+      -moz-animation: pace-spinner 1000ms linear infinite
+      -ms-animation: pace-spinner 1000ms linear infinite
+      -o-animation: pace-spinner 1000ms linear infinite
+      animation: pace-spinner 1000ms linear infinite
+      display: block;
+      margin-bottom: 30px;
+      margin-left auto
+      margin-right  auto
+
+@keyframes pace-spinner
+  0% { transform: rotate(0deg); transform: rotate(0deg); }
+  100% { transform: rotate(360deg); transform: rotate(360deg); }
+
+#header_responsive
+  display none
+header
+  position fixed
+  top 0px
+  width 100%
+  z-index 10
+  .logo
+    position absolute
+    top 40px
+    left 50px
+    #titulo_logo
+      transition 0.5s ease all
+  .menu
+    .btn_menu,.btn_menu_responsive
+      position absolute
+      top 50px
+      right 45px
+      cursor pointer
+      width 61px
+      height 57px
+      background-image url(../img/navegacion.png);
+      &:hover
+        background-position -63px -3px
+    aside
+      position: absolute
+      background-color: rgba(255, 255, 255, 0.94)
+      right 0px
+      height 100vh
+      width: 120px
+      nav
+        margin 0 auto
+        display block
+        max-width 78px
+        li
+          margin-bottom: 65%
+          a
+            text-align center
+            display block
+            text-decoration none
+          span
+            font-family: Conv_SIMPLIFICA Typeface
+            color: #666666
+            font-size: 12px
+            letter-spacing 1px
+            text-align center
+          .icon_menu
+            background-image url(../img/navegacion.png)
+            background-repeat: no-repeat
+            display: block
+            margin: 0 auto
+            span
+              line-height: 10px;
+              display: block;
+              vertical-align: bottom;
+              position: relative;
+          &.generaciones
+            .icon_menu
+              background-position: 1.8px -106px
+              width: 55px;
+              height: 30px;
+              &:hover
+                background-position: -69px -106px
+              span
+                line-height: 12px;
+                bottom: -37px;
+                right: -12px;
+                margin-left: -24px;
+          &.productos
+            .icon_menu
+              background-position: -7px -157px
+              width: 41px
+              height: 39px
+              &:hover
+                background-position -73px -157px
+              span
+                line-height: 12px;
+                bottom: -45px;
+          &.cocteleria
+            .icon_menu
+              background-position: -8px -215px;
+              width: 42px;
+              height: 30px;
+              &:hover
+                background-position -73px -215px
+              span
+                line-height: 12px;
+                bottom: -34px;
+          &.regalos
+            margin-bottom: 70%
+            .icon_menu
+              background-position: -8px -297px;
+              width: 44px;
+              height: 37px;
+              &:hover
+                background-position -75px -297px
+              span
+                line-height: 12px;
+                bottom: -39px;
+                margin-left: -10px
+                right: -5px
+          &.ubicanos
+            .icon_menu
+              background-position: -8px -263px;
+              width: 45px;
+              height: 23px;
+              &:hover
+                background-position -73px -263px
+              span
+                line-height: 12px;
+                bottom: -27px;
+          &.social
+            margin-top: 60px
+            bottom: 0px;
+            #youtube
+              background-position: -8px -340px;
+              width: 36px;
+              height: 31px;
+              background-image: url("../img/navegacion.png");
+              background-repeat: no-repeat;
+              display: inline-block;
+              margin: 0 auto;
+              &:hover
+                background-position -74px -340px
+              span
+                line-height: 12px;
+                bottom: -37px;
+            #facebook
+              background-position: -11px -373px;
+              width: 33px;
+              float: right
+              height: 31px;
+              background-image: url("../img/navegacion.png");
+              background-repeat: no-repeat;
+              display: inline-block;
+              &:hover
+                background-position -76px -373px
+
+        .close_menu
+          width 30px
+          cursor pointer
+          height 30px
+          background-image url(../img/navegacion.png)
+          background-repeat: no-repeat
+          background-position 3px -61px
+          margin 50px auto
+          display block
+          &:hover
+            background-position -65px -63px
+
+#generations_section
+  transition 1.5s ease all
+  h2
+    color #1A1A15
+    font-size 58px
+    margin-top: 11px
+    font-family Conv_SIMPLIFICA Typeface
+    text-align center
+  .slogan
+    margin-top: -42px;
+    display block
+    img
+      margin: 0 auto
+  .intro
+    p
+      margin-top: 0px
+      color #737277
+      font-family: Conv_VersaillesLTStd-Roman
+      font-size: 16px
+      text-align left
+  .imagen_pisco
+    overflow: hidden;
+    bottom: 0px;
+    right: 115px;
+    position: absolute;
+    img
+      display: block;
+      position: relative;
+
+#generations_section2
+  .content-b
+    background-color transparent
+    // background: rgb(255,255,255);
+    // background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(249,249,249,1) 55%, rgba(232,232,232,1) 74%, rgba(234,234,234,1) 76%, rgba(234,234,234,1) 76%, rgba(234,234,234,1) 77%, rgba(232,232,232,1) 80%, rgba(232,232,232,1) 80%, rgba(230,230,230,1) 81%, rgba(233,233,233,1) 84%, rgba(230,230,230,1) 84%, rgba(228,228,228,1) 85%, rgba(233,233,233,1) 85%, rgba(233,233,233,1) 87%, rgba(228,228,228,1) 87%, rgba(233,233,233,1) 90%, rgba(228,228,228,1) 90%, rgba(230,230,230,1) 91%, rgba(228,228,228,1) 91%, rgba(230,230,230,1) 92%, rgba(228,228,228,1) 92%, rgba(231,231,231,1) 98%, rgba(228,228,228,1) 98%, rgba(231,231,231,1) 100%, rgba(227,227,227,1) 100%, rgba(238,238,238,1) 100%);
+    // background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(249,249,249,1) 55%,rgba(232,232,232,1) 74%,rgba(234,234,234,1) 76%,rgba(234,234,234,1) 76%,rgba(234,234,234,1) 77%,rgba(232,232,232,1) 80%,rgba(232,232,232,1) 80%,rgba(230,230,230,1) 81%,rgba(233,233,233,1) 84%,rgba(230,230,230,1) 84%,rgba(228,228,228,1) 85%,rgba(233,233,233,1) 85%,rgba(233,233,233,1) 87%,rgba(228,228,228,1) 87%,rgba(233,233,233,1) 90%,rgba(228,228,228,1) 90%,rgba(230,230,230,1) 91%,rgba(228,228,228,1) 91%,rgba(230,230,230,1) 92%,rgba(228,228,228,1) 92%,rgba(231,231,231,1) 98%,rgba(228,228,228,1) 98%,rgba(231,231,231,1) 100%,rgba(227,227,227,1) 100%,rgba(238,238,238,1) 100%);
+    // background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(249,249,249,1) 55%,rgba(232,232,232,1) 74%,rgba(234,234,234,1) 76%,rgba(234,234,234,1) 76%,rgba(234,234,234,1) 77%,rgba(232,232,232,1) 80%,rgba(232,232,232,1) 80%,rgba(230,230,230,1) 81%,rgba(233,233,233,1) 84%,rgba(230,230,230,1) 84%,rgba(228,228,228,1) 85%,rgba(233,233,233,1) 85%,rgba(233,233,233,1) 87%,rgba(228,228,228,1) 87%,rgba(233,233,233,1) 90%,rgba(228,228,228,1) 90%,rgba(230,230,230,1) 91%,rgba(228,228,228,1) 91%,rgba(230,230,230,1) 92%,rgba(228,228,228,1) 92%,rgba(231,231,231,1) 98%,rgba(228,228,228,1) 98%,rgba(231,231,231,1) 100%,rgba(227,227,227,1) 100%,rgba(238,238,238,1) 100%);
+  .biografia_imagen
+    .texto
+      font-family: Conv_SIMPLIFICA Typeface;
+      margin-top: 8px;
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      line-height: 15px;
+      color: #85838a;
+  .linea_superior
+    width: 70px
+    height: 2px
+    background-color: #909500
+    display block
+  .linea_inferior
+    width: 70px
+    margin-top 25px
+    height: 2px
+    background-color: #909500
+    margin-bottom: 20px
+    display block
+  h2
+    font-family: Conv_SIMPLIFICA Typeface;
+    font-size: 40px
+    color #929721
+    text-align left
+    margin 25px 0px
+    letter-spacing 3px
+  h3
+    font-family Conv_SIMPLIFICA Typeface
+    font-size: 21px
+    color #929721
+    text-align left
+    margin-top: -22px;
+    margin-bottom: 35px;
+  p
+    font-family: Conv_VersaillesLTStd-Roman
+    text-align  justify
+    color: #737277
+    font-size: 15px
+    padding-right: 20px
+  .tags
+    text-align left
+    a
+      font-family: Conv_SIMPLIFICA Typeface;
+      font-size: 20px
+      letter-spacing 2px
+      color #929721
+    span
+      margin: 0px 10px;
+      vertical-align: top;
+      font-size: 16px;
+      margin-top: 7px;
+      color: #929721;
+
+#advertisement_section
+  position relative
+  .titulo
+    top: 45px;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: "Conv_SIMPLIFICA Typeface"
+    font-size: 35px
+    color #929721
+    h2
+      font-size: 35px;
+      letter-spacing: 4px;
+      color: #929721;
+    img
+      margin: 0 auto
+  .container-carousel
+    margin 25% auto 0
+    max-width 955px
+    width 100%
+    display block
+    .owl-carousel
+      .item
+        .laurel
+          background-size: 100% 100%;
+          margin: 0 auto;
+          max-width: 164px;
+          width 100%
+          height: 140px;
+          background-image: url("../img/laurel1.png");
+          background-position: center center;
+          padding: 15px 25px 30px;
+          text-align: center;
+          text-transform: uppercase;
+        .laurel2
+          background-size: 100% 100%;
+          margin: 0 auto;
+          max-width: 164px;
+          width 100%
+          height: 140px;
+          background-image: url("../img/laurel2.png");
+          background-position: center center;
+          padding: 15px 25px 30px;
+          text-align: center;
+          text-transform: uppercase;
+        .laurel3
+            background-size: 100% 100%;
+            margin: 0 auto;
+            max-width: 164px;
+            width 100%
+            height: 140px;
+            background-image: url("../img/laurel3.png");
+            background-position: center center;
+            padding: 15px 25px 30px;
+            text-align: center;
+            text-transform: uppercase;
+        .laurel4
+            background-size: 100% 100%;
+            margin: 0 auto;
+            max-width: 164px;
+            width 100%
+            height: 140px;
+            background-image: url("../img/laurel4.png");
+            background-position: center center;
+            padding: 15px 25px 30px;
+            text-align: center;
+            text-transform: uppercase;
+          .concurso_nombre
+            font-size: 11px
+            font-family: Conv_VersaillesLTStd-Roman
+            color #929721
+          .concurso_fecha
+            font-size: 8.8px
+            color #929721
+            font-family: Conv_VersaillesLTStd-Roman
+        .medalla_nombre
+          text-align center
+          font-family Conv_SIMPLIFICA Typeface
+          font-size: 18px
+          color #929721
+          p
+            margin-top: 5px;
+            line-height: 15px
+		.owl-controls
+          display: block
+          margin-top: -15%
+          width: 100%
+          position: absolute
+          font-weight: bold
+          .owl-prev
+            width 25px
+            height 40px
+            float: left;
+            margin-left: -10%;
+            background-image url("../img/flechitas.png")
+            font-size 0px
+            background-position 0px center
+          .owl-next
+            width 25px
+            height 40px
+            font-size 0px
+            background-position 24px center
+            float: right;
+            background-image url("../img/flechitas.png")
+            margin-right: -10%;
+#products_section
+  .content-b
+    background-color transparent
+    // background: rgb(255,255,255);
+    // background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(249,249,249,1) 55%, rgba(232,232,232,1) 74%, rgba(234,234,234,1) 76%, rgba(234,234,234,1) 76%, rgba(234,234,234,1) 77%, rgba(232,232,232,1) 80%, rgba(232,232,232,1) 80%, rgba(230,230,230,1) 81%, rgba(233,233,233,1) 84%, rgba(230,230,230,1) 84%, rgba(228,228,228,1) 85%, rgba(233,233,233,1) 85%, rgba(233,233,233,1) 87%, rgba(228,228,228,1) 87%, rgba(233,233,233,1) 90%, rgba(228,228,228,1) 90%, rgba(230,230,230,1) 91%, rgba(228,228,228,1) 91%, rgba(230,230,230,1) 92%, rgba(228,228,228,1) 92%, rgba(231,231,231,1) 98%, rgba(228,228,228,1) 98%, rgba(231,231,231,1) 100%, rgba(227,227,227,1) 100%, rgba(238,238,238,1) 100%);
+    // background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(249,249,249,1) 55%,rgba(232,232,232,1) 74%,rgba(234,234,234,1) 76%,rgba(234,234,234,1) 76%,rgba(234,234,234,1) 77%,rgba(232,232,232,1) 80%,rgba(232,232,232,1) 80%,rgba(230,230,230,1) 81%,rgba(233,233,233,1) 84%,rgba(230,230,230,1) 84%,rgba(228,228,228,1) 85%,rgba(233,233,233,1) 85%,rgba(233,233,233,1) 87%,rgba(228,228,228,1) 87%,rgba(233,233,233,1) 90%,rgba(228,228,228,1) 90%,rgba(230,230,230,1) 91%,rgba(228,228,228,1) 91%,rgba(230,230,230,1) 92%,rgba(228,228,228,1) 92%,rgba(231,231,231,1) 98%,rgba(228,228,228,1) 98%,rgba(231,231,231,1) 100%,rgba(227,227,227,1) 100%,rgba(238,238,238,1) 100%);
+    // background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(249,249,249,1) 55%,rgba(232,232,232,1) 74%,rgba(234,234,234,1) 76%,rgba(234,234,234,1) 76%,rgba(234,234,234,1) 77%,rgba(232,232,232,1) 80%,rgba(232,232,232,1) 80%,rgba(230,230,230,1) 81%,rgba(233,233,233,1) 84%,rgba(230,230,230,1) 84%,rgba(228,228,228,1) 85%,rgba(233,233,233,1) 85%,rgba(233,233,233,1) 87%,rgba(228,228,228,1) 87%,rgba(233,233,233,1) 90%,rgba(228,228,228,1) 90%,rgba(230,230,230,1) 91%,rgba(228,228,228,1) 91%,rgba(230,230,230,1) 92%,rgba(228,228,228,1) 92%,rgba(231,231,231,1) 98%,rgba(228,228,228,1) 98%,rgba(231,231,231,1) 100%,rgba(227,227,227,1) 100%,rgba(238,238,238,1) 100%);
+    .linea
+      padding 0px 0px 34px 0px
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+      text-align: center;
+      .hijolinea
+        position: relative;
+        display: inline-block;
+        .izq
+          position: absolute;
+          width: 2000px;
+          height: 40px;
+          background : url(../img/frutos-right.png) no-repeat center right
+          right: 105%;
+          top: 50%;
+        .der
+          position: absolute;
+          width: 2000px;
+          height: 40px;
+          background : url(../img/frutos-left.png) no-repeat center left
+          left: 100%;
+          top: 50%;
+    .container_cremas
+      max-width 900px
+      margin 0px auto 90px
+      overflow: hidden
+      font-family: Conv_SIMPLIFICA Typeface
+      font-size: 30px
+      text-transform uppercase
+      display: block
+      h3
+        margin-top 60px
+        font-size: 30px
+      ul
+        margin-bottom: 0px
+        li
+          a
+            background url("../img/piscos/botellas.png") no-repeat
+            display: block
+            width: 50px
+            height: 290px
+            &#crema-chirimoya
+              background-position -72px -754px
+              &:hover
+                background-position -426px -815px
+            &#crema-lucuma
+              background-position -154px -754px
+              &:hover
+                background-position -520px -818px
+            &#crema-vainilla
+              background-position -72px -754px
+              &:hover
+                background-position -616px -816px
+
+    .container_piscos
+      max-width 889px
+      margin 90px auto 0px
+      overflow: hidden
+      font-family: Conv_SIMPLIFICA Typeface
+      font-size: 30px
+      text-transform uppercase
+      display: block
+      h3
+        margin-top 60px
+        font-size: 30px
+      ul
+        margin-bottom: 0px
+        &.third
+          li
+            a
+              background url("../img/piscos/botellas.png") no-repeat
+              display: block
+              width: 49px
+              height: 225px
+              &#pisco-quebranta
+                background-position -28px -272px
+                &:hover
+                  background-position -380px -315px
+              &#pisco-torontel
+                background-position -109px -272px
+                &:hover
+                  background-position -471px -315px;
+              &#pisco-moscatel
+                background-position -194px -272px
+                &:hover
+                  background-position -568px -313px
+              &#pisco-acholado
+                background-position -274px -272px
+                &:hover
+                  background-position -657px -313px
+        &.first
+          li
+            a
+              background url("../img/piscos/botellas.png") no-repeat
+              display: block
+              width: 50px
+              height: 225px
+              &#pisco-mollar
+                background-position -77px -496px
+                &:hover
+                  background-position -435px -567px
+              &#pisco-albilla
+                background-position -151px -496px
+                &:hover
+                  background-position -519px -567px;
+              &#pisco-italia
+                background-position -229px -496px
+                &:hover
+                  background-position -607px -568px
+        &.second
+          li
+            a
+              background: url('../img/piscos/botellas.png') no-repeat
+              width: 48px;
+              display block
+              height: 243px;
+              &#pisco-mostoverde_acholado
+                background-position -62px -28px
+                &:hover
+                  background-position -419px -38px
+              &#pisco-mostoverde_quebranta
+                background-position -147px -28px
+                &:hover
+                  background-position -515px -38px;
+              &#pisco-mostoverde_torontel
+                background-position -244px -28px
+                &:hover
+                  background-position -624px -38px
+
+#cocteleria_section
+  .content-b
+    background-color transparent
+    // background: rgb(255,255,255);
+    // background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(249,249,249,1) 55%, rgba(232,232,232,1) 74%, rgba(234,234,234,1) 76%, rgba(234,234,234,1) 76%, rgba(234,234,234,1) 77%, rgba(232,232,232,1) 80%, rgba(232,232,232,1) 80%, rgba(230,230,230,1) 81%, rgba(233,233,233,1) 84%, rgba(230,230,230,1) 84%, rgba(228,228,228,1) 85%, rgba(233,233,233,1) 85%, rgba(233,233,233,1) 87%, rgba(228,228,228,1) 87%, rgba(233,233,233,1) 90%, rgba(228,228,228,1) 90%, rgba(230,230,230,1) 91%, rgba(228,228,228,1) 91%, rgba(230,230,230,1) 92%, rgba(228,228,228,1) 92%, rgba(231,231,231,1) 98%, rgba(228,228,228,1) 98%, rgba(231,231,231,1) 100%, rgba(227,227,227,1) 100%, rgba(238,238,238,1) 100%);
+    // background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(249,249,249,1) 55%,rgba(232,232,232,1) 74%,rgba(234,234,234,1) 76%,rgba(234,234,234,1) 76%,rgba(234,234,234,1) 77%,rgba(232,232,232,1) 80%,rgba(232,232,232,1) 80%,rgba(230,230,230,1) 81%,rgba(233,233,233,1) 84%,rgba(230,230,230,1) 84%,rgba(228,228,228,1) 85%,rgba(233,233,233,1) 85%,rgba(233,233,233,1) 87%,rgba(228,228,228,1) 87%,rgba(233,233,233,1) 90%,rgba(228,228,228,1) 90%,rgba(230,230,230,1) 91%,rgba(228,228,228,1) 91%,rgba(230,230,230,1) 92%,rgba(228,228,228,1) 92%,rgba(231,231,231,1) 98%,rgba(228,228,228,1) 98%,rgba(231,231,231,1) 100%,rgba(227,227,227,1) 100%,rgba(238,238,238,1) 100%);
+    // background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(249,249,249,1) 55%,rgba(232,232,232,1) 74%,rgba(234,234,234,1) 76%,rgba(234,234,234,1) 76%,rgba(234,234,234,1) 77%,rgba(232,232,232,1) 80%,rgba(232,232,232,1) 80%,rgba(230,230,230,1) 81%,rgba(233,233,233,1) 84%,rgba(230,230,230,1) 84%,rgba(228,228,228,1) 85%,rgba(233,233,233,1) 85%,rgba(233,233,233,1) 87%,rgba(228,228,228,1) 87%,rgba(233,233,233,1) 90%,rgba(228,228,228,1) 90%,rgba(230,230,230,1) 91%,rgba(228,228,228,1) 91%,rgba(230,230,230,1) 92%,rgba(228,228,228,1) 92%,rgba(231,231,231,1) 98%,rgba(228,228,228,1) 98%,rgba(231,231,231,1) 100%,rgba(227,227,227,1) 100%,rgba(238,238,238,1) 100%);
+    .titulo
+      top: 97px;
+      margin: 0 auto;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      font-family: "Conv_SIMPLIFICA Typeface"
+      font-size: 35px
+      color #929721
+      text-transform uppercase
+      h2
+        margin-bottom: 0px
+        margin-top: 20px
+        font-size: 35px;
+        letter-spacing: 4px;
+      img
+        margin: 0 auto
+    .container_cocteles
+      max-width 930px
+      text-transform uppercase
+      margin 260px auto 80px
+      overflow: hidden
+      font-family: Conv_SIMPLIFICA Typeface
+      font-size: 30px
+      text-transform uppercase
+      display: block
+      text-align center
+      ul
+        li
+          .linea
+            margin-bottom: 20px
+            max-width 212px
+            border-top: 1px solid #929721
+          a
+            margin-bottom 20px
+            width: 167px
+            overflow: hidden
+            height: 250px
+            text-decoration none
+            display block
+            .hover
+              padding-top: 20px
+              width 100%
+              height 100%
+              overflow: hidden
+              display block
+              transition 0.5s ease all
+              background-color rgba(255, 255, 255, 0.86)
+              opacity 0
+              &:hover
+                opacity 1
+              h4
+                text-transform uppercase
+                margin-top 100px
+                margin-bottom: 0px
+                color #1D1D1B
+                font-size: 15px
+                font-family: Conv_VersaillesLTStd-Roman
+              .adornido
+                display: block;
+                overflow: hidden;
+                height: auto;
+                margin-top: 12px;
+                img
+                  margin 0 auto
+                  display block
+            &#pisco_sour
+              background-image: url(../img/pisco_sour.jpg)
+            &#pisco_punch
+              background-image: url(../img/pisco_punch.jpg)
+            &#pisco_sour_maracuya
+              background-image: url(../img/pisco_sour_maracuya.jpg)
+            &#chilcano-clasico
+              background-image: url(../img/chilcano.jpg)
+            &#chilcano-frutos_rojos
+              background-image: url(../img/chilcano_frutos_rojos.jpg)
+
+
+#regalos_section
+  .content-b
+    background-color transparent
+    // background: rgb(255,255,255);
+    // background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(249,249,249,1) 55%, rgba(232,232,232,1) 74%, rgba(234,234,234,1) 76%, rgba(234,234,234,1) 76%, rgba(234,234,234,1) 77%, rgba(232,232,232,1) 80%, rgba(232,232,232,1) 80%, rgba(230,230,230,1) 81%, rgba(233,233,233,1) 84%, rgba(230,230,230,1) 84%, rgba(228,228,228,1) 85%, rgba(233,233,233,1) 85%, rgba(233,233,233,1) 87%, rgba(228,228,228,1) 87%, rgba(233,233,233,1) 90%, rgba(228,228,228,1) 90%, rgba(230,230,230,1) 91%, rgba(228,228,228,1) 91%, rgba(230,230,230,1) 92%, rgba(228,228,228,1) 92%, rgba(231,231,231,1) 98%, rgba(228,228,228,1) 98%, rgba(231,231,231,1) 100%, rgba(227,227,227,1) 100%, rgba(238,238,238,1) 100%);
+    // background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(249,249,249,1) 55%,rgba(232,232,232,1) 74%,rgba(234,234,234,1) 76%,rgba(234,234,234,1) 76%,rgba(234,234,234,1) 77%,rgba(232,232,232,1) 80%,rgba(232,232,232,1) 80%,rgba(230,230,230,1) 81%,rgba(233,233,233,1) 84%,rgba(230,230,230,1) 84%,rgba(228,228,228,1) 85%,rgba(233,233,233,1) 85%,rgba(233,233,233,1) 87%,rgba(228,228,228,1) 87%,rgba(233,233,233,1) 90%,rgba(228,228,228,1) 90%,rgba(230,230,230,1) 91%,rgba(228,228,228,1) 91%,rgba(230,230,230,1) 92%,rgba(228,228,228,1) 92%,rgba(231,231,231,1) 98%,rgba(228,228,228,1) 98%,rgba(231,231,231,1) 100%,rgba(227,227,227,1) 100%,rgba(238,238,238,1) 100%);
+    // background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(249,249,249,1) 55%,rgba(232,232,232,1) 74%,rgba(234,234,234,1) 76%,rgba(234,234,234,1) 76%,rgba(234,234,234,1) 77%,rgba(232,232,232,1) 80%,rgba(232,232,232,1) 80%,rgba(230,230,230,1) 81%,rgba(233,233,233,1) 84%,rgba(230,230,230,1) 84%,rgba(228,228,228,1) 85%,rgba(233,233,233,1) 85%,rgba(233,233,233,1) 87%,rgba(228,228,228,1) 87%,rgba(233,233,233,1) 90%,rgba(228,228,228,1) 90%,rgba(230,230,230,1) 91%,rgba(228,228,228,1) 91%,rgba(230,230,230,1) 92%,rgba(228,228,228,1) 92%,rgba(231,231,231,1) 98%,rgba(228,228,228,1) 98%,rgba(231,231,231,1) 100%,rgba(227,227,227,1) 100%,rgba(238,238,238,1) 100%);
+    .container-promos
+      max-width 1024px
+      text-transform uppercase
+      margin 260px auto 80px
+      font-family: Conv_SIMPLIFICA Typeface
+      text-transform uppercase
+      display: block
+      text-align center
+      .linea
+        border-bottom: 1px solid #909500
+        max-width 286px
+        margin-bottom 23px
+      #formulario
+        margin-top -70px
+        .titulo
+          font-family: "Conv_SIMPLIFICA Typeface"
+          line-height 35px
+          font-size: 35px
+          color #929721
+          margin-top: 21px
+          margin-bottom: 48px
+        label
+          color #808080
+          font-family: Conv_VersaillesLTStd-Roman
+          font-size: 15px
+          text-transform capitalize
+        input
+          height 22px
+          border none
+          background-color #d6d6d6
+          color #fff
+          margin-bottom 10px
+        textarea
+          min-height 92px
+          background-color #d6d6d6
+        #enviar
+          background-color transparent
+          border-bottom 1px solid #929721
+          border-top 1px solid #929721
+          color #929721
+          padding 5px 10px
+          font-family Conv_SIMPLIFICA Typeface
+          font-size 18px
+          border-left none
+          border-right none
+          border-radius 0px  
+          margin-top 20px
+      .img-container
+        margin-top -40px
+        margin-bottom: 23px
+        min-height 470px
+        .bottom
+          position: absolute;
+          bottom: 0;
+        img
+          margin 0 auto
+      p
+        color #737277
+        font-family: Conv_VersaillesLTStd-Roman
+        text-align left
+        text-transform initial
+      .navegacion_vertical
+        ul
+          max-width 90px
+          display block
+          width: 100%;
+          margin 0 auto
+          li
+            margin 10px 0px
+            a
+              font-size: 14px
+              color #909500
+              background-color: #E9E9E9
+              display block
+              cursor pointer
+              padding-top 10px
+              padding-bottom: 10px
+              transition 0.5s ease all
+              letter-spacing 1.5px
+              text-decoration none
+              &:hover
+                background-color: #1D1D1B
+                color #fff
+              &.active
+                background-color: #1D1D1B
+                color #fff
+            &.prev
+              background: url('../img/vertical_buttons.png') no-repeat -6px -23px;
+              width: 38px;
+              height: 21px;
+              cursor pointer
+              margin 34px auto 26px 
+            &.next
+              cursor pointer
+              background: url('../img/vertical_buttons.png') no-repeat -6px -71px;
+              width: 38px;
+              height: 21px;
+              margin 26px auto 20px 
+        .tittle
+          padding: 7px 15px 7px
+          font-size: 15px
+          max-width: 120px
+          margin 0 auto
+          color #909500
+          background-color: #E9E9E9
+          cursor pointer
+          &:hover
+            background-color: #1D1D1B
+            color #fff
+          &.active
+            background-color: #1D1D1B
+            color #fff
+          h3
+            font-size: 15px
+            letter-spacing 1px
+            margin-bottom: 3px
+            margin-top: 0
+          .adornito
+            display block
+            background: url('../img/adornitos_ubicanos.png') no-repeat -4px -5px;
+            width: 34px;
+            margin: 0 auto
+            height: 11px;
+
+#contenedor_bottom
+  position  relative
+  .content-a
+    .content-b
+      footer
+        text-align center
+        overflow hidden 
+        width 100%
+        min-height 62px
+        display block
+        background-image url('../img/footer_bg.jpg')
+        background-position center center
+        background-size 100% 100%
+        position absolute
+        bottom 0px 
+        p
+          margin-top 29px
+          font-family Conv_MyriadPro-Regular
+          font-size 10px
+          color #C8C8C8
+          letter-spacing 1.5px
+      #ubicanos_section
+        z-index 2
+        min-height 227px
+        background-image url('../img/ubicanosbg.jpg')
+        background-position center center
+        background-size 100% 100%
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        img
+          margin-bottom 15px
+          margin-top 38px
+        address
+          color #EEEEEE
+          font-size 16px
+          margin-bottom 15px
+          font-family Conv_SIMPLIFICA Typeface
+          span
+            margin 0px 5px
+          ul
+            li 
+              letter-spacing 2px
+        .social
+          li
+            letter-spacing 2px
+            .facebook
+              background: url('../img/adornitos_ubicanos.png') no-repeat -4px -35px;
+              width: 37px;
+              display block
+              height: 22px;
+            .youtube
+              background: url('../img/adornitos_ubicanos.png') no-repeat -53px -35px;
+              width: 35px;
+              height: 22px;
+              display block
+      #mapa
+        #map
+          min-height 700px
+  
+
+
+.tos-html
+  .wrapper
+    display: block
+.wrapper
+  display none
+  .maincontent
+    max-width: 864px
+    width 100%
+    display  block
+    img
+      margin 0 auto
+    .linea
+      border-bottom: 1px solid #919600
+      margin-top: 25px
+      max-width: 216px
+    h6
+      margin 16px 0 21px
+      font-family: Conv_VersaillesLTStd-Roman
+      font-size: 13px
+      color #E6E9E9
+
+    li
+      font-family: Conv_VersaillesLTStd-Roman
+      font-size: 13px
+      color #E6E9E9
+    h5
+      font-family: "Conv_SIMPLIFICA Typeface";
+      color: #919600;
+      font-size: 33px;
+      text-transform: uppercase;
+      padding-bottom: 5px
+      margin-top: 13%;
+      border-bottom: 1px solid #919600;
+      display: inline-block;
+      &.coctel
+        margin-top: 4%
+    .iconitos
+      display inline-block
+      margin-bottom: 10px;
+      margin-left: 10px;
+    p
+      font-size: 13.5px
+      color: #E1E4E4
+      font-family: Conv_VersaillesLTStd-Roman;
+      text-align left
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+@media (min-height: 767px)
+  header
+    .menu
+      aside
+        nav
+          li
+            margin-bottom 98%;
+            &.regalos
+              margin-bottom: 100%
+
+@media (max-height: 660px)
+  header
+    .menu
+      aside
+        nav
+          li
+            margin-bottom 30%;
+            &.regalos
+              margin-bottom: 100%
+
+
+/* Large Devices, Wide Screens */
+//@media only screen and (max-width : 1200px) {
+//
+//}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  #generations_section
+    &.fullscreen,.content-a
+      min-height: 767px !important
+      height: 100% !important
+  #products_section
+    .content-b
+      .linea
+        padding-top: 40px
+  #generations_section2
+    padding: 45px 0px 
+    .biografia_imagen
+      margin-top 40px
+
+  .fullscreen,.content-a
+    height auto !important
+    min-height auto !important
+  #advertisement_section
+    .container-carousel
+      margin-bottom: 12%
+  #regalos_section
+    .content-b
+      .container-promos
+        margin-top: 10%
+        .img-container
+          margin-top: 0px
+        #formulario
+          margin-top: 40px
+  #cocteleria_section
+  .content-b
+    .container_cocteles
+      ul
+        li
+          .linea
+            display none
+
+@media only screen and (max-width : 768px)
+  #regalos_section
+    .tittle
+      display none
+    .content-b
+      .container-promos
+        .linea
+          max-width: 100%
+        p
+          text-align center
+        .col-sm-12
+          overflow: hidden
+        .img-container
+          .bottom
+            position: relative;
+            bottom: 0;
+            margin: 0 auto;
+            max-width: 400px;
+        .navegacion_vertical
+          ul
+            max-width: 100%;
+            display: inline-block;
+            width: 100%;
+            margin: 0 auto;
+            li
+              margin: 10px 0px;
+              display: inline-block;
+              &.prev
+                display none
+              &.next
+                display none
+              a
+                padding: 10px
+/*   Small Devices, Tablets */
+@media only screen and (max-width : 600px)
+  #products_section
+    .content-b
+      .container_cremas
+        margin-bottom: 0px
+  #advertisement_section
+    .owl-controls
+      margin-top: -32%
+      .owl-prev
+        margin-left: 2%;
+      .owl-next
+        margin-right: 2%;
+    .container-carousel
+      margin-right: 10%
+      margin-bottom: 10px
+    .titulo
+      display none
+  #vista_seleccion
+    .advertencia
+      bottom 12px
+      h2
+        font-size: 10px
+  #header_desktop
+    display none
+  #header_responsive
+    display block
+    padding-top: 13px;
+    padding-bottom: 10px;
+    background-color: #fff
+    .menu
+      float: right
+      .btn_menu_responsive
+        position: absolute;
+        background-color: #929821;
+        background-position: 13px 10px;
+        padding: 36px 41px;
+        top 0px
+        right 0px
+    .logo
+      display: inline-block;
+      width: 212px;
+      float: left 
+      position relative
+      left 0px
+      top 0px
+      right 0px
+      #titulo_logo
+        width: 63%
+        margin-top: -7px;
+      img
+        margin-left 15px
+        margin-top: -8px;
+        width: 18%
+    aside
+      width: 100%;
+      top: 72px;
+      nav
+        float: right
+        width: 100%;
+        max-width: 100%;
+        text-align: right;
+        li
+          float right
+          width: 100%
+          padding-bottom: 5%;
+          padding-top: 5%;
+          margin: 0px;
+          cursor pointer
+          &:hover
+            background-color: #f7f7f7
+          span
+            font-family: Conv_SIMPLIFICA Typeface;
+            color: #666;
+            font-size: 18px;
+            letter-spacing: 1px;
+            text-align: center;
+            float: right;
+            margin-top: 5px;
+            margin-right: 24px;
+          a
+            .icon_menu
+              float: right;
+              margin-right: 5%;
+  #generations_section
+    .intro
+      p
+        max-width 268px
+        margin 20px auto
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  .tos-html
+    padding: 20px 0px !important
+  #vista_seleccion
+    overflow-x: hidden;
+    .advertencia
+      display none
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+  #regalos_section
+    .content-b
+      .container-promos
+        #formulario
+          label
+            font-size: 10px
+
+
+
+
+
+
+
+
+@css{
+  /* background setup */
+  .background {
+    background-repeat:no-repeat;
+    background-size:100%;
+    /* custom background-position */
+    background-position:50% 50%;
+    /* ie8- graceful degradation */
+    background-position:50% 50%9 !important;
+  }
+
+  /* fullscreen setup */
+  html, body {
+    /* give this to all tags from html to .fullscreen */
+    height:100%;
+  }
+  .fullscreen´{
+    padding: 0px;
+  }
+  .fullscreen,
+  .content-a {
+    width:100%;
+    min-height:767px;
+    height:100%;
+    overflow:hidden;
+  }
+  .fullscreen.overflow,
+  .fullscreen.overflow .content-a {
+    /*height:auto;*/
+    /*min-height:100%;*/
+    min-height:767px;
+  }
+
+  /* content centering styles */
+  .content-a {
+    display:table;
+  }
+  .content-b {
+    display:table-cell;
+    position:relative;
+    vertical-align:middle;
+    text-align:center;
+  }
+}
