@@ -167,7 +167,20 @@ $.fn.scrollStopped = function(callback) {
 };
 
 $(window).scrollStopped(function(ev){
-    $('.desktop_header').css({opacity: 1});
+
+    var counter = 0;
+    var myInterval = setInterval(function () {
+        ++counter;
+        if(counter = 3){
+            $('.desktop_header').css({opacity: 1}); 
+            console.log('counter');   
+            clearInterval(myInterval);
+        }
+    }, 1000);
+    
+    
+    
+        
 });
 
 
@@ -228,10 +241,10 @@ $(document).ready(function(){
     var intro = $('#generations_section');
 
     if(windowW > 480){
-        var images = ['primera_vista_fondo1.jpg','primera_vista_fondo2.jpg','primera_vista_fondo3.jpg'];
+        var images = ['primera_vista_fondo1.jpg','primera_vista_fondo3.jpg','primera_vista_fondo2.jpg'];
         intro.css('background-image','url(img/primera_vista_fondo1.jpg)');
     }else{
-        var images = ['primera_vista_fondo1_mobile.jpg','primera_vista_fondo2_mobile.jpg','primera_vista_fondo3_mobile.jpg'];
+        var images = ['primera_vista_fondo1_mobile.jpg','primera_vista_fondo3_mobile.jpg','primera_vista_fondo2_mobile.jpg'];
         intro.css('background-image','url(img/primera_vista_fondo1_mobile.jpg)');
         intro.css('background-repeat','no-repeat');
         intro.css('background-size','contain');
