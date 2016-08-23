@@ -76,7 +76,7 @@ $(document).ready(function() {
 
     $('.owl-carousel').owlCarousel({
         loop: true,
-        autoplay : true,
+        autoplay : false,
         items : 5,
         responsiveClass: true,
         responsive: {
@@ -268,8 +268,8 @@ $(document).ready(function(){
     },4000);
     
     var windowH = $(window).height();
-    $('#botella_pisco').css('height', windowH * 0.9);
-
+    //alert(windowH);
+    $('#botella_pisco').css('height', windowH * 0.92);
 });
 
 

@@ -217,7 +217,7 @@ header .menu aside {
   right: 0px;
   height: 100vh;
   /*width: 120px;*/
-  width: 7%;
+  width: 9%;
 }
 header .menu aside nav {
   margin: 0 auto;
@@ -228,7 +228,7 @@ header .menu aside nav {
 }
 header .menu aside nav li {
   /*margin-bottom: 65%;*/
-  height: 15.5%;
+  height: 15%;
 }
 header .menu aside nav li a {
   text-align: center;
@@ -362,7 +362,8 @@ header .menu aside nav .close_menu {
   background-image: url("../img/navegacion.png");
   background-repeat: no-repeat;
   background-position: 3px -61px;
-  margin: 50px auto;
+  /*margin: 50px auto;*/
+  margin: 38% auto;
   display: block;
 }
 header .menu aside nav .close_menu:hover {
@@ -489,7 +490,7 @@ header .menu aside nav .close_menu:hover {
   margin: 0 auto;
 }
 #advertisement_section .container-carousel {
-  margin: 17% auto 0;
+  margin: 22% auto 0;
   max-width: 955px;
   width: 100%;
   display: block;
@@ -877,6 +878,16 @@ header .menu aside nav .close_menu:hover {
   margin-top: 21px;
   margin-bottom: 48px;
 }
+
+#regalos_section .content-b .container-promos .titulo {
+  font-family: "Conv_SIMPLIFICA Typeface";
+  line-height: 35px;
+  font-size: 35px;
+  color: #929721;
+  margin-top: 21px;
+  margin-bottom: 48px;
+}
+
 #regalos_section .content-b .container-promos #formulario label {
   color: #808080;
   font-family: Conv_VersaillesLTStd-Roman;

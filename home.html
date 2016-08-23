@@ -63,12 +63,15 @@
                     </a>
                 </li>
                 <li class="ubicanos">
-                    <a href="#">
+                    <a href="#ubicanos_section">
                         <span class="icon_menu"></span>
                         <span>Ubícanos</span>                    
                 </a>
                 </li>
-                <li class="social"><a id="youtube" href="https://www.youtube.com/channel/UCD23fGkJUDKpGl3rGWsXqaA"></a><a id="facebook" href="https://www.facebook.com/Pisco-Tres-Generaciones-947961388560264/?fref=ts"></a></li>
+                <li class="social">
+                    <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UCD23fGkJUDKpGl3rGWsXqaA"></a>
+                    <a id="facebook" target="_blank" href="https://www.facebook.com/Pisco-Tres-Generaciones-947961388560264/?fref=ts"></a>
+                </li>
             </nav>
         </aside>
     </div>
@@ -133,7 +136,7 @@
                     </a>
                 </li>
                 <li class="social">
-                    <div style="width:70%; margin:auto;">
+                    <div style="width:80%; margin:auto;">
                         <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UCD23fGkJUDKpGl3rGWsXqaA"></a>
                         <a id="facebook" target="_blank" href="https://www.facebook.com/Pisco-Tres-Generaciones-947961388560264/?fref=ts"></a>
                     </div>
@@ -142,6 +145,7 @@
         </aside>
     </div>
 </header>
+
 <section id="generations_section" class="fullscreen background parallax"
          style=" background-image:url('img/primera_vista_fondo1.jpg');" data-img-width="1400" data-img-height="767"
          data-diff="100">
@@ -169,7 +173,8 @@
         </div>
     </div>
 </section>
-<section id="generations_section2" class="fullscreen background parallax"
+
+<section id="generations_section2" class="fullscreen background parallax hidden-xs"
          style=" background-image:url('img/segunda_vista_fondo.jpg');" data-img-width="1400" data-img-height="794"
          data-diff="200">
     <div class="content-a">
@@ -242,6 +247,12 @@
             </div>
         </div>
     </div>
+</section>
+
+<section id="generations_section_mobile" class=" visible-xs">
+        <a href="history.html">
+            <img src="img/segunda_vista_fondo_mobile.jpg" class="img-resonsive" style="width:100%;" alt="">
+        </a>
 </section>
 
 <section id="advertisement_section" class="background parallax fullscreen"
@@ -458,19 +469,19 @@
     <div class="content-a" style="min-height: 510px;">
         <div class="content-b">
             
-            <div class="visible-xs linea">
-                <div class="hijolinea">
-                    <img src="img/titulo_productos.png" class="img-responsive wow fadeInDown" data-wow-offset="150" alt="">
-
-                    <div class="izq"></div>
-                    <div class="der"></div>
-                </div>
-            </div>
+            
 
             <div class="container_piscos">
+                <div class="visible-xs linea" style="padding:0;">
+                    <div class="hijolinea">
+                        <img src="img/titulo_productos.png" class="img-responsive wow fadeInDown" data-wow-offset="150" alt="">
 
+                        <div class="izq"></div>
+                        <div class="der"></div>
+                    </div>
+                </div>
                 <article class="col-lg-12 row">
-                    <div class="col-md-2"><h3>piscos</h3></div>
+                    <div class="col-md-2"><h3 style="letter-spacing: 2px;">piscos</h3></div>
                     <div class="col-md-3">
                         <ul class="list-inline first ">
                             <li class="wow fadeInDown" data-wow-offset=""><a id="pisco-mollar" href="#hidden-content-mollar "  > </a></li>
@@ -508,7 +519,7 @@
 
             <div class="container_cremas">
                 <article class="col-lg-12 row">
-                    <div class="col-md-2 "><h3>cremas</h3></div>
+                    <div class="col-md-2 "><h3 style="letter-spacing: 2px;">cremas</h3></div>
                     <div class="col-md-3 col-md-offset-3">
                         <ul class="list-inline third">
                             <li class="wow fadeInDown" data-wow-offset="300" ><a id="crema-chirimoya" href="#hidden-content-crema-chirimoya"> </a></li>
@@ -601,6 +612,11 @@
                 <div class="row">
                     <div class="col-md-7 col-sm-12">
                         <div class="col-md-4 col-sm-4 col-xs-12 ">
+                            
+                            <img src="img/adornito_regalos.png" alt=""/>
+                            <div class="titulo wow fadeInDown visible-xs">
+                                REGALA <br/> TRES  GENERACIONES
+                            </div>
 
                             <div class="navegacion_vertical">
                                 <div class="tittle active" id="corporativo" descripr="Personalizamos nuestros Piscos según el requerimiento de tu empresa. " namer="regalo_corp">
@@ -639,9 +655,9 @@
                     </div>
                     <div class="col-md-5 col-sm-12">
                     <form action="enviar_mesh.php" id="formulario">
-                        <img src="img/adornito_regalos.png" alt=""/>
+                        <img class="hidden-xs" src="img/adornito_regalos.png" alt=""/>
 
-                        <div class="titulo wow fadeInDown">
+                        <div class="titulo wow fadeInDown hidden-xs">
                             REGALA <br/> TRES  GENERACIONES
                         </div>
 
