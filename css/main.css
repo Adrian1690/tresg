@@ -229,11 +229,26 @@ header .menu aside nav {
 header .menu aside nav li {
   /*margin-bottom: 65%;*/
   height: 15%;
+  /*height: 20%;*/
 }
+
+
 header .menu aside nav li a {
   text-align: center;
   display: block;
   text-decoration: none;
+}
+
+#header_desktop .menu aside nav li {
+  /*margin-bottom: 65%;*/
+  height: 20%;
+  /*height: 20%;*/
+}
+#header_desktop .menu aside nav li a {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  padding-top: 25%;
 }
 header .menu aside nav li span {
   font-family: Conv_SIMPLIFICA Typeface;
@@ -355,6 +370,7 @@ header .menu aside nav li.social #facebook {
 header .menu aside nav li.social #facebook:hover {
   background-position: -76px -373px;
 }
+
 header .menu aside nav .close_menu {
   width: 30px;
   cursor: pointer;
@@ -369,6 +385,22 @@ header .menu aside nav .close_menu {
 header .menu aside nav .close_menu:hover {
   background-position: -65px -63px;
 }
+
+#header_desktop .menu aside nav .close_menu {
+  width: 30px;
+  cursor: pointer;
+  height: 30px;
+  background-image: url("../img/navegacion.png");
+  background-repeat: no-repeat;
+  background-position: 3px -61px;
+  /*margin: 50px auto;*/
+  margin: 38% auto;
+  display: block;
+}
+#header_desktop .menu aside nav .close_menu:hover {
+  background-position: -65px -63px;
+}
+
 #generations_section {
   transition: 1.5s ease all;
 }

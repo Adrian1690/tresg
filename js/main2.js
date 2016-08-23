@@ -171,16 +171,13 @@ $(window).scrollStopped(function(ev){
     var counter = 0;
     var myInterval = setInterval(function () {
         ++counter;
-        if(counter = 3){
+        if(counter = 4){
             $('.desktop_header').css({opacity: 1}); 
             console.log('counter');   
             clearInterval(myInterval);
         }
     }, 1000);
-    
-    
-    
-        
+            
 });
 
 
