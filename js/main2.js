@@ -236,6 +236,7 @@ $(document).ready(function(){
 
     var windowW = $(window).width();
     var intro = $('#generations_section');
+    //var third = $('#advertisement_section');
 
     if(windowW > 480){
         var images = ['primera_vista_fondo1.jpg','primera_vista_fondo3.jpg','primera_vista_fondo2.jpg'];
@@ -246,6 +247,12 @@ $(document).ready(function(){
         intro.css('background-repeat','no-repeat');
         intro.css('background-size','contain');
         intro.css('background-position','center');
+
+        /*
+        third.css('background-image','url(img/tercer_vista_fondo_mobile.jpg)');
+        third.attr('data-img-width','200px');
+        third.attr('data-img-height','200px');
+        */
     }
     
 
