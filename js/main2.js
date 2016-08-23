@@ -252,7 +252,7 @@ $(document).ready(function(){
         };
 
         intro.css('background-image','url(img/' + images[i ++] +')');
-        if(windowW < 480) {
+        /*if(windowW < 480) {
             //intro.css('background-size','100% auto');
             intro.css('background-repeat','no-repeat');
             intro.css('background-size','contain');
@@ -260,12 +260,12 @@ $(document).ready(function(){
 
 
             //alert('asdas');
-        }
+        }*/
         if (i == images.length ) {
             i = 0;
         };
         
-    },4000);
+    },6000);
     
     var windowH = $(window).height();
     //alert(windowH);
