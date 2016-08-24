@@ -676,20 +676,41 @@ header .menu aside nav .close_menu:hover {
   background-position: -72px -754px;
 }
 #products_section .content-b .container_cremas ul li a#crema-chirimoya:hover {
-  background-position: -426px -815px;
+  /*background-position: -426px -815px;*/
 }
 #products_section .content-b .container_cremas ul li a#crema-lucuma {
   background-position: -154px -754px;
 }
 #products_section .content-b .container_cremas ul li a#crema-lucuma:hover {
-  background-position: -520px -818px;
+  /*background-position: -520px -818px;*/
 }
 #products_section .content-b .container_cremas ul li a#crema-vainilla {
   background-position: -72px -754px;
 }
 #products_section .content-b .container_cremas ul li a#crema-vainilla:hover {
-  background-position: -616px -816px;
+  /*background-position: -616px -816px;*/
 }
+
+#products_section .content-b .container_cremas ul li a {
+  /*background-position: -616px -816px;*/
+  -webkit-transition: all 1s ease; /* Safari and Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* IE 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+}
+
+#products_section .content-b .container_cremas ul li a:hover {
+  /*background-position: -616px -816px;*/
+  cursor: pointer;
+  -webkit-transform:scale(1.1); /* Safari and Chrome */
+  -moz-transform:scale(1.1); /* Firefox */
+  -ms-transform:scale(1.1); /* IE 9 */
+  -o-transform:scale(1.1); /* Opera */
+  transform:scale(1.1);
+}
+
+
 #products_section .content-b .container_piscos {
   max-width: 889px;
   margin: 90px auto 0px;
@@ -716,25 +737,25 @@ header .menu aside nav .close_menu:hover {
   background-position: -28px -272px;
 }
 #products_section .content-b .container_piscos ul.third li a#pisco-quebranta:hover {
-  background-position: -380px -315px;
+  /*background-position: -380px -315px;*/
 }
 #products_section .content-b .container_piscos ul.third li a#pisco-torontel {
   background-position: -109px -272px;
 }
 #products_section .content-b .container_piscos ul.third li a#pisco-torontel:hover {
-  background-position: -471px -315px;
+  /*background-position: -471px -315px;*/
 }
 #products_section .content-b .container_piscos ul.third li a#pisco-moscatel {
   background-position: -194px -272px;
 }
 #products_section .content-b .container_piscos ul.third li a#pisco-moscatel:hover {
-  background-position: -568px -313px;
+  /*background-position: -568px -313px;*/
 }
 #products_section .content-b .container_piscos ul.third li a#pisco-acholado {
   background-position: -274px -272px;
 }
 #products_section .content-b .container_piscos ul.third li a#pisco-acholado:hover {
-  background-position: -657px -313px;
+  /*background-position: -657px -313px;*/
 }
 #products_section .content-b .container_piscos ul.first li a {
   background: url("../img/piscos/botellas.png") no-repeat;
@@ -746,19 +767,19 @@ header .menu aside nav .close_menu:hover {
   background-position: -77px -496px;
 }
 #products_section .content-b .container_piscos ul.first li a#pisco-mollar:hover {
-  background-position: -435px -567px;
+  /*background-position: -435px -567px;*/
 }
 #products_section .content-b .container_piscos ul.first li a#pisco-albilla {
   background-position: -151px -496px;
 }
 #products_section .content-b .container_piscos ul.first li a#pisco-albilla:hover {
-  background-position: -519px -567px;
+  /*background-position: -519px -567px;*/
 }
 #products_section .content-b .container_piscos ul.first li a#pisco-italia {
   background-position: -229px -496px;
 }
 #products_section .content-b .container_piscos ul.first li a#pisco-italia:hover {
-  background-position: -607px -568px;
+  /*background-position: -607px -568px;*/
 }
 #products_section .content-b .container_piscos ul.second li a {
   background: url("../img/piscos/botellas.png") no-repeat;
@@ -770,20 +791,40 @@ header .menu aside nav .close_menu:hover {
   background-position: -62px -28px;
 }
 #products_section .content-b .container_piscos ul.second li a#pisco-mostoverde_acholado:hover {
-  background-position: -419px -38px;
+  /*background-position: -419px -38px;*/
 }
 #products_section .content-b .container_piscos ul.second li a#pisco-mostoverde_quebranta {
   background-position: -147px -28px;
 }
 #products_section .content-b .container_piscos ul.second li a#pisco-mostoverde_quebranta:hover {
-  background-position: -515px -38px;
+  /*background-position: -515px -38px;*/
 }
 #products_section .content-b .container_piscos ul.second li a#pisco-mostoverde_torontel {
   background-position: -244px -28px;
 }
 #products_section .content-b .container_piscos ul.second li a#pisco-mostoverde_torontel:hover {
-  background-position: -624px -38px;
+  /*background-position: -624px -38px;*/
 }
+
+#products_section .content-b .container_piscos ul li a {
+  -webkit-transition: all 1s ease; /* Safari and Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* IE 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+}
+
+
+#products_section .content-b .container_piscos ul li a:hover {
+  cursor: pointer;
+  -webkit-transform:scale(1.1); /* Safari and Chrome */
+  -moz-transform:scale(1.1); /* Firefox */
+  -ms-transform:scale(1.1); /* IE 9 */
+  -o-transform:scale(1.1); /* Opera */
+  transform:scale(1.1);
+}
+
+
 #cocteleria_section .content-b {
   background-color: transparent;
 }
@@ -997,6 +1038,26 @@ header .menu aside nav .close_menu:hover {
   background-color: #1d1d1b;
   color: #fff;
 }
+
+.primary{
+  border:1px solid black;
+  border-color: #929721;
+  text-align:center;
+  padding:5px;
+  text-decoration: none !important;
+}
+
+.primary.active{
+    background-color: #929721;
+    color: white !important;
+    text-decoration: none;
+}
+.primary:hover{
+    background-color: #929721;
+    color: white !important;
+    text-decoration: none;
+}
+
 #regalos_section .content-b .container-promos .navegacion_vertical ul li.prev {
   background: url("../img/vertical_buttons.png") no-repeat -6px -23px;
   width: 38px;
@@ -1202,7 +1263,7 @@ header .menu aside nav .close_menu:hover {
     padding: 45px 0px;
   }
   #generations_section2 .biografia_imagen {
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .fullscreen,
   .content-a {

@@ -1,26 +1,28 @@
 
 
-$('body').on('click', '#degeneracion', function(event) {
+$('body').on('click', '.degeneracion', function(event) {
 
 
     event.preventDefault();
-     $('.DamaFade').fadeOut( "slow", function() {
+    $('.DamaFade').fadeOut( "slow", function() {
+        $('.la_dama').removeClass('active');
+        $('.degeneracion').addClass('active');
         $('.GeneracionFade').fadeIn('fast');
     });
 
 });
 
 
-$('body').on('click', '#la_dama', function(event) {
-
-
+$('body').on('click', '.la_dama', function(event) {
+    
     event.preventDefault();
     $('.GeneracionFade').fadeOut( "slow", function() {
         $('.DamaFade').fadeIn('fast');
+        $('.degeneracion').removeClass('active');
+        $('.la_dama').addClass('active');
     });
+
 });
-
-
 
 $(document).ready(function () {
     $(".container_piscos ul li a").tosrus({
