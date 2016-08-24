@@ -216,81 +216,96 @@ linkInterno.on('click', function (e) {
 
 //Preloader
 $(document).ready(function(){
-    //eliminamos el scroll de la pagina
-   // $("body").css({"overflow-y":"hidden"});
+    $("body").css({"overflow-y":"hidden"});
     //guardamos en una variable el alto del que tiene tu browser que no es lo mismo que del DOM
     var alto=$(window).height();
     //agregamos en el body un div que sera que ocupe toda la pantalla y se muestra encima de todo
     $("body").prepend("<div id='pre-load-web'><div id='imagen-load'><img id='logo_madera' src='img/logo_intro.png' alt=''/><img id='progreso' src='img/loader.png' /></div></div>");
         //le damos el alto
-        $("#pre-load-web").css({height:alto+"px"});
+        $("#pre-load-web").css({height:alto+"px", margin:'0 auto'});
+        
 
     $("#imagen-load").css({"margin-top":(alto/2)-100+"px"});
-    $("#vista_seleccion .content").css({"margin-top":(alto/2)-150+"px"});
+    
+
+    //alert(alto);
+    $("#vista_seleccion .content").css({"margin-top":alto * 0.25});
 });
 
 $(document).ready(function(){
+    
     $("#pre-load-web").fadeOut(500,function() {
         $(this).remove();
     });
-
-    var i = 0;
-
-    var windowW = $(window).width();
-    var intro = $('#generations_section');
-    //var third = $('#advertisement_section');
-
-    if(windowW > 480){
-        var images = ['primera_vista_fondo1.jpg','primera_vista_fondo3.jpg','primera_vista_fondo2.jpg'];
-        intro.css('background-image','url(img/primera_vista_fondo1.jpg)');
-    }else{
-        var images = ['primera_vista_fondo1_mobile.jpg','primera_vista_fondo3_mobile.jpg','primera_vista_fondo2_mobile.jpg'];
-        intro.css('background-image','url(img/primera_vista_fondo1_mobile.jpg)');
-        intro.css('background-repeat','no-repeat');
-        intro.css('background-size','contain');
-        intro.css('background-position','center');
-
-        /*
-        third.css('background-image','url(img/tercer_vista_fondo_mobile.jpg)');
-        third.attr('data-img-width','200px');
-        third.attr('data-img-height','200px');
-        */
-    }
     
+});
 
-    setInterval(function(){
 
-        if (i == 1 || i == 2) {
+$('.si').on('click', function(event) {
 
-            $('.intro').fadeOut( 1300);
-            $('.intro-slogan').fadeOut( 1300);
+    $('#vista_seleccion').fadeOut('slow', function() {
+        $("body").css({"overflow-y":"auto"});
+        var i = 0;
 
+        var windowW = $(window).width();
+        var intro = $('#generations_section');
+        //var third = $('#advertisement_section');
+
+        if(windowW > 480){
+            var images = ['primera_vista_fondo1.jpg','primera_vista_fondo3.jpg','primera_vista_fondo2.jpg'];
+            intro.css('background-image','url(img/primera_vista_fondo1.jpg)');
         }else{
-            $('.intro').fadeIn( 1300);
-            $('.intro-slogan').fadeIn( 1300);
-        };
-
-        intro.css('background-image','url(img/' + images[i ++] +')');
-        /*if(windowW < 480) {
-            //intro.css('background-size','100% auto');
+            var images = ['primera_vista_fondo1_mobile.jpg','primera_vista_fondo3_mobile.jpg','primera_vista_fondo2_mobile.jpg'];
+            intro.css('background-image','url(img/primera_vista_fondo1_mobile.jpg)');
             intro.css('background-repeat','no-repeat');
             intro.css('background-size','contain');
             intro.css('background-position','center');
 
-
-            //alert('asdas');
-        }*/
-        if (i == images.length ) {
-            i = 0;
-        };
+            /*
+            third.css('background-image','url(img/tercer_vista_fondo_mobile.jpg)');
+            third.attr('data-img-width','200px');
+            third.attr('data-img-height','200px');
+            */
+        }
         
-    },6000);
-    
-    var windowH = $(window).height();
-    //alert(windowH);
-    $('#botella_pisco').css('height', windowH * 0.92);
-});
 
+        setInterval(function(){
+
+            if (i == 1 || i == 2) {
+
+                $('.intro').fadeOut( 1300);
+                $('.intro-slogan').fadeOut( 1300);
+
+            }else{
+                $('.intro').fadeIn( 1300);
+                $('.intro-slogan').fadeIn( 1300);
+            };
+
+            intro.css('background-image','url(img/' + images[i ++] +')');
+            /*if(windowW < 480) {
+                //intro.css('background-size','100% auto');
+                intro.css('background-repeat','no-repeat');
+                intro.css('background-size','contain');
+                intro.css('background-position','center');
+
+
+                //alert('asdas');
+            }*/
+            if (i == images.length ) {
+                i = 0;
+            };
+            
+        },6000);
+        
+        var windowH = $(window).height();
+        //alert(windowH);
+        $('#botella_pisco').css('height', windowH * 0.92);
+        event.preventDefault();
+
+    });
+
+    /* Act on the event */
+});
 
 
 

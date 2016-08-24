@@ -5,6 +5,15 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Futura_BT_W01_Light_Condensed';
+  src: url("../fonts/Futura_BT_W01_Light_Condensed.eot");
+  src: url("../fonts/Futura_BT_W01_Light_Condensed.woff") format('woff'), url("../fonts/Futura_BT_W01_Light_Condensed.ttf") format('truetype'), url("../fonts/Futura_BT_W01_Light_Condensed.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'Conv_VersaillesLTStd-Roman';
   src: url("../fonts/VersaillesLTStd-Roman.eot");
@@ -904,23 +913,23 @@ header .menu aside nav .close_menu:hover {
   display: block;
 }
 #cocteleria_section .content-b .container_cocteles ul li a#pisco_sour {
-  background-image: url("../img/pisco_sour.jpg");
+  background-image: url("../img/pisco_sour.png");
   background-size: 100% auto;
 }
 #cocteleria_section .content-b .container_cocteles ul li a#pisco_punch {
-  background-image: url("../img/pisco_punch_FONDO.jpg");
+  background-image: url("../img/pisco_punch.jpg");
   background-size: 100% auto;
 }
 #cocteleria_section .content-b .container_cocteles ul li a#pisco_sour_maracuya {
-  background-image: url("../img/pisco_sour_maracuya_FONDO.jpg");
+  background-image: url("../img/pisco_sour_maracuya.jpg");
   background-size: 100% auto;
 }
 #cocteleria_section .content-b .container_cocteles ul li a#chilcano-clasico {
-  background-image: url("../img/chilcano_FONDO.jpg");
+  background-image: url("../img/chilcano.jpg");
   background-size: 100% auto;
 }
 #cocteleria_section .content-b .container_cocteles ul li a#chilcano-frutos_rojos {
-  background-image: url("../img/chilcano_frutos_rojos_FONDO.jpg");
+  background-image: url("../img/chilcano_frutos_rojos.jpg");
   background-size: 100% auto;
 }
 #regalos_section .content-b {
@@ -1045,6 +1054,8 @@ header .menu aside nav .close_menu:hover {
   text-align:center;
   padding:5px;
   text-decoration: none !important;
+  padding-left: 12px;
+  padding-top: 9px;
 }
 
 .primary.active{
@@ -1127,7 +1138,8 @@ header .menu aside nav .close_menu:hover {
 #contenedor_bottom .content-a .content-b #ubicanos_section {
   z-index: 2;
   min-height: 227px;
-  background-image: url("../img/ubicanosbg.jpg");
+  /*background-image: url("../img/ubicanosbg.jpg");*/
+  background-image: url("../img/imagen_baja_ubicanos.png");
   background-position: center center;
   background-size: 100% 100%;
   position: absolute;
@@ -1142,7 +1154,8 @@ header .menu aside nav .close_menu:hover {
   color: #eee;
   font-size: 16px;
   margin-bottom: 15px;
-  font-family: Conv_SIMPLIFICA Typeface;
+  /*font-family: Conv_SIMPLIFICA Typeface;*/
+  font-family: Futura_BT_W01_Light_Condensed;
 }
 #contenedor_bottom .content-a .content-b #ubicanos_section address span {
   margin: 0px 5px;
