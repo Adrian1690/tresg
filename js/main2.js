@@ -216,6 +216,7 @@ linkInterno.on('click', function (e) {
 
 //Preloader
 $(document).ready(function(){
+    /*
     $("body").css({"overflow-y":"hidden"});
     //guardamos en una variable el alto del que tiene tu browser que no es lo mismo que del DOM
     var alto=$(window).height();
@@ -230,13 +231,14 @@ $(document).ready(function(){
 
     //alert(alto);
     $("#vista_seleccion .content").css({"margin-top":alto * 0.25});
+    */
 });
 
 $(document).ready(function(){
     
-    $("#pre-load-web").fadeOut(500,function() {
+    /*$("#pre-load-web").fadeOut(500,function() {
         $(this).remove();
-    });
+    });*/
     
 });
 

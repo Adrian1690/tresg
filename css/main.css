@@ -1142,7 +1142,7 @@ header .menu aside nav .close_menu:hover {
   background-image: url("../img/imagen_baja_ubicanos.png");
   background-position: center center;
   background-size: 100% 100%;
-  position: absolute;
+  /*position: absolute;*/
   top: 0px;
   width: 100%;
 }
@@ -1150,22 +1150,36 @@ header .menu aside nav .close_menu:hover {
   margin-bottom: 15px;
   margin-top: 38px;
 }
-#contenedor_bottom .content-a .content-b #ubicanos_section address {
-  color: #eee;
-  font-size: 16px;
+#contenedor_bottom .content-a .content-b #ubicanos_section address,
+#contenedor_bottom .content-a .content-b  address {
+  color: #808080;
+  font-size: 10px;
+  font-weight: bold;
   margin-bottom: 15px;
   /*font-family: Conv_SIMPLIFICA Typeface;*/
-  font-family: Futura_BT_W01_Light_Condensed;
+  font-family: Conv_VersaillesLTStd-Roman;
 }
 #contenedor_bottom .content-a .content-b #ubicanos_section address span {
   margin: 0px 5px;
 }
-#contenedor_bottom .content-a .content-b #ubicanos_section address ul li {
+#contenedor_bottom .content-a .content-b #ubicanos_section address ul li,
+#contenedor_bottom .content-a .content-b address ul li {
   letter-spacing: 2px;
 }
 #contenedor_bottom .content-a .content-b #ubicanos_section .social li {
   letter-spacing: 2px;
 }
+
+#contenedor_bottom .content-a .content-b .subtitle {
+  /*font-family: "Conv_SIMPLIFICA Typeface";*/
+  line-height: 18PX;
+  font-size: 11px;
+  color: #929721;
+  margin-top: 2px;
+  /* margin-bottom: 48px; */
+} 
+
+
 #contenedor_bottom .content-a .content-b #ubicanos_section .social li .youtube {
   background: url("../img/adornitos_ubicanos.png") no-repeat -4px -35px;
   width: 37px;
@@ -1178,6 +1192,40 @@ header .menu aside nav .close_menu:hover {
   height: 22px;
   display: block;
 }
+
+#contenedor_bottom .content-a .content-b #seccion_mapa_info {
+  
+  /*height: 500px;*/
+  max-width: 1024px;
+  /*text-transform: uppercase;*/
+  margin: 1em auto 30px;
+  overflow: hidden;
+  /*font-family: Conv_SIMPLIFICA Typeface;*/
+  font-size: 30px;
+  display: block;
+  text-align: center;
+}
+
+#contenedor_bottom .content-a .content-b #seccion_mapa_info .img_mapa{
+  /*width: 100%;*/
+  height: 100%;
+}
+
+.subir{
+  width:4em;
+  margin:auto;
+  font-family: "Conv_SIMPLIFICA Typeface";
+  color: #929721;
+  font-size: 30px;
+}
+
+.clearboth{
+  clear: both;
+}
+.margin-top-10{
+  margin-top:10px;
+}
+
 
 /*#contenedor_bottom .content-a .content-b #ubicanos_section .social li .youtube:hover{
   background-position: -74px -340px;
