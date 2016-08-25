@@ -527,6 +527,14 @@ header .menu aside nav .close_menu:hover {
   letter-spacing: 4px;
   color: #929721;
 }
+
+#advertisement_section .titulo h3 {
+  color: #808080;
+  font-family: Conv_VersaillesLTStd-Roman;
+  font-size: 14px;
+  margin-top:50px;
+}
+
 #advertisement_section .titulo img {
   margin: 0 auto;
 }
@@ -1040,11 +1048,11 @@ header .menu aside nav .close_menu:hover {
   text-decoration: none;
 }
 #regalos_section .content-b .container-promos .navegacion_vertical ul li a:hover {
-  background-color: #1d1d1b;
+  background-color: #909500;
   color: #fff;
 }
 #regalos_section .content-b .container-promos .navegacion_vertical ul li a.active {
-  background-color: #1d1d1b;
+  background-color: #909500;
   color: #fff;
 }
 
@@ -1093,11 +1101,11 @@ header .menu aside nav .close_menu:hover {
   cursor: pointer;
 }
 #regalos_section .content-b .container-promos .navegacion_vertical .tittle:hover {
-  background-color: #1d1d1b;
+  background-color: #909500;
   color: #fff;
 }
 #regalos_section .content-b .container-promos .navegacion_vertical .tittle.active {
-  background-color: #1d1d1b;
+  background-color: #909500;
   color: #fff;
 }
 #regalos_section .content-b .container-promos .navegacion_vertical .tittle h3 {
@@ -1117,12 +1125,13 @@ header .menu aside nav .close_menu:hover {
   position: relative;
 }
 #contenedor_bottom .content-a .content-b footer {
-  text-align: center;
+  text-align: left;
   overflow: hidden;
   width: 100%;
-  min-height: 62px;
+  min-height: 30px;
   display: block;
-  background-image: url("../img/footer_bg.jpg");
+  /*background-image: url("../img/footer_bg.jpg");*/
+  background-color: #D6D6D6;
   background-position: center center;
   background-size: 100% 100%;
   position: absolute;
@@ -1198,32 +1207,64 @@ header .menu aside nav .close_menu:hover {
   /*height: 500px;*/
   max-width: 1024px;
   /*text-transform: uppercase;*/
-  margin: 1em auto 30px;
+  margin: 1em auto 13px;
   overflow: hidden;
   /*font-family: Conv_SIMPLIFICA Typeface;*/
-  font-size: 30px;
+  font-size: 12px;
   display: block;
   text-align: center;
 }
 
 #contenedor_bottom .content-a .content-b #seccion_mapa_info .img_mapa{
   /*width: 100%;*/
-  height: 100%;
+  height: 328px;
 }
 
-.subir{
-  width:4em;
-  margin:auto;
+.subir, .subir:hover{
+  width:8em;
+  margin:0 auto;
   font-family: "Conv_SIMPLIFICA Typeface";
-  color: #929721;
   font-size: 30px;
+  text-decoration: none;
+  cursor:pointer;
 }
 
+.subir a ul{
+  list-style-type: none;
+  padding-top: 17px;
+  color: #929721;
+  text-decoration: none;
+  padding : 0;
+}
+
+.subir ul:hover{
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+
+.lineageneral{
+  width: 100%;
+  
+  background-color: #909500;
+  margin-bottom: 20px;
+  display: block;
+  margin-top: -11px;
+  height: 1px;
+}
 .clearboth{
   clear: both;
 }
 .margin-top-10{
   margin-top:10px;
+}
+
+.danger{
+  font-family: Futura_BT_W01_Light_Condensed;
+  font-size: 20px;
+  color:#d6d5d4;
+  letter-spacing: 3px;
+  /*margin-bottom: 24px;*/
 }
 
 
