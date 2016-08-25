@@ -532,14 +532,14 @@ header .menu aside nav .close_menu:hover {
   color: #808080;
   font-family: Conv_VersaillesLTStd-Roman;
   font-size: 14px;
-  margin-top:50px;
+  margin-top:4%;
 }
 
 #advertisement_section .titulo img {
   margin: 0 auto;
 }
 #advertisement_section .container-carousel {
-  margin: 22% auto 0;
+  margin: 26% auto 0;
   max-width: 955px;
   width: 100%;
   display: block;
@@ -946,7 +946,7 @@ header .menu aside nav .close_menu:hover {
 #regalos_section .content-b .container-promos {
   max-width: 1024px;
   text-transform: uppercase;
-  margin: 260px auto 80px;
+  margin: 197px auto 80px;
   font-family: Conv_SIMPLIFICA Typeface;
   text-transform: uppercase;
   display: block;
