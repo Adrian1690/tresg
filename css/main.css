@@ -1189,6 +1189,13 @@ header .menu aside nav .close_menu:hover {
   position: absolute;
   bottom: 0px;
 }
+#contenedor_bottom .content-a .content-b footer .pie{
+  max-width: 1024px;
+  color:#808080;
+  margin:0 auto;
+  font-size: 11px;
+  margin-top: 7px;
+}
 #contenedor_bottom .content-a .content-b footer p {
   margin-top: 29px;
   font-family: Conv_MyriadPro-Regular;
