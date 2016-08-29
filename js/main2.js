@@ -235,12 +235,15 @@ $(document).ready(function(){
    
    
 
-        $('.scrollup').click(function(){
+    $('.scrollup').click(function(){
             $("html, body").animate({ scrollTop: 0 }, 600);
 
             return false;
-        });
+    });
     
+    var windowH = $(window).height();
+    //alert(windowH);
+    $('#botella_pisco').css('height', windowH * 0.92);
 
 });
 
@@ -309,9 +312,6 @@ $('.si').on('click', function(event) {
             
         },6000);
         
-        var windowH = $(window).height();
-        //alert(windowH);
-        $('#botella_pisco').css('height', windowH * 0.92);
         event.preventDefault();
 
     });
