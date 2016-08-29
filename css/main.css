@@ -1189,7 +1189,7 @@ header .menu aside nav .close_menu:hover {
   text-align: left;
   overflow: hidden;
   width: 100%;
-  min-height: 53px;
+  min-height: 30px;
   display: block;
   /*background-image: url("../img/footer_bg.jpg");*/
   background-color: #D6D6D6;
@@ -1212,6 +1212,11 @@ header .menu aside nav .close_menu:hover {
   color: #c8c8c8;
   letter-spacing: 1.5px;
 }
+
+#contenedor_bottom .content-a .content-b footer .pie span {
+  float:right;
+}
+
 #contenedor_bottom .content-a .content-b #ubicanos_section {
   z-index: 2;
   min-height: 227px;
@@ -1281,6 +1286,19 @@ header .menu aside nav .close_menu:hover {
   font-size: 12px;
   display: block;
   text-align: center;
+}
+
+#contenedor_bottom .content-a .content-b #seccion_mapa_info .mapa_right{
+  text-align:center;
+  padding-right:3em;
+  margin-top:10px;
+}
+
+#contenedor_bottom .content-a .content-b #seccion_mapa_info .mapa_left{
+  text-align:center;
+  margin-top:41px;
+  padding-left:1em;
+  border-left:2px solid #D6D6D6;
 }
 
 #contenedor_bottom .content-a .content-b #seccion_mapa_info .img_mapa{
@@ -1496,7 +1514,7 @@ header .menu aside nav .close_menu:hover {
     float: right;
     margin-right: 5%;
   }
-  
+
   #generations_section.fullscreen,
   #generations_section .content-a {
     min-height: 767px !important;
@@ -1531,6 +1549,10 @@ header .menu aside nav .close_menu:hover {
   #cocteleria_section .container_cocteles ul li .linea,
   .content-b .container_cocteles ul li .linea {
     display: none;
+  }
+
+  #contenedor_bottom .content-a .content-b #seccion_mapa_info .mapa_right img{
+    margin:auto;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1571,9 +1593,26 @@ header .menu aside nav .close_menu:hover {
   #regalos_section .content-b .container-promos .navegacion_vertical ul li a {
     padding: 10px;
   }
+
+  #contenedor_bottom .content-a .content-b #ubicanos_section{
+    background-size: inherit;
+  }
+
+  #contenedor_bottom .content-a .content-b #seccion_mapa_info .mapa_right{
+    padding-right:15px;
+    
+  }
+
+  #contenedor_bottom .content-a .content-b #seccion_mapa_info .mapa_left{
+    padding-left:0;
+    padding-right: 0px;
+  }
+
+  
 }
 /*   Small Devices, Tablets */
 @media only screen and (max-width: 600px) {
+
   #products_section .content-b .container_cremas {
     margin-bottom: 0px;
   }
@@ -1605,6 +1644,7 @@ header .menu aside nav .close_menu:hover {
     max-width: 268px;
     margin: 20px auto;
   }
+
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -1619,9 +1659,11 @@ header .menu aside nav .close_menu:hover {
   }
 
   #generations_section .intro p {
-    
     font-size: 14px;
-    
+  }
+
+  #contenedor_bottom .content-a .content-b footer .pie span {
+    float:left;
   }
 }
 /* Custom, iPhone Retina */
