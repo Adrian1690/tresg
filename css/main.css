@@ -845,6 +845,7 @@ header .menu aside nav .close_menu:hover {
 }
 
 
+
 #cocteleria_section .content-b {
   background-color: transparent;
 }
@@ -928,21 +929,33 @@ header .menu aside nav .close_menu:hover {
   background-size: 100% auto;
 }
 #cocteleria_section .content-b .container_cocteles ul li a#pisco_punch {
-  background-image: url("../img/pisco_punch.jpg");
+  background-image: url("../img/pisco_punch.png");
   background-size: 100% auto;
 }
 #cocteleria_section .content-b .container_cocteles ul li a#pisco_sour_maracuya {
-  background-image: url("../img/pisco_sour_maracuya.jpg");
+  background-image: url("../img/pisco_sour_maracuya.png");
   background-size: 100% auto;
 }
 #cocteleria_section .content-b .container_cocteles ul li a#chilcano-clasico {
-  background-image: url("../img/chilcano.jpg");
+  background-image: url("../img/chilcano.png");
   background-size: 100% auto;
 }
 #cocteleria_section .content-b .container_cocteles ul li a#chilcano-frutos_rojos {
-  background-image: url("../img/chilcano_frutos_rojos.jpg");
+  background-image: url("../img/chilcano_frutos_rojos.png");
   background-size: 100% auto;
 }
+
+
+.lb_cocteles{
+  position: absolute;
+  width: 100%;
+  height: 27%;
+  background-image: url('../img/imagen_baja_cocteles.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 15% auto 80px;
+}
+
 #regalos_section .content-b {
   background-color: transparent;
 }
