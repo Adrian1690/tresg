@@ -1422,6 +1422,81 @@ header .menu aside nav .close_menu:hover {
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+
+  #header_desktop {
+    display: none;
+  }
+  #header_responsive {
+    display: block;
+    padding-top: 13px;
+    padding-bottom: 10px;
+    background-color: #fff;
+  }
+  #header_responsive .menu {
+    float: right;
+  }
+  #header_responsive .menu .btn_menu_responsive {
+    position: absolute;
+    background-color: #929821;
+    background-position: 13px 10px;
+    padding: 36px 41px;
+    top: 0px;
+    right: 0px;
+  }
+  #header_responsive .logo {
+    display: inline-block;
+    width: 212px;
+    float: left;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+  }
+  #header_responsive .logo #titulo_logo {
+    width: 63%;
+    margin-top: -7px;
+  }
+  #header_responsive .logo img {
+    margin-left: 15px;
+    margin-top: -8px;
+    width: 18%;
+  }
+  #header_responsive aside {
+    width: 100%;
+    top: 72px;
+  }
+  #header_responsive aside nav {
+    float: right;
+    width: 100%;
+    max-width: 100%;
+    text-align: right;
+  }
+  #header_responsive aside nav li {
+    float: right;
+    width: 100%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin: 0px;
+    cursor: pointer;
+  }
+  #header_responsive aside nav li:hover {
+    background-color: #f7f7f7;
+  }
+  #header_responsive aside nav li span {
+    font-family: Conv_SIMPLIFICA Typeface;
+    color: #666;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+    float: right;
+    margin-top: 5px;
+    margin-right: 24px;
+  }
+  #header_responsive aside nav li a .icon_menu {
+    float: right;
+    margin-right: 5%;
+  }
+  
   #generations_section.fullscreen,
   #generations_section .content-a {
     min-height: 767px !important;
@@ -1525,79 +1600,7 @@ header .menu aside nav .close_menu:hover {
   #vista_seleccion .advertencia h2 {
     font-size: 10px;
   }
-  #header_desktop {
-    display: none;
-  }
-  #header_responsive {
-    display: block;
-    padding-top: 13px;
-    padding-bottom: 10px;
-    background-color: #fff;
-  }
-  #header_responsive .menu {
-    float: right;
-  }
-  #header_responsive .menu .btn_menu_responsive {
-    position: absolute;
-    background-color: #929821;
-    background-position: 13px 10px;
-    padding: 36px 41px;
-    top: 0px;
-    right: 0px;
-  }
-  #header_responsive .logo {
-    display: inline-block;
-    width: 212px;
-    float: left;
-    position: relative;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-  }
-  #header_responsive .logo #titulo_logo {
-    width: 63%;
-    margin-top: -7px;
-  }
-  #header_responsive .logo img {
-    margin-left: 15px;
-    margin-top: -8px;
-    width: 18%;
-  }
-  #header_responsive aside {
-    width: 100%;
-    top: 72px;
-  }
-  #header_responsive aside nav {
-    float: right;
-    width: 100%;
-    max-width: 100%;
-    text-align: right;
-  }
-  #header_responsive aside nav li {
-    float: right;
-    width: 100%;
-    padding-bottom: 5%;
-    padding-top: 5%;
-    margin: 0px;
-    cursor: pointer;
-  }
-  #header_responsive aside nav li:hover {
-    background-color: #f7f7f7;
-  }
-  #header_responsive aside nav li span {
-    font-family: Conv_SIMPLIFICA Typeface;
-    color: #666;
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-align: center;
-    float: right;
-    margin-top: 5px;
-    margin-right: 24px;
-  }
-  #header_responsive aside nav li a .icon_menu {
-    float: right;
-    margin-right: 5%;
-  }
+  
   #generations_section .intro p {
     max-width: 268px;
     margin: 20px auto;
