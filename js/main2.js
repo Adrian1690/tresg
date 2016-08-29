@@ -241,9 +241,13 @@ $(document).ready(function(){
             return false;
     });
     
-    var windowH = $(window).height();
-    //alert(windowH);
-    $('#botella_pisco').css('height', windowH * 0.92);
+
+    function resizeBotella(){
+        var windowH = $(window).height();
+        $('#botella_pisco').css('height', windowH * 0.92);    
+    }
+    $(window).resize(resizeBotella);
+    resizeBotella();    
 
 });
 
