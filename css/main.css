@@ -885,11 +885,14 @@ header .menu aside nav .close_menu:hover {
   max-width: 212px;
   border-top: 1px solid #929721;
 }
+#cocteleria_section .content-b .container_cocteles ul li {
+  vertical-align: top;
+}
 #cocteleria_section .content-b .container_cocteles ul li a {
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
   width: 167px;
   overflow: hidden;
-  height: 250px;
+  /*height: 250px;*/
   text-decoration: none;
   display: block;
 }
@@ -924,25 +927,57 @@ header .menu aside nav .close_menu:hover {
   margin: 0 auto;
   display: block;
 }
-#cocteleria_section .content-b .container_cocteles ul li a#pisco_sour {
+#cocteleria_section .content-b .container_cocteles ul li #pisco_sour {
   background-image: url("../img/pisco_sour.png");
-  background-size: 100% auto;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 250px;
 }
-#cocteleria_section .content-b .container_cocteles ul li a#pisco_punch {
+#cocteleria_section .content-b .container_cocteles ul li #pisco_punch {
   background-image: url("../img/pisco_punch.png");
-  background-size: 100% auto;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 250px;
 }
-#cocteleria_section .content-b .container_cocteles ul li a#pisco_sour_maracuya {
+#cocteleria_section .content-b .container_cocteles ul li #pisco_sour_maracuya {
   background-image: url("../img/pisco_sour_maracuya.png");
-  background-size: 100% auto;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 250px;
 }
-#cocteleria_section .content-b .container_cocteles ul li a#chilcano-clasico {
+#cocteleria_section .content-b .container_cocteles ul li #chilcano-clasico {
   background-image: url("../img/chilcano.png");
-  background-size: 100% auto;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 250px;
 }
-#cocteleria_section .content-b .container_cocteles ul li a#chilcano-frutos_rojos {
+#cocteleria_section .content-b .container_cocteles ul li #chilcano-frutos_rojos {
   background-image: url("../img/chilcano_frutos_rojos.png");
-  background-size: 100% auto;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+
+#cocteleria_section .name{
+  width: 160px;
+  height: 60px;
+  line-height: 27px;
+  text-align: center;
+  margin-left: 4px;
+  padding-top: 7px;
+  color:black;
+}
+
+#cocteleria_section .name:hover{
+  background-color: #909500;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s ease all;
 }
 
 
@@ -953,7 +988,7 @@ header .menu aside nav .close_menu:hover {
   background-image: url('../img/imagen_baja_cocteles.png');
   background-repeat: no-repeat;
   background-size: 100%;
-  margin: 15% auto 80px;
+  top: 30%;
 }
 
 #regalos_section .content-b {
