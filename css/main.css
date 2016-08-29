@@ -983,6 +983,7 @@ header .menu aside nav .close_menu:hover {
   font-family: Conv_VersaillesLTStd-Roman;
   font-size: 15px;
   text-transform: capitalize;
+  font-weight: normal;
 }
 #regalos_section .content-b .container-promos #formulario input {
   height: 22px;
@@ -1151,7 +1152,7 @@ header .menu aside nav .close_menu:hover {
   background-image: url("../img/imagen_baja_ubicanos.png");
   background-position: center center;
   background-size: 100% 100%;
-  /*position: absolute;*/
+  position: absolute;
   top: 0px;
   width: 100%;
 }
@@ -1207,7 +1208,7 @@ header .menu aside nav .close_menu:hover {
   /*height: 500px;*/
   max-width: 1024px;
   /*text-transform: uppercase;*/
-  margin: 1em auto 13px;
+  margin: 20em auto 13px;
   overflow: hidden;
   /*font-family: Conv_SIMPLIFICA Typeface;*/
   font-size: 12px;
