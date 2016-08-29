@@ -1003,6 +1003,11 @@ header .menu aside nav .close_menu:hover {
   display: block;
   text-align: center;
 }
+
+#regalos_section .content-b .container-promos .form-group {
+  height: 40px;
+}
+
 #regalos_section .content-b .container-promos .linea {
   border-bottom: 1px solid #909500;
   max-width: 286px;
@@ -1037,15 +1042,19 @@ header .menu aside nav .close_menu:hover {
   font-weight: normal;
 }
 #regalos_section .content-b .container-promos #formulario input {
-  height: 22px;
+  /*height: 22px;*/
   border: none;
-  background-color: #d6d6d6;
-  color: #fff;
+  background-color: #ededed;
+  /*color: #fff;*/
   margin-bottom: 10px;
+  letter-spacing: 1px;
 }
+
 #regalos_section .content-b .container-promos #formulario textarea {
+  border: none;
   min-height: 92px;
-  background-color: #d6d6d6;
+  background-color: #ededed;
+  letter-spacing: 1px;
 }
 #regalos_section .content-b .container-promos #formulario #enviar {
   background-color: transparent;
@@ -1180,7 +1189,7 @@ header .menu aside nav .close_menu:hover {
   text-align: left;
   overflow: hidden;
   width: 100%;
-  min-height: 30px;
+  min-height: 53px;
   display: block;
   /*background-image: url("../img/footer_bg.jpg");*/
   background-color: #D6D6D6;
@@ -1324,6 +1333,7 @@ header .menu aside nav .close_menu:hover {
   color:#d6d5d4;
   letter-spacing: 3px;
   /*margin-bottom: 24px;*/
+  padding-bottom: 30px;
 }
 
 
