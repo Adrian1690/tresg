@@ -513,9 +513,10 @@ header .menu aside nav .close_menu:hover {
   position: relative;
 }
 #advertisement_section .titulo {
-  top: 40px;
+  /*top: 40px;*/
   margin: 0 auto;
-  position: absolute;
+  margin-top: 40px;
+  /*position: absolute;*/
   width: 100%;
   text-align: center;
   font-family: "Conv_SIMPLIFICA Typeface";
@@ -528,7 +529,8 @@ header .menu aside nav .close_menu:hover {
   color: #929721;
 }
 
-#advertisement_section .titulo h3 {
+#advertisement_section .subtitulo h3 {
+  text-align: center;
   color: #808080;
   font-family: Conv_VersaillesLTStd-Roman;
   font-size: 14px;
@@ -539,7 +541,7 @@ header .menu aside nav .close_menu:hover {
   margin: 0 auto;
 }
 #advertisement_section .container-carousel {
-  margin: 26% auto 0;
+  margin: 7% auto 0;
   max-width: 955px;
   width: 100%;
   display: block;
@@ -641,7 +643,7 @@ header .menu aside nav .close_menu:hover {
   background-color: transparent;
 }
 #products_section .content-b .linea {
-  padding: 0px 0px 34px 0px;
+  padding: 0px 0px 0px 0px;
   overflow: hidden;
   width: 100%;
   position: relative;
@@ -675,6 +677,7 @@ header .menu aside nav .close_menu:hover {
   font-size: 30px;
   text-transform: uppercase;
   display: block;
+  padding-top:34px;
 }
 #products_section .content-b .container_cremas h3 {
   margin-top: 60px;
