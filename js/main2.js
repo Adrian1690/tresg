@@ -232,6 +232,16 @@ $(document).ready(function(){
     //alert(alto);
     $("#vista_seleccion .content").css({"margin-top":alto * 0.25});
     */
+   
+   
+
+        $('.scrollup').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+
+            return false;
+        });
+    
+
 });
 
 $(document).ready(function(){
