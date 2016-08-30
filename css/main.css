@@ -990,6 +990,7 @@ header .menu aside nav .close_menu:hover {
   background-repeat: no-repeat;
   background-size: 100%;
   top: 30%;
+  background-position: center center;
 }
 
 #regalos_section .content-b {
