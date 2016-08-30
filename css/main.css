@@ -1474,6 +1474,7 @@ header .menu aside nav .close_menu:hover {
   #header_responsive .logo #titulo_logo {
     width: 63%;
     margin-top: -7px;
+    margin-left: 0px;
   }
   #header_responsive .logo img {
     margin-left: 15px;
