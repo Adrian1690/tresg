@@ -1236,7 +1236,7 @@ header .menu aside nav .close_menu:hover {
 #contenedor_bottom .content-a .content-b #ubicanos_section address,
 #contenedor_bottom .content-a .content-b  address {
   color: #808080;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
   margin-bottom: 15px;
   /*font-family: Conv_SIMPLIFICA Typeface;*/
@@ -1256,7 +1256,7 @@ header .menu aside nav .close_menu:hover {
 #contenedor_bottom .content-a .content-b .subtitle {
   /*font-family: "Conv_SIMPLIFICA Typeface";*/
   line-height: 18PX;
-  font-size: 11px;
+  font-size: 13px;
   color: #929721;
   margin-top: 2px;
   /* margin-bottom: 48px; */
