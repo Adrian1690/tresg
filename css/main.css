@@ -109,6 +109,7 @@
   max-width: 960px;
   display: block;
   position: relative;
+  margin-top: 12%;
 }
 #vista_seleccion .content h6 {
   font-family: Conv_VersaillesLTStd-Roman;
@@ -118,7 +119,7 @@
   letter-spacing: 1px;
 }
 #vista_seleccion .content h5 {
-  font-family: "Conv_SIMPLIFICA Typeface";
+  font-family: "Futura_BT_W01_Light_Condensed";
   font-size: 25px;
   margin-top: 36px;
   letter-spacing: 2px;
@@ -151,7 +152,7 @@
 #vista_seleccion .advertencia {
   position: absolute;
   bottom: 30px;
-  font-family: "Conv_SIMPLIFICA Typeface";
+  font-family: "Futura_BT_W01_Light_Condensed";
   font-size: 31px;
   color: #808080;
   letter-spacing: 3px;
@@ -1556,6 +1557,10 @@ header .menu aside nav .close_menu:hover {
   }
 }
 @media only screen and (max-width: 768px) {
+
+  #vista_seleccion .content {
+    margin-top: 20%;
+  }
   #regalos_section .tittle {
     display: none;
   }
@@ -1655,7 +1660,8 @@ header .menu aside nav .close_menu:hover {
     overflow-x: hidden;
   }
   #vista_seleccion .advertencia {
-    display: none;
+    /*display: none;*/
+    font-size: 12px;
   }
 
   #generations_section .intro p {

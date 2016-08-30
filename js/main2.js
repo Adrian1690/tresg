@@ -216,7 +216,7 @@ linkInterno.on('click', function (e) {
 
 //Preloader
 $(document).ready(function(){
-    /*
+    
     $("body").css({"overflow-y":"hidden"});
     //guardamos en una variable el alto del que tiene tu browser que no es lo mismo que del DOM
     var alto=$(window).height();
@@ -230,15 +230,13 @@ $(document).ready(function(){
     
 
     //alert(alto);
-    $("#vista_seleccion .content").css({"margin-top":alto * 0.25});
-    */
-   
-   
+    //$("#vista_seleccion .content").css({"margin-top":alto * 0.25});
+    
 
     $('.scrollup').click(function(){
-            $("html, body").animate({ scrollTop: 0 }, 600);
+        $("html, body").animate({ scrollTop: 0 }, 600);
 
-            return false;
+        return false;
     });
     
 
@@ -253,9 +251,9 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     
-    /*$("#pre-load-web").fadeOut(500,function() {
+    $("#pre-load-web").fadeOut(2000,function() {
         $(this).remove();
-    });*/
+    });
     
 });
 
@@ -272,14 +270,15 @@ $('.si').on('click', function(event) {
 
         if(windowW > 480){
             var images = ['primera_vista_fondo1.jpg','primera_vista_fondo3.jpg','primera_vista_fondo2.jpg'];
-            intro.css('background-image','url(img/primera_vista_fondo1.jpg)');
+            //intro.css('background-image','url(img/primera_vista_fondo1.jpg)');
         }else{
             var images = ['primera_vista_fondo1_mobile.jpg','primera_vista_fondo3_mobile.jpg','primera_vista_fondo2_mobile.jpg'];
-            intro.css('background-image','url(img/primera_vista_fondo1_mobile.jpg)');
+            //intro.css('background-image','url(img/primera_vista_fondo1_mobile.jpg)');
+            /*
             intro.css('background-repeat','no-repeat');
             intro.css('background-size','contain');
             intro.css('background-position','center');
-
+            */
             /*
             third.css('background-image','url(img/tercer_vista_fondo_mobile.jpg)');
             third.attr('data-img-width','200px');
@@ -300,16 +299,17 @@ $('.si').on('click', function(event) {
                 $('.intro-slogan').fadeIn( 1300);
             };
 
+            /*intro.css('background-size','100% auto');
+            intro.css('background-repeat','no-repeat');
+            intro.css('background-size','contain');
+            intro.css('background-position','center');    */
             intro.css('background-image','url(img/' + images[i ++] +')');
-            /*if(windowW < 480) {
-                //intro.css('background-size','100% auto');
-                intro.css('background-repeat','no-repeat');
-                intro.css('background-size','contain');
-                intro.css('background-position','center');
+            //if(windowW < 480) {
+                
 
 
                 //alert('asdas');
-            }*/
+            //}
             if (i == images.length ) {
                 i = 0;
             };
