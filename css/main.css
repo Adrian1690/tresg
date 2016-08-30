@@ -1070,6 +1070,7 @@ header .menu aside nav .close_menu:hover {
   border-right: none;
   border-radius: 0px;
   margin-top: 20px;
+  height: 35px;
 }
 #regalos_section .content-b .container-promos .img-container {
   margin-top: -40px;
