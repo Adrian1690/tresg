@@ -967,16 +967,18 @@ header .menu aside nav .close_menu:hover {
 #cocteleria_section .name{
   width: 160px;
   height: 60px;
-  line-height: 27px;
+  line-height: 20px;
   text-align: center;
   margin-left: 4px;
   padding-top: 7px;
   color:black;
+  font-family: Conv_VersaillesLTStd-Roman;
 }
 
 #cocteleria_section .name:hover{
-  background-color: #909500;
-  color: white;
+  /*background-color: #909500;*/
+  /*color: white;*/
+  color: #909500;
   cursor: pointer;
   transition: 0.5s ease all;
 }
