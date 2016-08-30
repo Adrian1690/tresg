@@ -1605,7 +1605,8 @@ header .menu aside nav .close_menu:hover {
   }
 
   #contenedor_bottom .content-a .content-b #ubicanos_section{
-    background-size: inherit;
+    /*background-size: inherit;*/
+    background-image: url("../img/imagen_baja_ubicanos_res.png");
   }
 
   #contenedor_bottom .content-a .content-b #seccion_mapa_info .mapa_right{
