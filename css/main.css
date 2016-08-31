@@ -403,7 +403,7 @@ header .menu aside nav li.social #youtube span {
   bottom: -37px;
 }
 header .menu aside nav li.social #facebook {
-  background-position: -26px -373px;
+  background-position: -26px -374px;
   width: 33px;
   float: right;
   height: 31px;
@@ -412,7 +412,7 @@ header .menu aside nav li.social #facebook {
   display: inline-block;
 }
 header .menu aside nav li.social #facebook:hover {
-  background-position: -92px -373px;
+  background-position: -93px -374px;
 }
 
 header .menu aside nav .close_menu {
