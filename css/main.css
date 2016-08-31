@@ -217,6 +217,7 @@ header .menu .btn_menu{
   background-image: url("../img/navegacion2.png");
   background-position: 1.2px -409px;
 }
+
 header .menu .btn_menu_responsive {
   position: absolute;
   top: 50px;
@@ -224,8 +225,9 @@ header .menu .btn_menu_responsive {
   cursor: pointer;
   width: 61px;
   height: 57px;
-  background-image: url("../img/navegacion.png");
+  background-image: url("../img/icono_menu_responsive.png");
 }
+
 header .menu .btn_menu:hover{
   /*background-position: -63px -3px;*/
   background-position: -80.8px -409px;
@@ -1491,7 +1493,8 @@ header .menu aside nav .close_menu:hover {
   margin-bottom: 10px;
   margin-left: 10px;
 }
-.wrapper .maincontent p {
+.wrapper .maincontent p,
+.wrapper .maincontent ul {
   font-size: 15.5px;
   color: #e1e4e4;
   font-family: Conv_VersaillesLTStd-Roman;
@@ -1534,7 +1537,9 @@ header .menu aside nav .close_menu:hover {
   #header_responsive .menu .btn_menu_responsive {
     position: absolute;
     background-color: #929821;
-    background-position: 13px 10px;
+    background-size: 61%;
+    background-position: center center;
+    background-repeat: no-repeat;
     padding: 36px 41px;
     top: 0px;
     right: 0px;
