@@ -515,6 +515,25 @@ header .menu aside nav .close_menu:hover {
   margin: 25px 0px;
   letter-spacing: 3px;
 }
+
+#generations_section2 .titulo{
+        /* top: 40px; */
+    margin: 0 auto;
+    margin-top: 40px;
+    /* position: absolute; */
+    width: 100%;
+    text-align: center;
+    font-family: "Conv_SIMPLIFICA Typeface";
+    font-size: 35px;
+    color: #929721;
+  }
+
+#generations_section2 .titulo h2{
+  font-size: 35px;
+  letter-spacing: 4px;
+  color: #929721;
+  text-align: center;
+}
 #generations_section2 h3 {
   font-family: Conv_SIMPLIFICA Typeface;
   font-size: 21px;
@@ -578,7 +597,7 @@ header .menu aside nav .close_menu:hover {
   margin: 0 auto;
 }
 #advertisement_section .container-carousel {
-  margin: 7% auto 0;
+  margin: 3% auto 0;
   max-width: 955px;
   width: 100%;
   display: block;
@@ -1587,6 +1606,7 @@ header .menu aside nav .close_menu:hover {
   #generations_section2 {
     padding: 45px 0px;
   }
+
   #generations_section2 .biografia_imagen {
     margin-top: 20px;
   }
@@ -1621,6 +1641,12 @@ header .menu aside nav .close_menu:hover {
   #vista_seleccion .content {
     margin-top: 20%;
   }
+
+
+  #generations_section2 .titulo h2{
+    margin : 0px;
+  }
+
   #regalos_section .tittle {
     display: none;
   }
@@ -1683,7 +1709,7 @@ header .menu aside nav .close_menu:hover {
   #generations_section{
     background-image:url('../img/primera_vista_fondo1_mobile.jpg');
   }
-  
+
   #products_section .content-b .container_cremas {
     margin-bottom: 0px;
   }
