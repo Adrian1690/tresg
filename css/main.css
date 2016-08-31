@@ -1522,6 +1522,7 @@ header .menu aside nav .close_menu:hover {
     float: left;
     position: relative;
     left: 0px;
+    /*margin-left: 29%;*/
     top: 0px;
     right: 0px;
   }
