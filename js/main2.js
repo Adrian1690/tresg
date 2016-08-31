@@ -49,7 +49,7 @@ $('body').on('click', '.la_dama', function(event) {
 });
 
 $(document).ready(function () {
-
+    
 
     $('.regalos_gallery,#corporativo').click(function(e){
         e.preventDefault();
@@ -69,6 +69,31 @@ $(document).ready(function () {
            
 
     });
+
+    $(".container_piscos ul li a").tosrus({
+        wrapper: {
+            classes: "main-warpper",
+        },
+        infinite : true,
+        buttons : {
+            prev : true,
+            next : true,
+            close: true
+        }
+    });
+    
+    $(".container_cremas ul li a").tosrus({
+        wrapper: {
+            classes: "main-warpper"
+        },
+        infinite : true,
+        buttons : {
+            prev : true,
+            next : true,
+            close: true
+        }
+    });
+
 
     $(".container_cocteles ul li a").tosrus({
         wrapper: {
