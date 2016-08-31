@@ -443,6 +443,10 @@ header .menu aside nav .close_menu:hover {
   background-position: -65px -63px;
 }
 
+#generations_section{
+    background-image:url('../img/primera_vista_fondo1.jpg');
+}
+
 #generations_section {
   transition: 1.5s ease all;
 }
@@ -1613,7 +1617,7 @@ header .menu aside nav .close_menu:hover {
   }
 }
 @media only screen and (max-width: 768px) {
-
+  
   #vista_seleccion .content {
     margin-top: 20%;
   }
@@ -1674,7 +1678,12 @@ header .menu aside nav .close_menu:hover {
 }
 /*   Small Devices, Tablets */
 @media only screen and (max-width: 600px) {
+  
 
+  #generations_section{
+    background-image:url('../img/primera_vista_fondo1_mobile.jpg');
+  }
+  
   #products_section .content-b .container_cremas {
     margin-bottom: 0px;
   }
