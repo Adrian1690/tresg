@@ -387,7 +387,7 @@ header .menu aside nav li.social {
   bottom: 0px;
 }
 header .menu aside nav li.social #youtube {
-  background-position: -24px -340px;
+  background-position: -24px -341px;
   width: 36px;
   height: 31px;
   background-image: url("../img/navegacion2.png");
@@ -396,14 +396,14 @@ header .menu aside nav li.social #youtube {
   margin: 0 auto;
 }
 header .menu aside nav li.social #youtube:hover {
-  background-position: -90px -340px;
+  background-position: -90px -341px;
 }
 header .menu aside nav li.social #youtube span {
   line-height: 12px;
   bottom: -37px;
 }
 header .menu aside nav li.social #facebook {
-  background-position: -26px -373px;
+  background-position: -27px -374px;
   width: 33px;
   float: right;
   height: 31px;
