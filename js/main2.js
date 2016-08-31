@@ -353,7 +353,7 @@ $('.si').on('click', function(event) {
                 i = 0;
             };
             
-        },4000);
+        },6000);
         
         event.preventDefault();
 
