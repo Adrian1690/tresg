@@ -297,7 +297,8 @@ header .menu aside nav li .icon_menu span {
 }
 header .menu aside nav li.generaciones .icon_menu {
   /*background-position: 1.8px -106px;*/
-  background-position: -15.8px -106px;
+  /*background-position: -15.8px -106px;*/
+  background-position: -15.49999952316px -106px;
   width: 55px;
   height: 30px;
 }
