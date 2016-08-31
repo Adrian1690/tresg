@@ -207,7 +207,16 @@ header .logo {
 header .logo #titulo_logo {
   transition: 0.5s ease all;
 }
-header .menu .btn_menu,
+header .menu .btn_menu{
+  position: absolute;
+  top: 50px;
+  right: 45px;
+  cursor: pointer;
+  width: 80px;
+  height: 76px;
+  background-image: url("../img/navegacion2.png");
+  background-position: 1.2px -409px;
+}
 header .menu .btn_menu_responsive {
   position: absolute;
   top: 50px;
@@ -217,7 +226,11 @@ header .menu .btn_menu_responsive {
   height: 57px;
   background-image: url("../img/navegacion.png");
 }
-header .menu .btn_menu:hover,
+header .menu .btn_menu:hover{
+  /*background-position: -63px -3px;*/
+  background-position: -80.8px -409px;
+}
+
 header .menu .btn_menu_responsive:hover {
   background-position: -63px -3px;
 }
@@ -269,7 +282,7 @@ header .menu aside nav li span {
   text-align: center;
 }
 header .menu aside nav li .icon_menu {
-  background-image: url("../img/navegacion.png");
+  background-image: url("../img/navegacion2.png");
   background-repeat: no-repeat;
   display: block;
   margin: 0 auto;
@@ -281,12 +294,19 @@ header .menu aside nav li .icon_menu span {
   position: relative;
 }
 header .menu aside nav li.generaciones .icon_menu {
-  background-position: 1.8px -106px;
+  /*background-position: 1.8px -106px;*/
+  background-position: -15.8px -106px;
   width: 55px;
   height: 30px;
 }
-header .menu aside nav li.generaciones .icon_menu:hover {
-  background-position: -69px -106px;
+
+.font-bold{
+  font-weight: bold;
+}
+header .menu aside nav li.generaciones .icon_menu:hover, 
+header .menu aside nav li.generaciones .icon_menu.hovered  {
+  /*background-position: -69px -106px;*/
+  background-position: -84.8px -106px;
 }
 
 header .menu aside nav li.generaciones .icon_menu span {
@@ -296,24 +316,30 @@ header .menu aside nav li.generaciones .icon_menu span {
   margin-left: -24px;
 }
 header .menu aside nav li.productos .icon_menu {
-  background-position: -7px -157px;
+  /*background-position: -7px -157px;*/
+  background-position: -21px -157px;
   width: 41px;
   height: 39px;
 }
-header .menu aside nav li.productos .icon_menu:hover {
-  background-position: -73px -157px;
+header .menu aside nav li.productos .icon_menu:hover,
+header .menu aside nav li.productos .icon_menu.hovered {
+  /*background-position: -73px -157px;*/
+  background-position: -87px -157px;
 }
 header .menu aside nav li.productos .icon_menu span {
   line-height: 12px;
   bottom: -45px;
 }
 header .menu aside nav li.cocteleria .icon_menu {
-  background-position: -8px -215px;
+  /*background-position: -8px -215px;*/
+  background-position: -20px -215px;
   width: 42px;
   height: 30px;
 }
-header .menu aside nav li.cocteleria .icon_menu:hover {
-  background-position: -73px -215px;
+header .menu aside nav li.cocteleria .icon_menu:hover,
+header .menu aside nav li.cocteleria .icon_menu.hovered {
+  /*background-position: -73px -215px;*/
+  background-position: -85px -215px;
 }
 header .menu aside nav li.cocteleria .icon_menu span {
   line-height: 12px;
@@ -323,12 +349,15 @@ header .menu aside nav li.regalos {
   /*margin-bottom: 70%;*/
 }
 header .menu aside nav li.regalos .icon_menu {
-  background-position: -8px -297px;
+  /*background-position: -8px -297px;*/
+  background-position: -21px -297px;
   width: 44px;
   height: 37px;
 }
-header .menu aside nav li.regalos .icon_menu:hover {
-  background-position: -75px -297px;
+header .menu aside nav li.regalos .icon_menu:hover,
+header .menu aside nav li.regalos .icon_menu.hovered {
+  /*background-position: -75px -297px;*/
+  background-position: -88px -297px;
 }
 header .menu aside nav li.regalos .icon_menu span {
   line-height: 12px;
@@ -337,12 +366,15 @@ header .menu aside nav li.regalos .icon_menu span {
   right: -5px;
 }
 header .menu aside nav li.ubicanos .icon_menu {
-  background-position: -8px -263px;
+  /*background-position: -8px -263px;*/
+  background-position: -20px -263px;
   width: 45px;
   height: 23px;
 }
-header .menu aside nav li.ubicanos .icon_menu:hover {
-  background-position: -73px -263px;
+header .menu aside nav li.ubicanos .icon_menu:hover,
+header .menu aside nav li.ubicanos .icon_menu.hovered {
+  /*background-position: -73px -263px;*/
+  background-position: -85px -263px;
 }
 header .menu aside nav li.ubicanos .icon_menu span {
   line-height: 12px;
@@ -353,32 +385,32 @@ header .menu aside nav li.social {
   bottom: 0px;
 }
 header .menu aside nav li.social #youtube {
-  background-position: -8px -340px;
+  background-position: -24px -340px;
   width: 36px;
   height: 31px;
-  background-image: url("../img/navegacion.png");
+  background-image: url("../img/navegacion2.png");
   background-repeat: no-repeat;
   display: inline-block;
   margin: 0 auto;
 }
 header .menu aside nav li.social #youtube:hover {
-  background-position: -74px -340px;
+  background-position: -90px -340px;
 }
 header .menu aside nav li.social #youtube span {
   line-height: 12px;
   bottom: -37px;
 }
 header .menu aside nav li.social #facebook {
-  background-position: -11px -373px;
+  background-position: -26px -373px;
   width: 33px;
   float: right;
   height: 31px;
-  background-image: url("../img/navegacion.png");
+  background-image: url("../img/navegacion2.png");
   background-repeat: no-repeat;
   display: inline-block;
 }
 header .menu aside nav li.social #facebook:hover {
-  background-position: -76px -373px;
+  background-position: -91px -373px;
 }
 
 header .menu aside nav .close_menu {
@@ -966,7 +998,7 @@ header .menu aside nav .close_menu:hover {
 
 #cocteleria_section .name{
   width: 160px;
-  height: 60px;
+  height: 50px;
   line-height: 20px;
   text-align: center;
   margin-left: 4px;
@@ -977,7 +1009,9 @@ header .menu aside nav .close_menu:hover {
 
 }
 
-#cocteleria_section .name:hover{
+#cocteleria_section .name:hover,
+#cocteleria_section .name.hovered
+{
   /*background-color: #909500;*/
   /*color: white;*/
   color: #909500;
@@ -985,7 +1019,14 @@ header .menu aside nav .close_menu:hover {
   transition: 0.5s ease all;
 }
 
-
+.scale1-1{
+  -webkit-transform:scale(1.1); /* Safari and Chrome */
+  -moz-transform:scale(1.1); /* Firefox */
+  -ms-transform:scale(1.1); /* IE 9 */
+  -o-transform:scale(1.1); /* Opera */
+  transform:scale(1.1);
+  transition: all 1s ease;
+}
 .lb_cocteles{
   position: absolute;
   width: 100%;
@@ -1330,11 +1371,13 @@ header .menu aside nav .close_menu:hover {
   color: #929721;
   text-decoration: none;
   padding : 0;
+  margin-top: 2em;
 }
 
 .subir ul:hover{
-  padding-top: 10px;
+  /*padding-top: 10px;*/
   cursor: pointer;
+  margin-top: 2em;
 }
 
 
@@ -1363,7 +1406,9 @@ header .menu aside nav .close_menu:hover {
   padding-bottom: 30px;
 }
 
-
+.text-green:hover{
+  color: #929721;
+}
 /*#contenedor_bottom .content-a .content-b #ubicanos_section .social li .youtube:hover{
   background-position: -74px -340px;
 }

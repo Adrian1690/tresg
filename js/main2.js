@@ -1,5 +1,29 @@
 
 
+$('#cocteleria_section .content-b .container_cocteles ul li').hover(function(){
+    console.log('cocteles');
+
+    $(this).find('.name').toggleClass("hovered");
+    $(this).find('a').toggleClass("scale1-1");
+});
+
+$('#cocteleria_section .content-b .container_cocteles ul li a.wow').click(function(){
+    
+    //$(this).parent().find('a:nth-child(2)');
+    //alert('coctel');
+    console.log($(this).parent().find('a:nth-child(2)'));
+    $(this).parent().find('a:nth-child(2)').trigger('click');
+});
+
+
+$('#header_desktop .menu aside nav li a').hover(function(){
+    console.log('hover nav');
+    //console.log($(this).children());
+    
+    $(this).find('.icon_menu').toggleClass("hovered");
+    $(this).find('span').toggleClass("font-bold");
+});
+
 $('body').on('click', '.degeneracion', function(event) {
 
 
