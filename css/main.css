@@ -567,9 +567,15 @@ header .menu aside nav .close_menu:hover {
   margin-top: 7px;
   color: #929721;
 }
+
 #advertisement_section {
   position: relative;
+  background-image:url('../img/cielo_medalla.png');
+  min-height:600px;
+  background-repeat:no-repeat;
+  background-size:cover;
 }
+
 #advertisement_section .titulo {
   /*top: 40px;*/
   margin: 0 auto;
@@ -1648,6 +1654,9 @@ header .menu aside nav .close_menu:hover {
     margin-top: 20%;
   }
 
+  #advertisement_section {
+    min-height:500px;
+  }
 
   #generations_section2 .titulo h2{
     margin : 0px;
