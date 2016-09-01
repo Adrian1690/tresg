@@ -21,7 +21,7 @@ $('#cocteleria_section .content-b .container_cocteles ul li').hover(function(){
     console.log('cocteles');
 
     $(this).find('.name').toggleClass("hovered");
-    $(this).find('a').toggleClass("scale1-1");
+    $(this).find('a.wow').toggleClass("scale1-1");
 });
 
 $('#cocteleria_section .content-b .container_cocteles ul li a.wow').click(function(){
