@@ -21,7 +21,24 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="assets/owl.carousel.css"/>
     <link rel="stylesheet" href="assets/animate.css">
+    <script src="js/jquery.min.js"></script>
 
+    <script>
+        
+    function preload(arrayOfImages) {
+        $(arrayOfImages).each(function(){
+            $('<img/>')[0].src = this;
+            // Alternatively you could use:
+            // (new Image()).src = this;
+            });
+        }
+
+        // Usage:
+
+    preload(['img/primera_vista_fondo1.jpg','img/primera_vista_fondo3.jpg','img/primera_vista_fondo2.jpg']);
+
+    preload(['img/primera_vista_fondo1_mobile.png','img/primera_vista_fondo3_mobile.png','img/primera_vista_fondo2_mobile.png']);
+    </script>
 </head>
 <body>
 
@@ -50,9 +67,10 @@
         <img src="img/logo.png" alt=""/>
         <img id="titulo_logo" src="img/titulo_logo.png" alt=""/>
     </div>
+
     <div class="menu">
-        <div class="btn_menu_responsive" >
-        </div>
+        <div class="btn_menu_responsive" ></div>
+
         <aside id="menu_respond" style="display: none">
             <nav class="list-unstyled">
                 <li class="generaciones">
@@ -228,7 +246,7 @@
 -->
 
 <section id="generations_section" class="fullscreen background parallax"
-         style=" background-image:url('img/primera_vista_fondo1.jpg');" data-img-width="1400" data-img-height="767"
+         style=" " data-img-width="1400" data-img-height="767"
          data-diff="100">
     <div class="content-a">
         <div class="content-b">
@@ -260,8 +278,13 @@
          data-diff="200">
     <div class="content-a">
         <div class="content-b">
+
+            <div class="titulo wow fadeInDown visible-xs"> 
+                <!--<img class="img-responsive" src="img/segunda_vista_adorno.png" alt="">-->
+                <h2>Nuestra Historia</h2>
+            </div>
+            
             <div class="container">
-                
                 <div class="visible-xs" style="margin-top: 3em;">
                     <div class="col-sm-6" style="margin-top:2px">
                         <div class="tags wow slideInUp" style="width: 240px;margin: auto;">
@@ -319,21 +342,21 @@
                             </div>
                         </div>
                     </article>
-                    <article class="col-md-5 biografía_texto">
-                    <div class="linea_superior "></div>
-                    <h2 class="">LA DAMA DEL PISCO</h2>
-                    <h3>Juanita Martínez de Gonzales <br/>
-                        Maestra pisquera</h3>
+                    <article class="col-md-5 biografía_texto" style="min-height:459px;">
+                        <div class="linea_superior "></div>
+                        <h2 class="">LA DAMA DEL PISCO</h2>
+                        <h3>Juanita Martínez de Gonzales <br/>
+                            Maestra pisquera</h3>
 
-                    <p class="">Heredera de una tradición vitivinícola, imprime su sello personal de calidad y cuidadoso esmero en la
-                        pureza del Pisco TRES GENERACIONES, que ha merecido reconocimientos en el Perú y el extranjero.</p>
+                        <p class="">Heredera de una tradición vitivinícola, imprime su sello personal de calidad y cuidadoso esmero en la
+                            pureza del Pisco TRES GENERACIONES, que ha merecido reconocimientos en el Perú y el extranjero.</p>
 
-                    <p class="">Su experiencia y conocimiento lo está transmitiendo a sus hijos y nietos, quienes continúan en la producción e innovación, con el vivo espíritu del Pisco.</p>
+                        <p class="">Su experiencia y conocimiento lo está transmitiendo a sus hijos y nietos, quienes continúan en la producción e innovación, con el vivo espíritu del Pisco.</p>
 
 
-                    <div class="linea_inferior"></div>
+                        <div class="linea_inferior"></div>
 
-                </article>
+                    </article>
                 </div>
                 
                 <span class="col-md-5 col-md-offset-6 hidden-xs">
@@ -356,16 +379,14 @@
         </a>
 </section> -->
 
-<section id="advertisement_section" class="background parallax fullscreen"
-         style=" background-image:url('img/cielo_medalla.png');min-height:500px;" data-img-width="1400" data-img-height="510"
+<section id="advertisement_section" class="parallax"
+         style=" " data-img-width="1400" data-img-height="510"
          data-diff="100">
 
             <div class="titulo">
                 <img class="img-responsive" src="img/tercer_vista_titulo.png" alt=""/>
 
                 <h2 class="wow fadeInDown">RECONOCIMIENTOS</h2>
-                
-                
             </div>
             
             <div class="subtitulo">
@@ -668,7 +689,7 @@
                                 </span> -->
                             </a>
                             <a href="#hidden-content-coctel-pisco_sour">
-                                <div class="name">Pisco Sour</div>
+                                <div class="name" style="padding-top: 11%;">Pisco Sour</div>
                             </a>    
                             <img src="img/cuarta_vista_adorno2.png" class="img-responsive" alt=""/>
                         </li>
@@ -681,7 +702,7 @@
                                 </span> -->
                             </a>
                             <a href="#hidden-content-coctel-punch">
-                                <div class="name">Pisco Pounch</div>
+                                <div class="name" style="padding-top: 11%;">Pisco Pounch</div>
                             </a>
                             <img src="img/cuarta_vista_adorno2.png" class="img-responsive" alt=""/>
                         </li>
@@ -707,7 +728,7 @@
                                 </span> -->
                             </a>
                             <a href="#hidden-content-coctel-chilcano">
-                                <div class="name">Chilcano</div>
+                                <div class="name" style="padding-top: 11%;">Chilcano</div>
                             </a>
                             <img src="img/cuarta_vista_adorno2.png" class="img-responsive" alt=""/>
                         </li>
@@ -872,9 +893,9 @@
                                     <li class="subtitle" style="margin-top:3px;">
                                         PORFAVOR PONGASE EN CONTACTO CON:
                                     </li><br><br>
-                                    <li>cecilia@piscotresgeneraciones.com</li><br><br>
-                                    <li>Lima: (01) 255 - 7610 </li><br><br>
-                                    <li>Ica: (056) 40 - 3565</li>
+                                    <li class="text-green">cecilia@piscotresgeneraciones.com</li><br><br>
+                                    <li class="text-green">Lima: (01) 255 - 7610 </li><br><br>
+                                    <li class="text-green">Ica: (056) 40 - 3565</li>
                                 </ul>
                             </address>
                         </div>
@@ -1349,8 +1370,6 @@ async defer>
     </div>
 </div>
 
-
-<script src="js/jquery.min.js"></script>
 
 <!-- for dragging/swiping/pinching, include Hammer.js -->
 <script type="text/javascript" src="js/hammer.min.js"></script>
