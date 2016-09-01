@@ -1299,6 +1299,8 @@ header .menu aside nav .close_menu:hover {
   position: absolute;
   bottom: 0px;
 }
+
+
 #contenedor_bottom .content-a .content-b footer .pie{
   max-width: 1024px;
   color:#808080;
@@ -1306,6 +1308,15 @@ header .menu aside nav .close_menu:hover {
   font-size: 11px;
   margin-top: 7px;
 }
+
+#contenedor_bottom .content-a .content-b footer .pie a{
+  color : #808080;
+}
+
+#contenedor_bottom .content-a .content-b footer .pie a:hover{
+  color : #337ab7;
+}
+
 #contenedor_bottom .content-a .content-b footer p {
   margin-top: 29px;
   font-family: Conv_MyriadPro-Regular;
@@ -1334,15 +1345,39 @@ header .menu aside nav .close_menu:hover {
   margin-bottom: 15px;
   margin-top: 38px;
 }
+
+#contenedor_bottom .content-a .content-b #ubicanos_section address a {
+  color: none;
+  text-decoration: none;
+}
+
+#contenedor_bottom .content-a .content-b #ubicanos_section address a:hover {
+  color: none;
+  text-decoration: none;
+}
+
+#contenedor_bottom .content-a .content-b #ubicanos_section address a,
+#contenedor_bottom .content-a .content-b  address a{
+  color: #808080;
+  text-decoration: none;
+}
+
+#contenedor_bottom .content-a .content-b #ubicanos_section address a:hover,
+#contenedor_bottom .content-a .content-b  address a:hover{
+  color: #929721;
+  text-decoration: none;
+}
+
 #contenedor_bottom .content-a .content-b #ubicanos_section address,
 #contenedor_bottom .content-a .content-b  address {
   color: #808080;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: bold;
   margin-bottom: 15px;
   /*font-family: Conv_SIMPLIFICA Typeface;*/
   font-family: Conv_VersaillesLTStd-Roman;
 }
+
 #contenedor_bottom .content-a .content-b #ubicanos_section address span {
   margin: 0px 5px;
 }
@@ -1422,13 +1457,13 @@ header .menu aside nav .close_menu:hover {
   color: #929721;
   text-decoration: none;
   padding : 0;
-  margin-top: 2em;
+  /*margin-top: 2em;*/
 }
 
 .subir ul:hover{
-  /*padding-top: 10px;*/
+  padding-top: 10px;
   cursor: pointer;
-  margin-top: 2em;
+  /*margin-top: 2em;*/
   color : #808080;
 }
 
@@ -1459,7 +1494,7 @@ header .menu aside nav .close_menu:hover {
 }
 
 .text-green:hover{
-  color: #929721;
+  /*color: #929721;*/
 }
 /*#contenedor_bottom .content-a .content-b #ubicanos_section .social li .youtube:hover{
   background-position: -74px -340px;
