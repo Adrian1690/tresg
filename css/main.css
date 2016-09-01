@@ -1155,6 +1155,7 @@ header .menu aside nav .close_menu:hover {
   -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   border: none !important;
   font-family: Conv_VersaillesLTStd-Roman;
+  opacity: 0.7;
 }
 #regalos_section .content-b .container-promos #formulario #enviar {
   background-color: transparent;
