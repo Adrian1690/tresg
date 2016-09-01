@@ -1059,6 +1059,16 @@ header .menu aside nav .close_menu:hover {
   transform:scale(1.1);
   transition: all 1s ease;
 }
+
+.scale1-08{
+  -webkit-transform:scale(1.08); /* Safari and Chrome */
+  -moz-transform:scale(1.08); /* Firefox */
+  -ms-transform:scale(1.08); /* IE 9 */
+  -o-transform:scale(1.08); /* Opera */
+  transform:scale(1.08);
+  transition: all 1s ease;
+}
+
 .lb_cocteles{
   position: absolute;
   width: 100%;
