@@ -1599,7 +1599,7 @@ header .menu aside nav .close_menu:hover {
   #header_responsive .menu .btn_menu_responsive {
     position: absolute;
     background-color: #929821;
-    background-size: 61%;
+    /*background-size: 61%;*/
     background-position: center center;
     background-repeat: no-repeat;
     padding: 36px 41px;

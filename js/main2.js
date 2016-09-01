@@ -17,8 +17,17 @@ if(windowW > 600){
     intro.css('background-position','center');
 }
 
+$('.subir a ul').hover(
+    
+    function() {
+        $('.subir a ul li img').attr('src', 'img/flecha_subir_gris.png');
+    }, function() {
+        $('.subir a ul li img').attr('src', 'img/flecha_subir.png');
+    }
+);
+
 $('#cocteleria_section .content-b .container_cocteles ul li').hover(function(){
-    console.log('cocteles');
+    //console.log('cocteles');
 
     $(this).find('.name').toggleClass("hovered");
     $(this).find('a.wow').toggleClass("scale1-08");
@@ -67,11 +76,37 @@ $('body').on('click', '.la_dama', function(event) {
 
 $(document).ready(function () {
     
+    $('#corporativo').hover(
+    
+        function() {
+                $('#adorno_regalo1').show();
+                $('#adorno_regalo2').hide();//verde    
+        }, function() {
+            if( $(this).hasClass('active') ){
+                $('#adorno_regalo1').show();
+                $('#adorno_regalo2').hide();
+            }else{
+                $('#adorno_regalo1').hide();
+                $('#adorno_regalo2').show();    
+            }
+            
+        }
+    );
 
     $('.regalos_gallery,#corporativo').click(function(e){
         e.preventDefault();
         $('.regalos_gallery,#corporativo').removeClass('active');
         $(this).addClass('active');
+
+        if($(this).attr('id') == 'corporativo'){
+            $('#adorno_regalo1').show();
+            $('#adorno_regalo2').hide();
+        }else{
+            $('#adorno_regalo1').hide();
+            $('#adorno_regalo2').show();    
+        }
+        
+        
 
         var namer = $(this).attr('namer');
         var descp = $(this).attr('descripr');
