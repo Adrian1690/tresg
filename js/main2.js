@@ -167,7 +167,7 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function() {
+$(window).load(function() {
 
     // will first fade out the loading animation
     $("#imagen-load").delay(3000).fadeOut("slow");
@@ -175,7 +175,7 @@ $(document).ready(function() {
     // will fade out the whole DIV that covers the website.
 
     $(".cargadorGlobal").delay(3000).fadeOut("slow");
-
+    new WOW().init();
     $('#vista_seleccion').fadeIn();
     $('#generations_section').css({display:"block"});
     $('#generations_section2').css({display:"block"});
@@ -302,7 +302,7 @@ $(window).scroll(function(){
 });
 
 
-new WOW().init();
+//new WOW().init();
 $(document).ready(function(){
 
     var fromtop = $(document).scrollTop();       // pixels from top of screen
