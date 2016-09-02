@@ -76,6 +76,27 @@ $('body').on('click', '.la_dama', function(event) {
 
 $(document).ready(function () {
     
+    $('#formulario').submit(function(e){
+
+        e.preventDefault();
+
+        $.ajax({
+            url:"mail.php",  
+            method: "POST",
+            data: { 
+                nombre  : $('#nombre').val(),
+                correo  : $('#correo').val(),
+                telefono: $('#telefono').val(),
+                mensaje : $('#mensaje').val()
+            },
+            success:function(data) {
+              alert(data); 
+              $('#alert_mail').fadeIn();
+            }
+        });
+
+    })
+
     $('#corporativo').hover(
     
         function() {
