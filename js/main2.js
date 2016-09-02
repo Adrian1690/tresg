@@ -326,23 +326,6 @@ linkInterno.on('click', function (e) {
 //Preloader
 $(document).ready(function(){
     
-    
-    $("body").css({"overflow-y":"hidden"});
-    //guardamos en una variable el alto del que tiene tu browser que no es lo mismo que del DOM
-    var alto=$(window).height();
-    //agregamos en el body un div que sera que ocupe toda la pantalla y se muestra encima de todo
-    $("body").prepend("<div id='pre-load-web'><div id='imagen-load'><img id='logo_madera' src='img/logo_intro.png' alt=''/><img id='progreso' src='img/loader.png' /></div></div>");
-        //le damos el alto
-        $("#pre-load-web").css({height:alto+"px", margin:'0 auto'});
-        
-
-    $("#imagen-load").css({"margin-top":(alto/2)-100+"px"});
-    
-
-    //alert(alto);
-    //$("#vista_seleccion .content").css({"margin-top":alto * 0.25});
-    
-
     $('.scrollup').click(function(){
         $("html, body").animate({ scrollTop: 0 }, 600);
 
@@ -357,14 +340,6 @@ $(document).ready(function(){
     $(window).resize(resizeBotella);
     resizeBotella();    
 
-});
-
-$('#generations_section').ready(function(){
-    
-    $("#pre-load-web").fadeOut(2000,function() {
-        $(this).remove();
-    });
-    
 });
 
 
