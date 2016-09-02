@@ -167,24 +167,24 @@ $(document).ready(function () {
 
 
 
-$(window).load(function() {
+$(document).ready(function() {
 
     // will first fade out the loading animation
-            $("#imagen-load").fadeOut();
+    $("#imagen-load").delay(1000).fadeOut("slow");
 
-            // will fade out the whole DIV that covers the website.
+    // will fade out the whole DIV that covers the website.
 
-            $(".cargadorGlobal").delay(1000).fadeOut("slow");
+    $(".cargadorGlobal").delay(1000).fadeOut("slow");
 
-            $('#vista_seleccion').fadeIn();
-            $('#generations_section').css({display:"block"});
-            $('#generations_section2').css({display:"block"});
-            $('#advertisement_section').css({display:"block"});
-            $('#products_section').css({display:"block"});
-            $('#cocteleria_section').css({display:"block"});
-            $('#regalos_section').css({display:"block"});
-            $('#contenedor_bottom').css({display:"block"});
-            
+    $('#vista_seleccion').fadeIn();
+    $('#generations_section').css({display:"block"});
+    $('#generations_section2').css({display:"block"});
+    $('#advertisement_section').css({display:"block"});
+    $('#products_section').css({display:"block"});
+    $('#cocteleria_section').css({display:"block"});
+    $('#regalos_section').css({display:"block"});
+    $('#contenedor_bottom').css({display:"block"});
+
     $('.owl-carousel').owlCarousel({
         loop: true,
         autoplay : false,
