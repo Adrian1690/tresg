@@ -1777,7 +1777,7 @@ header .menu aside nav .close_menu:hover {
 @media only screen and (max-width: 600px) {
   
   #generations_section{
-    background-image:url('../img/primera_vista_fondo1_mobile.jpg');
+    background-image:url('../img/primera_vista_fondo1_mobile.png');
   }
 
   #products_section .content-b .container_cremas {
