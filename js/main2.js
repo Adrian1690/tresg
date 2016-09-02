@@ -170,11 +170,11 @@ $(document).ready(function () {
 $(window).load(function() {
 
     // will first fade out the loading animation
-    $("#imagen-load").delay(3000).fadeOut("slow");
+    $("#imagen-load").fadeOut("slow");
 
     // will fade out the whole DIV that covers the website.
 
-    $(".cargadorGlobal").delay(3000).fadeOut("slow");
+    $(".cargadorGlobal").delay(1000).fadeOut("slow");
     new WOW().init();
     $('#vista_seleccion').fadeIn();
     $('#generations_section').css({display:"block"});
