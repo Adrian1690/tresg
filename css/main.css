@@ -579,7 +579,7 @@ header .menu aside nav .close_menu:hover {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center center;
-  margin-bottom: -8px;
+  margin-bottom: -18px;
   margin-top: 15px;
 }
 
@@ -1829,6 +1829,11 @@ header .menu aside nav .close_menu:hover {
   #contenedor_bottom .content-a .content-b #seccion_mapa_info{
     margin: 13em auto 13px;
   }
+
+  #contenedor_bottom .content-a .content-b footer .pie,
+  #contenedor_bottom .content-a .content-b footer .pie span {
+    text-align: center;
+  }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -1848,7 +1853,7 @@ header .menu aside nav .close_menu:hover {
   }
 
   #contenedor_bottom .content-a .content-b footer .pie span {
-    float:left;
+    float: none;
   }
 }
 /* Custom, iPhone Retina */
