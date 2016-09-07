@@ -207,6 +207,7 @@ header .logo {
 header .logo #titulo_logo {
   transition: 0.5s ease all;
 }
+
 header .menu .btn_menu{
   position: absolute;
   top: 50px;
@@ -453,6 +454,7 @@ header .menu aside nav .close_menu:hover {
 #generations_section {
   transition: 1.5s ease all;
 }
+
 #generations_section h2 {
   color: #1a1a15;
   font-size: 58px;
@@ -567,6 +569,18 @@ header .menu aside nav .close_menu:hover {
   font-size: 16px;
   margin-top: 7px;
   color: #929721;
+}
+
+.imgfull_generacion{
+  width:100%;
+  height: 168px;
+  background-image:url('../img/segunda_vista_imagen_responsive.png');
+  transition: 0.5s ease all;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  margin-bottom: -8px;
+  margin-top: 15px;
 }
 
 #advertisement_section {

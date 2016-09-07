@@ -58,6 +58,8 @@ $('body').on('click', '.degeneracion', function(event) {
         $('.la_dama').removeClass('active');
         $('.degeneracion').addClass('active');
         $('.GeneracionFade').fadeIn('fast');
+
+        $('.imgfull_generacion').css('background-image','url(img/segunda_vista_imagen_responsive.png)');
     });
 
 });
@@ -70,6 +72,8 @@ $('body').on('click', '.la_dama', function(event) {
         $('.DamaFade').fadeIn('fast');
         $('.degeneracion').removeClass('active');
         $('.la_dama').addClass('active');
+
+        $('.imgfull_generacion').css('background-image','url(img/la_dama_responsive.png)');
     });
 
 });
