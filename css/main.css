@@ -608,7 +608,7 @@ header .menu aside nav .close_menu:hover {
   color: #929721;
 }
 
-#advertisement_section .subtitulo h3 {
+.subtitulo h3 {
   text-align: center;
   color: #808080;
   font-family: Conv_VersaillesLTStd-Roman;
@@ -1233,6 +1233,16 @@ header .menu aside nav .close_menu:hover {
   color: #fff;
 }
 
+#regalos_section .subtitulo h3 {
+  text-align: center;
+  color: #808080;
+  font-family: Conv_VersaillesLTStd-Roman;
+  font-size: 14px;
+  margin-top:4%;
+  text-transform: none;
+  margin-bottom: 2em;
+}
+
 .primary{
   border:1px solid black;
   border-color: #929721;
@@ -1829,6 +1839,10 @@ header .menu aside nav .close_menu:hover {
   #contenedor_bottom .content-a .content-b #seccion_mapa_info{
     margin: 13em auto 13px;
   }
+  
+  .centerxs{
+    margin: 0 auto;
+  }
 
   #contenedor_bottom .content-a .content-b footer .pie,
   #contenedor_bottom .content-a .content-b footer .pie span {
@@ -1853,7 +1867,8 @@ header .menu aside nav .close_menu:hover {
   }
 
   #contenedor_bottom .content-a .content-b footer .pie span {
-    float: none;
+    float: left;
+    width: 100%;
   }
 }
 /* Custom, iPhone Retina */
