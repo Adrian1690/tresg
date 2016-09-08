@@ -100,7 +100,8 @@
   left: 0px;
   top: 0px;
   z-index: 9999;
-  height: 100vh;
+  /*height: 100vh;*/
+  height: 100%;
 }
 #vista_seleccion .content {
   margin: 0 auto;
