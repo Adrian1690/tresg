@@ -1611,7 +1611,7 @@ header .menu aside nav .close_menu:hover {
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1280px) {
   #generations_section .imagen_pisco{
-    right: 70px;
+    right: 50px;
   }
 }
 
