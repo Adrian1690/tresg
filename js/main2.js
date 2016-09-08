@@ -99,6 +99,10 @@ $(document).ready(function () {
               console.log(data.Result);
               if(data.Result == 'OK' ){
                 alert('Mensaje enviado.');
+                $('#nombre').val('');
+                $('#correo').val('');
+                $('#telefono').val('');
+                $('#mensaje').val('');
               }else{
                 alert('Intente más tarde.');   
               }
