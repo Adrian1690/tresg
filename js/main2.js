@@ -374,7 +374,7 @@ $('.si').on('click', function(event) {
         $("body").css({"overflow-y":"auto"});
         var i = 0;
 
-        setInterval(function(){
+        /*setInterval(function(){
 
             if (i == 1 || i == 2) {
 
@@ -386,23 +386,15 @@ $('.si').on('click', function(event) {
                 $('.intro-slogan').fadeIn( 1300);
             };
 
-            /*intro.css('background-size','100% auto');
-            intro.css('background-repeat','no-repeat');
-            intro.css('background-size','contain');
-            intro.css('background-position','center');    */
+            
             intro.css('background-image','url(img/' + images[i ++] +')');
-            //if(windowW < 480) {
-                
-
-
-                //alert('asdas');
-            //}
+            
             if (i == images.length ) {
                 i = 0;
             };
             
         },6000);
-        
+        */
         event.preventDefault();
 
     });
