@@ -1615,8 +1615,8 @@ header .menu aside nav .close_menu:hover {
   #generations_section .imagen_pisco{
     right: 50px;
   }
-  #texto_tradicion .col-lg-5{
-    width: 39.666667% !important;
+  #texto_tradicion{
+    padding-left: 0;
   }
 }
 

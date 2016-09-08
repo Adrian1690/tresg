@@ -374,7 +374,7 @@ $('.si').on('click', function(event) {
         $("body").css({"overflow-y":"auto"});
         var i = 0;
 
-        /*setInterval(function(){
+        setInterval(function(){
 
             if (i == 1 || i == 2) {
 
@@ -394,7 +394,7 @@ $('.si').on('click', function(event) {
             };
             
         },6000);
-        */
+        
         event.preventDefault();
 
     });
