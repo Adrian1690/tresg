@@ -1615,6 +1615,13 @@ header .menu aside nav .close_menu:hover {
   #generations_section .imagen_pisco{
     right: 50px;
   }
+  #texto_tradicion .col-lg-5{
+    width: 39.666667% !important;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  
 }
 
 @media only screen and (max-width: 992px) {
