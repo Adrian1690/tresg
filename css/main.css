@@ -1556,14 +1556,15 @@ header .menu aside nav .close_menu:hover {
 .wrapper .maincontent h6 {
   margin: 16px 0 21px;
   font-family: Conv_VersaillesLTStd-Roman;
-  font-size: 13px;
+  /*font-size: 13px;*/
+  font-size: 15.5px;
   color: #e6e9e9;
 }
-.wrapper .maincontent li {
+/*.wrapper .maincontent li {
   font-family: Conv_VersaillesLTStd-Roman;
   font-size: 13px;
   color: #e6e9e9;
-}
+}*/
 .wrapper .maincontent h5 {
   font-family: "Conv_SIMPLIFICA Typeface";
   color: #919600;
@@ -1583,7 +1584,8 @@ header .menu aside nav .close_menu:hover {
   margin-left: 10px;
 }
 .wrapper .maincontent p,
-.wrapper .maincontent ul {
+.wrapper .maincontent ul,
+.wrapper .maincontent li {
   font-size: 15.5px;
   color: #e1e4e4;
   font-family: Conv_VersaillesLTStd-Roman;
