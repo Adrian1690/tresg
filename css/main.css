@@ -207,6 +207,7 @@ header .logo {
 header .logo #titulo_logo {
   transition: 0.5s ease all;
 }
+
 header .menu .btn_menu{
   position: absolute;
   top: 50px;
@@ -453,6 +454,7 @@ header .menu aside nav .close_menu:hover {
 #generations_section {
   transition: 1.5s ease all;
 }
+
 #generations_section h2 {
   color: #1a1a15;
   font-size: 58px;
@@ -569,6 +571,18 @@ header .menu aside nav .close_menu:hover {
   color: #929721;
 }
 
+.imgfull_generacion{
+  width:100%;
+  height: 168px;
+  background-image:url('../img/segunda_vista_imagen_responsive.png');
+  transition: 0.5s ease all;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  margin-bottom: -18px;
+  margin-top: 15px;
+}
+
 #advertisement_section {
   position: relative;
   background-image:url('../img/cielo_medalla.png');
@@ -594,7 +608,7 @@ header .menu aside nav .close_menu:hover {
   color: #929721;
 }
 
-#advertisement_section .subtitulo h3 {
+.subtitulo h3 {
   text-align: center;
   color: #808080;
   font-family: Conv_VersaillesLTStd-Roman;
@@ -1220,6 +1234,16 @@ header .menu aside nav .close_menu:hover {
   color: #fff;
 }
 
+#regalos_section .subtitulo h3 {
+  text-align: center;
+  color: #808080;
+  font-family: Conv_VersaillesLTStd-Roman;
+  font-size: 14px;
+  margin-top:4%;
+  text-transform: none;
+  margin-bottom: 2em;
+}
+
 .primary{
   border:1px solid black;
   border-color: #929721;
@@ -1778,7 +1802,7 @@ header .menu aside nav .close_menu:hover {
 @media only screen and (max-width: 600px) {
   
   #generations_section{
-    background-image:url('../img/primera_vista_fondo1_mobile.jpg');
+    background-image:url('../img/primera_vista_fondo1_mobile.png');
   }
 
   #products_section .content-b .container_cremas {
@@ -1816,6 +1840,15 @@ header .menu aside nav .close_menu:hover {
   #contenedor_bottom .content-a .content-b #seccion_mapa_info{
     margin: 13em auto 13px;
   }
+  
+  .centerxs{
+    margin: 0 auto;
+  }
+
+  #contenedor_bottom .content-a .content-b footer .pie,
+  #contenedor_bottom .content-a .content-b footer .pie span {
+    text-align: center;
+  }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -1835,7 +1868,8 @@ header .menu aside nav .close_menu:hover {
   }
 
   #contenedor_bottom .content-a .content-b footer .pie span {
-    float:left;
+    float: left;
+    width: 100%;
   }
 }
 /* Custom, iPhone Retina */

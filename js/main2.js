@@ -58,6 +58,8 @@ $('body').on('click', '.degeneracion', function(event) {
         $('.la_dama').removeClass('active');
         $('.degeneracion').addClass('active');
         $('.GeneracionFade').fadeIn('fast');
+
+        $('.imgfull_generacion').css('background-image','url(img/segunda_vista_imagen_responsive.png)');
     });
 
 });
@@ -70,12 +72,35 @@ $('body').on('click', '.la_dama', function(event) {
         $('.DamaFade').fadeIn('fast');
         $('.degeneracion').removeClass('active');
         $('.la_dama').addClass('active');
+
+        $('.imgfull_generacion').css('background-image','url(img/la_dama_responsive.png)');
     });
 
 });
 
 $(document).ready(function () {
     
+    $('#formulario').submit(function(e){
+
+        e.preventDefault();
+
+        $.ajax({
+            url:"mail.php",  
+            method: "POST",
+            data: { 
+                nombre  : $('#nombre').val(),
+                correo  : $('#correo').val(),
+                telefono: $('#telefono').val(),
+                mensaje : $('#mensaje').val()
+            },
+            success:function(data) {
+              alert(data); 
+              $('#alert_mail').fadeIn();
+            }
+        });
+
+    });
+
     $('#corporativo').hover(
     
         function() {
@@ -167,10 +192,23 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function() {
+$(window).load(function() {
 
+    // will first fade out the loading animation
+    $("#imagen-load").fadeOut("slow");
 
+    // will fade out the whole DIV that covers the website.
 
+    $(".cargadorGlobal").delay(1000).fadeOut("slow");
+    new WOW().init();
+    $('#vista_seleccion').fadeIn();
+    $('#generations_section').css({display:"block"});
+    $('#generations_section2').css({display:"block"});
+    $('#advertisement_section').css({display:"block"});
+    $('#products_section').css({display:"block"});
+    $('#cocteleria_section').css({display:"block"});
+    $('#regalos_section').css({display:"block"});
+    $('#contenedor_bottom').css({display:"block"});
 
     $('.owl-carousel').owlCarousel({
         loop: true,
@@ -289,7 +327,7 @@ $(window).scroll(function(){
 });
 
 
-new WOW().init();
+//new WOW().init();
 $(document).ready(function(){
 
     var fromtop = $(document).scrollTop();       // pixels from top of screen
@@ -313,23 +351,6 @@ linkInterno.on('click', function (e) {
 //Preloader
 $(document).ready(function(){
     
-    
-    $("body").css({"overflow-y":"hidden"});
-    //guardamos en una variable el alto del que tiene tu browser que no es lo mismo que del DOM
-    var alto=$(window).height();
-    //agregamos en el body un div que sera que ocupe toda la pantalla y se muestra encima de todo
-    $("body").prepend("<div id='pre-load-web'><div id='imagen-load'><img id='logo_madera' src='img/logo_intro.png' alt=''/><img id='progreso' src='img/loader.png' /></div></div>");
-        //le damos el alto
-        $("#pre-load-web").css({height:alto+"px", margin:'0 auto'});
-        
-
-    $("#imagen-load").css({"margin-top":(alto/2)-100+"px"});
-    
-
-    //alert(alto);
-    //$("#vista_seleccion .content").css({"margin-top":alto * 0.25});
-    
-
     $('.scrollup').click(function(){
         $("html, body").animate({ scrollTop: 0 }, 600);
 
@@ -344,14 +365,6 @@ $(document).ready(function(){
     $(window).resize(resizeBotella);
     resizeBotella();    
 
-});
-
-$('#generations_section').ready(function(){
-    
-    $("#pre-load-web").fadeOut(2000,function() {
-        $(this).remove();
-    });
-    
 });
 
 

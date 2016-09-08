@@ -30,22 +30,30 @@
             $('<img/>')[0].src = this;
             // Alternatively you could use:
             // (new Image()).src = this;
-            });
-        }
+        });
+    }
 
     // Usage:
 
+    //preload(['img/bg_intro.jpg']);
     preload(['img/primera_vista_fondo1.jpg','img/primera_vista_fondo3.jpg','img/primera_vista_fondo2.jpg']);
 
     preload(['img/primera_vista_fondo1_mobile.png','img/primera_vista_fondo3_mobile.png','img/primera_vista_fondo2_mobile.png']);
 
+    preload(['img/segunda_vista_imagen_responsive.png', 'img/la_dama_responsive.png']);
+
     preload(['img/regalos/regalo_corp.png','img/regalos/elegante.png','img/regalos/tour.png',
-                'img/regalos/madera.png','img/regalos/baul.png']);
+                'img/regalos/madera.png', 'img/regalos/mini.png', 'img/regalos/baul.png']);
     </script>
 </head>
 <body>
 
-<div id="vista_seleccion" >
+<div id='pre-load-web' class="cargadorGlobal" style="height: 100%;">
+    <div id='imagen-load' style=" margin-top: 17%;"><img id='logo_madera' src='img/logo_intro.png' alt=''/><img
+            id='progreso' src='img/loader.png'/></div>
+</div>
+
+<div id="vista_seleccion" style="display:none;">
     <div class="content" >
     <div class="linea_superior"><img src="img/intro_linea_superior.png" alt=""/></div>
     <h6>Estamos comprometidos con el consumo <br/>
@@ -65,84 +73,149 @@
     </div>
 </div>
 
-<header id="header_responsive">
-    <div class="logo">
-        <img src="img/logo.png" alt=""/>
-        <img id="titulo_logo" src="img/titulo_logo.png" alt=""/>
-    </div>
+ 
 
-    <div class="menu">
-        <div class="btn_menu_responsive" ></div>
+<!-- <div id="contenedorGlobal" style="display:block;overflow:hidden">  -->
+    <header id="header_responsive">
+        <div class="logo">
+            <img src="img/logo.png" alt=""/>
+            <img id="titulo_logo" src="img/titulo_logo.png" alt=""/>
+        </div>
 
-        <aside id="menu_respond" style="display: none">
-            <nav class="list-unstyled">
-                <li class="generaciones">
-                    <a href="#generations_section2">
-                        <div class="icon_menu"></div>
-                        <span>Nuestra Historia</span>
+        <div class="menu">
+            <div class="btn_menu_responsive" ></div>
+
+            <aside id="menu_respond" style="display: none">
+                <nav class="list-unstyled">
+                    <li class="generaciones">
+                        <a href="#generations_section2">
+                            <div class="icon_menu"></div>
+                            <span>Nuestra Historia</span>
+                        </a>
+                    </li>
+                    <li class="productos">
+                        <a href="#products_section">
+                            <span class="icon_menu"> </span>
+                            <span>Productos</span>
+                        </a>
+                    </li>
+                    <li class="cocteleria">
+                        <a href="#cocteleria_section">
+                            <span class="icon_menu"></span>
+                            <span>Coctelería</span>                    
+                        </a>
+                    </li>
+                    <li class="regalos">
+                        <a href="#regalos_section">
+                            <span class="icon_menu">
+
+                  </span>
+                            <span>Regalos Corporativos </span>
+                        </a>
+                    </li>
+                    <li class="ubicanos">
+                        <a href="#ubicanos_section">
+                            <span class="icon_menu"></span>
+                            <span>Ubícanos</span>                    
                     </a>
-                </li>
-                <li class="productos">
-                    <a href="#products_section">
-                        <span class="icon_menu"> </span>
-                        <span>Productos</span>
-                    </a>
-                </li>
-                <li class="cocteleria">
-                    <a href="#cocteleria_section">
-                        <span class="icon_menu"></span>
-                        <span>Coctelería</span>                    
-                    </a>
-                </li>
-                <li class="regalos">
-                    <a href="#regalos_section">
-                        <span class="icon_menu">
+                    </li>
+                    <li class="social" style=" margin-top: -18px;">
+                        <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UCD23fGkJUDKpGl3rGWsXqaA"></a>
+                        <a style="margin-right: 1em;margin-left: 1em;" id="facebook" target="_blank" href="https://www.facebook.com/Pisco-Tres-Generaciones-947961388560264/?fref=ts"></a>
+                    </li>
+                </nav>
+            </aside>
+        </div>
 
-              </span>
-                        <span>Regalos Corporativos </span>
-                    </a>
-                </li>
-                <li class="ubicanos">
-                    <a href="#ubicanos_section">
-                        <span class="icon_menu"></span>
-                        <span>Ubícanos</span>                    
-                </a>
-                </li>
-                <li class="social" style=" margin-top: -18px;">
-                    <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UCD23fGkJUDKpGl3rGWsXqaA"></a>
-                    <a style="margin-right: 1em;margin-left: 1em;" id="facebook" target="_blank" href="https://www.facebook.com/Pisco-Tres-Generaciones-947961388560264/?fref=ts"></a>
-                </li>
-            </nav>
-        </aside>
-    </div>
-
-</header>
+    </header>
 
 
 
-<header id="header_desktop">
-    <a href="#" class="scrollup">
+    <header id="header_desktop">
+        <a href="#" class="scrollup">
+            <div class="logo">
+                <img src="img/logo.png" alt=""/>
+                <img id="titulo_logo" class="desktop_header" src="img/titulo_logo.png" alt=""/>
+            </div>
+        </a>
+        <div class="menu">
+            <div class="btn_menu">
+            </div>
+            <aside id="aside_desktop" style="margin-right:-100%;background-color:white;">
+                <nav class="list-unstyled">
+                    
+                    <div style="height:10%">
+                        <li class="close_menu"></li>
+                    </div>
+
+                    <div style="height:80%;vertical-align: middle;">
+                        <li class="generaciones">
+                            <a href="#generations_section2">
+                                <div class="icon_menu">
+                                </div>
+                                <span style="line-height: 70%;">Tres Generaciones</span>
+                            </a>
+                        </li>
+                        <li class="productos">
+                            <a href="#products_section">
+                                <div class="icon_menu">
+                                </div>
+                                <span>Productos</span> 
+                            </a>
+                        </li>
+                        <li class="cocteleria">
+                            <a href="#cocteleria_section">
+                                <div class="icon_menu">
+                                </div>
+                                <span>Coctelería</span>
+                            </a>
+                        </li>
+                        <li class="regalos">
+                            <a href="#regalos_section">
+                                <div class="icon_menu">
+                                </div>
+                                <span style="line-height: 70%;">Regalos 
+                                Corporativos</span>
+                            </a>
+                        </li>
+                        <li class="ubicanos">
+                            <a href="#ubicanos_section">
+                                <div class="icon_menu">
+                                </div>
+                                <span>Ubícanos</span>
+                            </a>
+                        </li>
+                        
+                    </div>
+                    <div style="height: 5%">
+                        <li class="social" style="margin-top:0;">
+                            <div style="width:76%; margin:auto;text-align:center;">
+                                <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UCD23fGkJUDKpGl3rGWsXqaA"></a>
+                                <a id="facebook" target="_blank" href="https://www.facebook.com/Pisco-Tres-Generaciones-947961388560264/?fref=ts"></a>
+                            </div>
+                        </li>
+                    </div>
+                </nav>
+            </aside>
+        </div>
+    </header>
+
+    <!-- <header id="header_desktop_back">
         <div class="logo">
             <img src="img/logo.png" alt=""/>
             <img id="titulo_logo" class="desktop_header" src="img/titulo_logo.png" alt=""/>
         </div>
-    </a>
-    <div class="menu">
-        <div class="btn_menu">
-        </div>
-        <aside id="aside_desktop" style="margin-right:-100%;background-color:white;">
-            <nav class="list-unstyled">
-                
-                <div style="height:10%">
+        <div class="menu">
+            <div class="btn_menu">
+            </div>
+            <aside id="aside_desktop" style="margin-right:-100%;background-color:white;">
+                <nav class="list-unstyled">
                     <li class="close_menu"></li>
-                </div>
-
-                <div style="height:80%;vertical-align: middle;">
                     <li class="generaciones">
                         <a href="#generations_section2">
                             <div class="icon_menu">
                             </div>
-                            <span style="line-height: 70%;">Tres Generaciones</span>
+                            <span>Tres Generaciones</span>
                         </a>
                     </li>
                     <li class="productos">
@@ -163,8 +236,8 @@
                         <a href="#regalos_section">
                             <div class="icon_menu">
                             </div>
-                            <span style="line-height: 70%;">Regalos 
-                            Corporativos</span>
+                            <span>Regalos </span>
+                            <span>Corporativos</span>
                         </a>
                     </li>
                     <li class="ubicanos">
@@ -174,439 +247,424 @@
                             <span>Ubícanos</span>
                         </a>
                     </li>
-                    
-                </div>
-                <div style="height: 5%">
-                    <li class="social" style="margin-top:0;">
-                        <div style="width:76%; margin:auto;text-align:center;">
+                    <li class="social">
+                        <div style="width:80%; margin:auto;">
                             <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UCD23fGkJUDKpGl3rGWsXqaA"></a>
                             <a id="facebook" target="_blank" href="https://www.facebook.com/Pisco-Tres-Generaciones-947961388560264/?fref=ts"></a>
                         </div>
                     </li>
+                </nav>
+            </aside>
+        </div>
+    </header>
+    -->
+
+    <section id="generations_section" class="fullscreen background parallax"
+             data-img-width="1400" data-img-height="767"
+             data-diff="100" style="display:none;">
+        <div class="content-a">
+            <div class="content-b">
+                <div class="container">
+                    <article class="hidden-xs col-lg-4 col-md-5 col-sm-6 row  intro-slogan wow slideInUp">
+                        <h2 class="desde ">Desde 1856</h2>
+
+                        <div class="slogan "><img src="img/primera_vista_titulo.png" class="img-responsive"
+                                                  alt=""/></div>
+                    </article>
+                    <article class="hidden-xs col-lg-5 col-md-6 col-sm-5 row intro wow slideInUp " data-wow-delay="">
+                        <p>Con tradición y esmero, la pureza del
+                            pisco ha merecido reconocimiento
+                            nacional e internacional y su secreto
+                            descansa en la selección de las
+                            diferentes cepas de uvas pisqueras
+                            cultivadas en el valle de Ica.</p>
+                    </article>
                 </div>
-            </nav>
-        </aside>
-    </div>
-</header>
-
-<!-- <header id="header_desktop_back">
-    <div class="logo">
-        <img src="img/logo.png" alt=""/>
-        <img id="titulo_logo" class="desktop_header" src="img/titulo_logo.png" alt=""/>
-    </div>
-    <div class="menu">
-        <div class="btn_menu">
+                <article class="imagen_pisco hidden-md hidden-sm hidden-xs wow slideInUp " data-wow-delay="1s">
+                    <img id="botella_pisco" class="img-responsive " src="img/primera_vista_botella.png" alt=""/>
+                </article>
+            </div>
         </div>
-        <aside id="aside_desktop" style="margin-right:-100%;background-color:white;">
-            <nav class="list-unstyled">
-                <li class="close_menu"></li>
-                <li class="generaciones">
-                    <a href="#generations_section2">
-                        <div class="icon_menu">
+    </section>
+
+    <section id="generations_section2" class="fullscreen background parallax "
+                data-img-width="1400" data-img-height="794"
+             data-diff="200" style="display:none;">
+        <div class="content-a">
+            <div class="content-b">
+
+                <div class="titulo wow fadeInDown visible-xs"> 
+                    <img style = "margin:0 auto;" class="img-responsive" src="img/segunda_vista_adorno.png" alt="">
+                    <h2>Nuestra Historia</h2>
+                </div>
+                
+                <div class="container">
+                    <div class="visible-xs" style="margin-top: 3em;">
+                        <div class="col-sm-6" style="margin-top:2px">
+                            <div class="tags wow slideInUp" style="width: 240px;margin: auto;">
+                                <a href="#" id="" class="degeneracion primary active">
+                                    DE GENERACIÓN EN GENERACIÓN
+                                </a>
+                            </div>
                         </div>
-                        <span>Tres Generaciones</span>
-                    </a>
-                </li>
-                <li class="productos">
-                    <a href="#products_section">
-                        <div class="icon_menu">
+                        <div class="col-sm-6" style="margin-top:10px">
+                            <div class="tags wow slideInUp" style="width: 160px;margin: auto;">
+                                <a href="#" id="" class="la_dama primary"> LA DAMA DEL PISCO</a>
+                            </div>
                         </div>
-                        <span>Productos</span> 
-                    </a>
-                </li>
-                <li class="cocteleria">
-                    <a href="#cocteleria_section">
-                        <div class="icon_menu">
-                        </div>
-                        <span>Coctelería</span>
-                    </a>
-                </li>
-                <li class="regalos">
-                    <a href="#regalos_section">
-                        <div class="icon_menu">
-                        </div>
-                        <span>Regalos </span>
-                        <span>Corporativos</span>
-                    </a>
-                </li>
-                <li class="ubicanos">
-                    <a href="#ubicanos_section">
-                        <div class="icon_menu">
-                        </div>
-                        <span>Ubícanos</span>
-                    </a>
-                </li>
-                <li class="social">
-                    <div style="width:80%; margin:auto;">
-                        <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UCD23fGkJUDKpGl3rGWsXqaA"></a>
-                        <a id="facebook" target="_blank" href="https://www.facebook.com/Pisco-Tres-Generaciones-947961388560264/?fref=ts"></a>
                     </div>
-                </li>
-            </nav>
-        </aside>
-    </div>
-</header>
--->
+                </div>    
+                
+                
 
-<section id="generations_section" class="fullscreen background parallax"
-         style=" " data-img-width="1400" data-img-height="767"
-         data-diff="100">
-    <div class="content-a">
-        <div class="content-b">
-            <div class="container">
-                <article class="hidden-xs col-lg-4 col-md-5 col-sm-6 row  intro-slogan wow slideInUp">
-                    <h2 class="desde ">Desde 1856</h2>
+                <!-- <img  class="wow imgfull_generacion img-responsive visible-xs" style="width:100%;margin: 0 auto; " src="img/segunda_vista_imagen_responsive.png"  alt=""/> -->
+                <div class="imgfull_generacion visible-xs">
+                </div>
+                
+                <div class="container">
+                    <div class="contenedorFade  GeneracionFade">
+                        <article class="col-md-5 col-md-offset-1">
+                            <div class="biografia_imagen">
+                                
+                                <img class="wow fadeInLeft img-responsive hidden-xs" style="margin: 0 auto;" src="img/segunda_vista_imagen.jpg"  alt=""/>
 
-                    <div class="slogan "><img src="img/primera_vista_titulo.png" class="img-responsive"
-                                              alt=""/></div>
-                </article>
-                <article class="hidden-xs col-lg-5 col-md-6 col-sm-5 row intro wow slideInUp " data-wow-delay="">
-                    <p>Con tradición y esmero, la pureza del
-                        pisco ha merecido reconocimiento
-                        nacional e internacional y su secreto
-                        descansa en la selección de las
-                        diferentes cepas de uvas pisqueras
-                        cultivadas en el valle de Ica.</p>
-                </article>
-            </div>
-            <article class="imagen_pisco hidden-md hidden-sm hidden-xs wow slideInUp " data-wow-delay="1s">
-                <img id="botella_pisco" class="img-responsive " src="img/primera_vista_botella.png" alt=""/>
-            </article>
-        </div>
-    </div>
-</section>
+                                <!-- <img class="wow fadeInLeft img-responsive " style="margin: 0 auto; display: none;" src="img/segunda_vista_imagen_responsive.png"  alt=""/> -->
 
-<section id="generations_section2" class="fullscreen background parallax "
-         style=" background-image:url('img/segunda_vista_fondo22.jpg');" data-img-width="1400" data-img-height="794"
-         data-diff="200">
-    <div class="content-a">
-        <div class="content-b">
+                                <div class="texto">
+                                    Juanita Martinez de Gonzales y Luis Gonzales Missa <br/>
+                                    Herededos de una tradición
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-5 biografía_texto wow fadeInRight">
+                            <div class="linea_superior hidden-xs"></div>
+                            <h2 class="" >DE GENERACIÓN EN GENERACIÓN
+                                SIGUIENDO LA TRADICIÓN</h2>
 
-            <div class="titulo wow fadeInDown visible-xs"> 
-                <img style = "margin:0 auto;" class="img-responsive" src="img/segunda_vista_adorno.png" alt="">
-                <h2>Nuestra Historia</h2>
-            </div>
-            
-            <div class="container">
-                <div class="visible-xs" style="margin-top: 3em;">
-                    <div class="col-sm-6" style="margin-top:2px">
-                        <div class="tags wow slideInUp" style="width: 240px;margin: auto;">
+                            <p class="" >Desde 1,856 elaboramos uno de los Piscos más celebrados, premiados y
+                                distinguidos del Perú.</p>
+
+                            <p class="" >Somos pioneros de la industria vitivinícola del valle de Ica. Nuestra
+                                empresa es liderada por la célebre maestra pisquera Juanita Martínez de Gonzales, reconocida
+                                como “LA DAMA DEL PISCO”, quien imprime su sello personal de tradición y cuidadoso esmero en
+                                cada uno de nuestros Piscos.</p>
+
+                            <p class="" >La calidad del Pisco Tres Generaciones consiste en la selección de uvas,
+                                pasión por lo que hacemos y compromiso por ofrecer un producto de alta calidad a nuestros
+                                consumidores.</p>
+
+                            <div class="linea_inferior wow fadeInRight"></div>
+
+                        </article>
+                    </div>
+                    <div class="contenedorFade DamaFade" style="display: none;">
+                        <article class="col-md-5 col-md-offset-1">
+                            <div class="biografia_imagen">
+                                <img class="wow fadeIn img-responsive hidden-xs" style="margin: 0 auto;" src="img/la_dama.jpg" alt=""/>
+                                
+                                <!-- <img class="wow fadeIn img-responsive visible-xs" style="margin: 0 auto; display: none !important;" src="img/la_dama_responsive.png" alt=""/> -->
+
+                                <div class="texto">
+                                    La Dama del Pisco, Juanita Martinez de Gonzales.
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-5 biografía_texto" style="min-height:459px;">
+                            <div class="linea_superior hidden-xs"></div>
+                            <h2 class="">LA DAMA DEL PISCO</h2>
+                            <h3>Juanita Martínez de Gonzales <br/>
+                                Maestra pisquera</h3>
+
+                            <p class="">Heredera de una tradición vitivinícola, imprime su sello personal de calidad y cuidadoso esmero en la
+                                pureza del Pisco TRES GENERACIONES, que ha merecido reconocimientos en el Perú y el extranjero.</p>
+
+                            <p class="">Su experiencia y conocimiento lo está transmitiendo a sus hijos y nietos, quienes continúan en la producción e innovación, con el vivo espíritu del Pisco.</p>
+
+
+                            <div class="linea_inferior"></div>
+
+                        </article>
+                    </div>
+                    
+                    <span class="col-md-5 col-md-offset-6 hidden-xs">
+                        <div class="tags wow slideInUp">
                             <a href="#" id="" class="degeneracion primary active">
                                 DE GENERACIÓN EN GENERACIÓN
                             </a>
+                            <!-- <span>|</span> -->
+                            <a href="#" id="" class="la_dama primary" style="padding-right: 8px;"> LA DAMA DEL PISCO</a>
                         </div>
-                    </div>
-                    <div class="col-sm-6" style="margin-top:10px">
-                        <div class="tags wow slideInUp" style="width: 160px;margin: auto;">
-                            <a href="#" id="" class="la_dama primary"> LA DAMA DEL PISCO</a>
-                        </div>
-                    </div>
+                    </span>
                 </div>
-                <div class="contenedorFade  GeneracionFade">
-                    
-                    <article class="col-md-5 col-md-offset-1">
-                        <div class="biografia_imagen">
-                            <img class="wow fadeInLeft img-responsive hidden-xs" style="margin: 0 auto;" src="img/segunda_vista_imagen.jpg"  alt=""/>
-                            <img class="wow fadeInLeft img-responsive visible-xs" style="margin: 0 auto; " src="img/segunda_vista_imagen_responsive.png"  alt=""/>
-
-                            <div class="texto">
-                                Juanita Martinez de Gonzales y Luis Gonzales Missa <br/>
-                                Herededos de una tradición
-                            </div>
-                        </div>
-                    </article>
-                    <article class="col-md-5 biografía_texto wow fadeInRight">
-                        <div class="linea_superior hidden-xs"></div>
-                        <h2 class="" >DE GENERACIÓN EN GENERACIÓN
-                            SIGUIENDO LA TRADICIÓN</h2>
-
-                        <p class="" >Desde 1,856 elaboramos uno de los Piscos más celebrados, premiados y
-                            distinguidos del Perú.</p>
-
-                        <p class="" >Somos pioneros de la industria vitivinícola del valle de Ica. Nuestra
-                            empresa es liderada por la célebre maestra pisquera Juanita Martínez de Gonzales, reconocida
-                            como “LA DAMA DEL PISCO”, quien imprime su sello personal de tradición y cuidadoso esmero en
-                            cada uno de nuestros Piscos.</p>
-
-                        <p class="" >La calidad del Pisco Tres Generaciones consiste en la selección de uvas,
-                            pasión por lo que hacemos y compromiso por ofrecer un producto de alta calidad a nuestros
-                            consumidores.</p>
-
-                        <div class="linea_inferior wow fadeInRight"></div>
-
-                    </article>
-                </div>
-                <div class="contenedorFade DamaFade" style="display: none;">
-                    <article class="col-md-5 col-md-offset-1">
-                        <div class="biografia_imagen">
-                            <img class="wow fadeIn img-responsive hidden-xs" style="margin: 0 auto;" src="img/la_dama.jpg" alt=""/>
-                            <img class="wow fadeIn img-responsive visible-xs" style="margin: 0 auto;" src="img/la_dama_responsive.png" alt=""/>
-
-                            <div class="texto">
-                                La Dama del Pisco, Juanita Martinez de Gonzales.
-                            </div>
-                        </div>
-                    </article>
-                    <article class="col-md-5 biografía_texto" style="min-height:459px;">
-                        <div class="linea_superior hidden-xs"></div>
-                        <h2 class="">LA DAMA DEL PISCO</h2>
-                        <h3>Juanita Martínez de Gonzales <br/>
-                            Maestra pisquera</h3>
-
-                        <p class="">Heredera de una tradición vitivinícola, imprime su sello personal de calidad y cuidadoso esmero en la
-                            pureza del Pisco TRES GENERACIONES, que ha merecido reconocimientos en el Perú y el extranjero.</p>
-
-                        <p class="">Su experiencia y conocimiento lo está transmitiendo a sus hijos y nietos, quienes continúan en la producción e innovación, con el vivo espíritu del Pisco.</p>
-
-
-                        <div class="linea_inferior"></div>
-
-                    </article>
-                </div>
-                
-                <span class="col-md-5 col-md-offset-6 hidden-xs">
-                    <div class="tags wow slideInUp">
-                        <a href="#" id="" class="degeneracion primary active">
-                            DE GENERACIÓN EN GENERACIÓN
-                        </a>
-                        <!-- <span>|</span> -->
-                        <a href="#" id="" class="la_dama primary" style="padding-right: 8px;"> LA DAMA DEL PISCO</a>
-                    </div>
-                </span>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- <section id="generations_section_mobile" class=" visible-xs">
-        <a href="history.html" target="_blank">
-            <img src="img/segunda_vista_fondo_mobile.jpg" class="img-resonsive" style="width:100%;" alt="">
-        </a>
-</section> -->
+    <!-- <section id="generations_section_mobile" class=" visible-xs">
+            <a href="history.html" target="_blank">
+                <img src="img/segunda_vista_fondo_mobile.jpg" class="img-resonsive" style="width:100%;" alt="">
+            </a>
+    </section> -->
 
-<section id="advertisement_section" class="parallax"
-         style=" " data-img-width="1400" data-img-height="510"
-         data-diff="100">
+    <section id="advertisement_section" class="parallax"
+             data-img-width="1400" data-img-height="510"
+             data-diff="100" style="display:none;">
 
-            <div class="titulo">
-                <img class="img-responsive" src="img/tercer_vista_titulo.png" alt=""/>
+                <div class="titulo">
+                    <img class="img-responsive" src="img/tercer_vista_titulo.png" alt=""/>
 
-                <h2 class="wow fadeInDown">RECONOCIMIENTOS</h2>
-            </div>
-            
-            <div class="subtitulo">
-                <h3 class="sub">GALARDONADOS EN CONCURSOS <br> NACIONALES E INTERNACIONALES</h3>    
-            </div>
-            
-            <div class="container-carousel">
-                <div class="owl-carousel owl-theme">
-                    <div class="item wow  " >
-                        <div class="laurel2">
-                            <div class="concurso_nombre">
-                                Concurso
-                                Internacional
-                                de Vinos y
-                                Espirituosos
+                    <h2 class="wow fadeInDown">RECONOCIMIENTOS</h2>
+                </div>
+                
+                <div class="subtitulo">
+                    <h3 class="sub">GALARDONADOS EN CONCURSOS <br> NACIONALES E INTERNACIONALES</h3>    
+                </div>
+                
+                <div class="container-carousel">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item wow  " >
+                            <div class="laurel2">
+                                <div class="concurso_nombre">
+                                    Concurso
+                                    Internacional
+                                    de Vinos y
+                                    Espirituosos
+                                </div>
+                                <div class="concurso_fecha">
+                                    ALLADOLID - ESPAÑA
+                                    AÑO 2015
+                                </div>
                             </div>
-                            <div class="concurso_fecha">
-                                ALLADOLID - ESPAÑA
-                                AÑO 2015
-                            </div>
-                        </div>
-                        <div class="medalla_nombre">
-                            <p>- Medalla de Oro - <br/>
-                                Pisco Mosto Verde Torontel</p>
+                            <div class="medalla_nombre">
+                                <p>- Medalla de Oro - <br/>
+                                    Pisco Mosto Verde Torontel</p>
 
-                            <p>- Medalla de Plata - <br/>
-                                Pisco Moscatel</p>
-                        </div>
-                    </div>
-                    <div class="item wow  " >
-                        <div class="laurel">
-                            <div class="concurso_nombre">
-                               XXI CONCURSO
-                                NACIONAL
-                                DEL PISCO,
-                                COSECHA 2014
-                            </div>
-                            <div class="concurso_fecha">
-                                ICA-PERÚ
-                                AÑO 2015
+                                <p>- Medalla de Plata - <br/>
+                                    Pisco Moscatel</p>
                             </div>
                         </div>
-                        <div class="medalla_nombre">
-                            <p>- Medalla de Oro - <br/>
-                                Pisco Quebranta</p>
-                        </div>
-                    </div>
-                    <div class="item wow  " >
-                        <div class="laurel">
-                            <div class="concurso_nombre">
-                                XX CONCURSO
-                                NACIONAL
-                                DEL PISCO,
-                                COSECHA 2013
+                        <div class="item wow  " >
+                            <div class="laurel">
+                                <div class="concurso_nombre">
+                                   XXI CONCURSO
+                                    NACIONAL
+                                    DEL PISCO,
+                                    COSECHA 2014
+                                </div>
+                                <div class="concurso_fecha">
+                                    ICA-PERÚ
+                                    AÑO 2015
+                                </div>
                             </div>
-                            <div class="concurso_fecha">
-                                ICA - PERÚ
-                                AÑO 2014
+                            <div class="medalla_nombre">
+                                <p>- Medalla de Oro - <br/>
+                                    Pisco Quebranta</p>
                             </div>
                         </div>
-                        <div class="medalla_nombre">
-                            <p>- Medalla de Oro - <br/>
-                                Pisco Puro de Uva Torontel</p>
+                        <div class="item wow  " >
+                            <div class="laurel">
+                                <div class="concurso_nombre">
+                                    XX CONCURSO
+                                    NACIONAL
+                                    DEL PISCO,
+                                    COSECHA 2013
+                                </div>
+                                <div class="concurso_fecha">
+                                    ICA - PERÚ
+                                    AÑO 2014
+                                </div>
+                            </div>
+                            <div class="medalla_nombre">
+                                <p>- Medalla de Oro - <br/>
+                                    Pisco Puro de Uva Torontel</p>
 
-                        </div>
-                    </div>
-                    <div class="item wow  " >
-                        <div class="laurel3">
-                            <div class="concurso_nombre">
-                                concurso
-                                internacional
-                                de vinos y
-                                espirituosos
-                            </div>
-                            <div class="concurso_fecha">
-                                valladolid - españa
-                                Año 2012
                             </div>
                         </div>
-                        <div class="medalla_nombre">
-                            <p>- Gran Medalla de Oro - <br/>
-                                Pisco Acholado</p>
+                        <div class="item wow  " >
+                            <div class="laurel3">
+                                <div class="concurso_nombre">
+                                    concurso
+                                    internacional
+                                    de vinos y
+                                    espirituosos
+                                </div>
+                                <div class="concurso_fecha">
+                                    valladolid - españa
+                                    Año 2012
+                                </div>
+                            </div>
+                            <div class="medalla_nombre">
+                                <p>- Gran Medalla de Oro - <br/>
+                                    Pisco Acholado</p>
 
-                            <p>- Medalla de Oro - <br/>
-                                Pisco Quebranta</p>
-                        </div>
-                    </div>
-                    <div class="item wow  " >
-                        <div class="laurel2">
-                            <div class="concurso_nombre">
-                                concurso
-                                internacional
-                                de vinos y
-                                vlicores
-                            </div>
-                            <div class="concurso_fecha">
-                                terravino - israel
-                                AÑO 2009
+                                <p>- Medalla de Oro - <br/>
+                                    Pisco Quebranta</p>
                             </div>
                         </div>
-                        <div class="medalla_nombre">
-                            <p>- Medalla de Oro - <br/>
-                                Pisco Mosto Verde Quebranta</p>
+                        <div class="item wow  " >
+                            <div class="laurel2">
+                                <div class="concurso_nombre">
+                                    concurso
+                                    internacional
+                                    de vinos y
+                                    vlicores
+                                </div>
+                                <div class="concurso_fecha">
+                                    terravino - israel
+                                    AÑO 2009
+                                </div>
+                            </div>
+                            <div class="medalla_nombre">
+                                <p>- Medalla de Oro - <br/>
+                                    Pisco Mosto Verde Quebranta</p>
 
-                            <p>- Medalla de Plata - <br/>
-                                Pisco Acholado</p>
-                        </div>
-                    </div>
-                    <div class="item wow ">
-                        <div class="laurel4">
-                            <div class="concurso_nombre">
-                               CONCURSO
-                                internacional
-                                de vinalies
-                            </div>
-                            <div class="concurso_fecha">
-                                vinalies - francia
-                                AÑO 2008
+                                <p>- Medalla de Plata - <br/>
+                                    Pisco Acholado</p>
                             </div>
                         </div>
-                        <div class="medalla_nombre">
-                            <p>- Medalla de Plata - <br/>
-                                Pisco Quebranta</p>
-                        </div>
-                    </div>
-                    <div class="item " >
-                        <div class="laurel">
-                            <div class="concurso_nombre">
-                                Concurso
-                                Internacional
-                                de Vinos y
-                                Espirituosos
+                        <div class="item wow ">
+                            <div class="laurel4">
+                                <div class="concurso_nombre">
+                                   CONCURSO
+                                    internacional
+                                    de vinalies
+                                </div>
+                                <div class="concurso_fecha">
+                                    vinalies - francia
+                                    AÑO 2008
+                                </div>
                             </div>
-                            <div class="concurso_fecha">
-                               andalucía - ESPAÑA
-                                AÑO 2007
+                            <div class="medalla_nombre">
+                                <p>- Medalla de Plata - <br/>
+                                    Pisco Quebranta</p>
                             </div>
                         </div>
-                        <div class="medalla_nombre">
-                            <p>- Medalla de Oro - <br/>
-                               Pisco Mosto Verde Quebranta</p>
+                        <div class="item " >
+                            <div class="laurel">
+                                <div class="concurso_nombre">
+                                    Concurso
+                                    Internacional
+                                    de Vinos y
+                                    Espirituosos
+                                </div>
+                                <div class="concurso_fecha">
+                                   andalucía - ESPAÑA
+                                    AÑO 2007
+                                </div>
+                            </div>
+                            <div class="medalla_nombre">
+                                <p>- Medalla de Oro - <br/>
+                                   Pisco Mosto Verde Quebranta</p>
 
 
-                        </div>
-                    </div>
-                    <div class="item " >
-                        <div class="laurel">
-                            <div class="concurso_nombre">
-                               ii concurso
-                                de destilados
-                                de bruselas
-                            </div>
-                            <div class="concurso_fecha">
-                                bruselas - bélgica
-                                AÑO 2004
                             </div>
                         </div>
-                        <div class="medalla_nombre">
-                            <p>- Gran Alambique de Oro - <br/>
-                                Pisco Quebranta</p>
-                        </div>
-                    </div>
-                    <div class="item " >
-                        <div class="laurel2">
-                            <div class="concurso_nombre">
-                                viii concurso
-                                nacional del
-                                pisco
+                        <div class="item " >
+                            <div class="laurel">
+                                <div class="concurso_nombre">
+                                   ii concurso
+                                    de destilados
+                                    de bruselas
+                                </div>
+                                <div class="concurso_fecha">
+                                    bruselas - bélgica
+                                    AÑO 2004
+                                </div>
                             </div>
-                            <div class="concurso_fecha">
-                                LIMA - PERÚ
-                                AÑO 2001
+                            <div class="medalla_nombre">
+                                <p>- Gran Alambique de Oro - <br/>
+                                    Pisco Quebranta</p>
                             </div>
                         </div>
-                        <div class="medalla_nombre">
-                            <p>- Primer Puesto - <br/>
-                                Pisco Mosto Verde</p>
+                        <div class="item " >
+                            <div class="laurel2">
+                                <div class="concurso_nombre">
+                                    viii concurso
+                                    nacional del
+                                    pisco
+                                </div>
+                                <div class="concurso_fecha">
+                                    LIMA - PERÚ
+                                    AÑO 2001
+                                </div>
+                            </div>
+                            <div class="medalla_nombre">
+                                <p>- Primer Puesto - <br/>
+                                    Pisco Mosto Verde</p>
 
-                            <p>- Segundo Puesto - <br/>
-                                Pisco Acholado</p>
-                        </div>
-                    </div>
-                    <div class="item " >
-                        <div class="laurel">
-                            <div class="concurso_nombre">
-                                XXV Festival
-                                INTERNACIONAL
-                                DE LA VENDIMIA
-                                DE ICA
-                            </div>
-                            <div class="concurso_fecha">
-                                Ica - Perú
-                                Año 1989
+                                <p>- Segundo Puesto - <br/>
+                                    Pisco Acholado</p>
                             </div>
                         </div>
-                        <div class="medalla_nombre">
-                            <p>- Primer Puesto - <br/>
-                                Pisco Quebranta</p>
+                        <div class="item " >
+                            <div class="laurel">
+                                <div class="concurso_nombre">
+                                    XXV Festival
+                                    INTERNACIONAL
+                                    DE LA VENDIMIA
+                                    DE ICA
+                                </div>
+                                <div class="concurso_fecha">
+                                    Ica - Perú
+                                    Año 1989
+                                </div>
+                            </div>
+                            <div class="medalla_nombre">
+                                <p>- Primer Puesto - <br/>
+                                    Pisco Quebranta</p>
 
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-</section>
+    </section>
 
-<section id="products_section" class="background parallax fullscreen" style=" background-image:url('img/segunda_vista_fondo22.jpg');"
-         data-img-width="1400" data-img-height="510" data-diff="100">
-    <div class="content-a" style="min-height: 510px;">
-        <div class="content-b">
-            
-            
+    <section id="products_section" class="background parallax fullscreen" style="display:none;"
+             data-img-width="1400" data-img-height="510" data-diff="100">
+        <div class="content-a" style="min-height: 510px;">
+            <div class="content-b">
+                
+                
 
-            <div class="container_piscos">
-                <div class="visible-xs linea" style="padding:0;">
+                <div class="container_piscos">
+                    <div class="visible-xs linea" style="padding:0;">
+                        <div class="hijolinea">
+                            <img src="img/titulo_productos.png" class="img-responsive wow fadeInDown" data-wow-offset="150" alt="">
+
+                            <div class="izq"></div>
+                            <div class="der"></div>
+                        </div>
+                    </div>
+                    <article class="col-lg-12 row">
+                        <div class="col-md-2"><h3 style="letter-spacing: 2px;">piscos</h3></div>
+                        <div class="col-md-3">
+                            <ul class="list-inline first ">
+                                <li class="wow fadeInDown" data-wow-offset=""><a id="pisco-mollar" href="#hidden-content-mollar "  > </a></li>
+                                <li class="wow fadeInDown" data-wow-offset=""><a id="pisco-albilla" href="#hidden-content-albilla "  > </a></li>
+                                <li class="wow fadeInDown" data-wow-offset=""><a id="pisco-italia" href="#hidden-content-italia "  > </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="list-inline second">
+                                <li class="wow fadeInDown" data-wow-offset=""><a id="pisco-mostoverde_acholado" href="#hidden-content-mostoverde-acholado "  > </a></li>
+                                <li class="wow fadeInDown" data-wow-offset=""><a id="pisco-mostoverde_quebranta" href="#hidden-content-mostoverde-quebranta "  > </a>
+                                </li>
+                                <li class="wow fadeInDown" data-wow-offset=""><a id="pisco-mostoverde_torontel" href="#hidden-content-mostoverde-torontel "  > </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul class="list-inline third">
+                                <li class="wow fadeInDown" data-wow-offset=""><a id="pisco-quebranta" href="#hidden-content-quebranda "  > </a></li>
+                                <li class="wow fadeInDown" data-wow-offset=""><a id="pisco-torontel" href="#hidden-content-torontel "  > </a></li>
+                                <li class="wow fadeInDown" data-wow-offset=""><a id="pisco-moscatel" href="#hidden-content-moscatel "  > </a></li>
+                                <li class="wow fadeInDown" data-wow-offset=""><a id="pisco-acholado" href="#hidden-content-acholado "  > </a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="hidden-xs linea">
                     <div class="hijolinea">
                         <img src="img/titulo_productos.png" class="img-responsive wow fadeInDown" data-wow-offset="150" alt="">
 
@@ -614,346 +672,327 @@
                         <div class="der"></div>
                     </div>
                 </div>
-                <article class="col-lg-12 row">
-                    <div class="col-md-2"><h3 style="letter-spacing: 2px;">piscos</h3></div>
-                    <div class="col-md-3">
-                        <ul class="list-inline first ">
-                            <li class="wow fadeInDown" data-wow-offset=""><a id="pisco-mollar" href="#hidden-content-mollar "  > </a></li>
-                            <li class="wow fadeInDown" data-wow-offset=""><a id="pisco-albilla" href="#hidden-content-albilla "  > </a></li>
-                            <li class="wow fadeInDown" data-wow-offset=""><a id="pisco-italia" href="#hidden-content-italia "  > </a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <ul class="list-inline second">
-                            <li class="wow fadeInDown" data-wow-offset=""><a id="pisco-mostoverde_acholado" href="#hidden-content-mostoverde-acholado "  > </a></li>
-                            <li class="wow fadeInDown" data-wow-offset=""><a id="pisco-mostoverde_quebranta" href="#hidden-content-mostoverde-quebranta "  > </a>
+
+                <div class="container_cremas">
+                    <article class="col-lg-12 row">
+                        <div class="col-md-2 "><h3 style="letter-spacing: 2px;">cremas</h3></div>
+                        <div class="col-md-3 col-md-offset-3">
+                            <ul class="list-inline third">
+                                <li class="wow fadeInDown" data-wow-offset="" ><a id="crema-chirimoya" href="#hidden-content-crema-chirimoya"> </a></li>
+                                <li class="wow fadeInDown" data-wow-offset="" ><a id="crema-lucuma" href="#hidden-content-crema-lucuma"> </a></li>
+                                <li class="wow fadeInDown" data-wow-offset="" ><a id="crema-vainilla" href="#hidden-content-crema-vainilla"> </a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cocteleria_section" class="background parallax fullscreen"
+             style="display:none;"
+             data-img-width="1400" data-img-height="510" data-diff="100">
+        <div class="content-a" style="min-height: 510px;">
+            <div class="content-b">
+                <div class="titulo">
+                    <img class="img-responsive" src="img/quinta_vista_adorno.png" alt="">
+
+                    <h2 class="wow fadeInDown">Coctelería</h2>
+                </div>
+
+                <div class="lb_cocteles hidden-xs hidden-sm "></div>
+                
+                <div class="container_cocteles">
+
+                    <div class="clearboth"></div>    
+                    <article class="col-lg-12 row">
+                        <ul class="list-inline cocteles">
+                            <li>
+                                <!-- <div class="linea"></div> -->
+                                <a class="wow " id="pisco_sour" href="#hidden-content-coctel-pisco_sours">
+                                    <!-- <span class="hover">
+                                        <h4>pisco sour</h4>
+                                        <span class="adornido"><img src="img/cuarta_vista_adorno3.png" alt=""/></span>
+                                    </span> -->
+                                </a>
+                                <a href="#hidden-content-coctel-pisco_sour">
+                                    <div class="name" style="padding-top: 11%;">Pisco Sour</div>
+                                </a>    
+                                <img src="img/cuarta_vista_adorno2.png" class="img-responsive" alt=""/>
                             </li>
-                            <li class="wow fadeInDown" data-wow-offset=""><a id="pisco-mostoverde_torontel" href="#hidden-content-mostoverde-torontel "  > </a></li>
+                            <li>
+                                <!-- <div class="linea"></div> -->
+                                <a class="wow " id="pisco_punch" href="#hidden-content-coctel-punchs">
+                                    <!-- <span class="hover">
+                                        <h4>pisco punch</h4>
+                                        <span class="adornido"><img src="img/cuarta_vista_adorno3.png" alt=""/></span>
+                                    </span> -->
+                                </a>
+                                <a href="#hidden-content-coctel-punch">
+                                    <div class="name" style="padding-top: 11%;">Pisco Pounch</div>
+                                </a>
+                                <img src="img/cuarta_vista_adorno2.png" class="img-responsive" alt=""/>
+                            </li>
+                            <li>
+                                <!-- <div class="linea"></div> -->
+                                <a class="wow " id="pisco_sour_maracuya" href="#hidden-content-coctel-pisco_sour_maracuyas">
+                                    <!-- <span class="hover">
+                                        <h4>pisco sour maracuya</h4>
+                                        <span class="adornido"><img src="img/cuarta_vista_adorno3.png" alt=""/></span>
+                                    </span> -->
+                                </a>
+                                <a href="#hidden-content-coctel-pisco_sour_maracuya">
+                                    <div class="name">Pisco Sour Maracuya</div>
+                                </a>
+                                <img src="img/cuarta_vista_adorno2.png" class="img-responsive" alt=""/>
+                            </li>
+                            <li>
+                                <!-- <div class="linea"></div> -->
+                                <a class="wow " id="chilcano-clasico" href="#hidden-content-coctel-chilcanos">
+                                    <!-- <span class="hover">
+                                        <h4>chilcano</h4>
+                                        <span class="adornido"><img src="img/cuarta_vista_adorno3.png" alt=""/></span>
+                                    </span> -->
+                                </a>
+                                <a href="#hidden-content-coctel-chilcano">
+                                    <div class="name" style="padding-top: 11%;">Chilcano</div>
+                                </a>
+                                <img src="img/cuarta_vista_adorno2.png" class="img-responsive" alt=""/>
+                            </li>
+                            <li>
+                                <!-- <div class="linea"></div> -->
+                                <a class="wow " id="chilcano-frutos_rojos" href="#hidden-content-coctel-rojos">
+                                    <!-- <span class="hover">
+                                        <h4>chilcano <br/>de frutos <br/> rojos</h4>
+                                        <span class="adornido"><img src="img/cuarta_vista_adorno3.png" alt=""/></span>
+                                    </span> -->
+                                </a>
+                                <a href="#hidden-content-coctel-rojo">
+                                    <div class="name">Chilcano Frutos Rojos</div>
+                                </a>
+                                <img src="img/cuarta_vista_adorno2.png" class="img-responsive" alt=""/>
+                            </li>
                         </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <ul class="list-inline third">
-                            <li class="wow fadeInDown" data-wow-offset=""><a id="pisco-quebranta" href="#hidden-content-quebranda "  > </a></li>
-                            <li class="wow fadeInDown" data-wow-offset=""><a id="pisco-torontel" href="#hidden-content-torontel "  > </a></li>
-                            <li class="wow fadeInDown" data-wow-offset=""><a id="pisco-moscatel" href="#hidden-content-moscatel "  > </a></li>
-                            <li class="wow fadeInDown" data-wow-offset=""><a id="pisco-acholado" href="#hidden-content-acholado "  > </a></li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-
-            <div class="hidden-xs linea">
-                <div class="hijolinea">
-                    <img src="img/titulo_productos.png" class="img-responsive wow fadeInDown" data-wow-offset="150" alt="">
-
-                    <div class="izq"></div>
-                    <div class="der"></div>
+                    </article>    
                 </div>
-            </div>
-
-            <div class="container_cremas">
-                <article class="col-lg-12 row">
-                    <div class="col-md-2 "><h3 style="letter-spacing: 2px;">cremas</h3></div>
-                    <div class="col-md-3 col-md-offset-3">
-                        <ul class="list-inline third">
-                            <li class="wow fadeInDown" data-wow-offset="" ><a id="crema-chirimoya" href="#hidden-content-crema-chirimoya"> </a></li>
-                            <li class="wow fadeInDown" data-wow-offset="" ><a id="crema-lucuma" href="#hidden-content-crema-lucuma"> </a></li>
-                            <li class="wow fadeInDown" data-wow-offset="" ><a id="crema-vainilla" href="#hidden-content-crema-vainilla"> </a></li>
-                        </ul>
-                    </div>
-                </article>
+                
             </div>
         </div>
-    </div>
-</section>
+        
+    </section>
 
-<section id="cocteleria_section" class="background parallax fullscreen"
-         style=" background-image:url('img/segunda_vista_fondo22.jpg');"
-         data-img-width="1400" data-img-height="510" data-diff="100">
-    <div class="content-a" style="min-height: 510px;">
-        <div class="content-b">
-            <div class="titulo">
-                <img class="img-responsive" src="img/quinta_vista_adorno.png" alt="">
 
-                <h2 class="wow fadeInDown">Coctelería</h2>
+    <section id="regalos_section" class="background parallax fullscreen" style=" background-image:url('img/paisaje_fondo_regalos_corpora.png');display:none;" data-img-width="1400" data-img-height="510" data-diff="100">
+        <div class="content-a">
+            <div class="content-b">
+                <div class="container-promos">
+                    <div class="row">
+                        <div class="col-md-7 col-sm-12">
+                            <div class="col-md-4 col-sm-4 col-xs-12 ">
+                                
+                                <img style="margin: 0 auto;" class="visible-xs visible-sm" src="img/adornito_regalos.png" alt=""/>
+                                <div class="titulo wow fadeInDown visible-xs visible-sm">
+                                    REGALA <br/> TRES  GENERACIONES
+                                </div>
+                                
+                                <div class="navegacion_vertical">
+                                    <div class="tittle active" id="corporativo" descripr="Personalizamos nuestros Piscos según el requerimiento de tu empresa. " namer="regalo_corp">
+                                        <h3>REGALOS <br/> CORPORATIVOS</h3>
+                                        <!-- <span id="adorno_regalo1" class="adornito"></span> -->
+                                        <img id="adorno_regalo1" style="" src="img/cuarta_vista_adorno3_blanco.png" alt="">
+                                        <img id="adorno_regalo2" style="display:none;" src="img/cuarta_vista_adorno3_verde.png" alt="">
+                                    </div>
+
+                                    <ul class="list-unstyled ">
+                                        
+                                        <li><a class="regalos regalos_gallery active visible-xs" href="#" descripr="Personalizamos nuestros Piscos según el requerimiento de tu empresa." namer="regalo_corp">Tu empresa</a></li>
+
+                                        <li><a class="regalos regalos_gallery" href="#" descripr="El mejor regalo para compartir entre dos. Contiene un Pisco Tres Generaciones y 2 copas." namer="elegante">ELEGANTE 3G</a></li>
+                                        <li><a class="regalos regalos_gallery" href="#" descripr="Comparte la pureza del Pisco en todos tus viajes. Contiene dos Piscos Tres Generaciones." namer="tour">TOUR 3G</a></li>
+                                        <li><a class="regalos regalos_gallery" href="#" descripr="Obsequia un detalle clásico y artesanal. Contiene un Pisco Tres Generaciones y 1 copa." namer="madera">MADERA 3G</a></li>
+                                        <li><a class="regalos regalos_gallery" href="#" descripr="Despierta tus sentidos, el regalo para catar y degustar" namer="mini">MINI 3G</a></li>
+                                        <li><a class="regalos regalos_gallery" href="#" descripr="Nuestro Pisco mejor guardado para ti. Contiene un Pisco Tres Generaciones y dos copas." namer="baul">BAUL 3G</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-8 col-sm-8 col-xs-12  row centerxs">
+                                <div class="img-container" id="container_regalos">
+                                    <img src="img/regalos/regalo_corp.png" class="img-responsive" alt=""/>
+
+
+                                    <div class="bottom">
+                                        <div class="linea"></div>
+                                        <p id="descripcion">
+                                            Personalizamos nuestros Piscos <br/>
+                                            según el requerimiento de tu empresa.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-12">
+                            <form action="#" id="formulario">
+                                <img class="hidden-xs hidden-sm" src="img/adornito_regalos.png" alt=""/>
+
+                                <div class="titulo wow fadeInDown hidden-xs hidden-sm">
+                                    REGALA <br/> TRES  GENERACIONES
+                                </div>
+                                
+                                <div class="subtitulo">
+                                    <h3 class="sub">Escribenos y solicíta tu regalo tres generaciones.</h3>    
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="nombre" class="col-sm-2 col-xs-3 control-label">Nombre:</label>
+
+                                    <div class="col-sm-9 col-xs-9 col-md-offset-1">
+                                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="correo" class="col-sm-2 col-xs-3 control-label">Correo:</label>
+
+                                    <div class="col-sm-9 col-xs-9 col-md-offset-1">
+                                        <input type="email" class="form-control" id="correo" name="correo" required >
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefono" class="col-sm-2 col-xs-3 control-label">Teléfono:</label>
+
+                                    <div class="col-sm-9 col-xs-9 col-md-offset-1">
+                                        <input type="text" class="form-control" id="telefono" name="telefono" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mensaje" class="col-sm-2 col-xs-3 control-label">Mensaje:</label>
+
+                                    <div class="col-sm-9 col-xs-9 col-md-offset-1">
+                                        <textarea type="text" class="form-control" id="mensaje" name="mensaje" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="clearboth"></div>
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <button type="submit" id="enviar" class="btn btn-default enviar">Enviar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="lb_cocteles hidden-xs hidden-sm "></div>
-            
-            <div class="container_cocteles">
 
-                <div class="clearboth"></div>    
-                <article class="col-lg-12 row">
-                    <ul class="list-inline cocteles">
-                        <li>
-                            <!-- <div class="linea"></div> -->
-                            <a class="wow " id="pisco_sour" href="#hidden-content-coctel-pisco_sours">
-                                <!-- <span class="hover">
-                                    <h4>pisco sour</h4>
-                                    <span class="adornido"><img src="img/cuarta_vista_adorno3.png" alt=""/></span>
-                                </span> -->
-                            </a>
-                            <a href="#hidden-content-coctel-pisco_sour">
-                                <div class="name" style="padding-top: 11%;">Pisco Sour</div>
-                            </a>    
-                            <img src="img/cuarta_vista_adorno2.png" class="img-responsive" alt=""/>
-                        </li>
-                        <li>
-                            <!-- <div class="linea"></div> -->
-                            <a class="wow " id="pisco_punch" href="#hidden-content-coctel-punchs">
-                                <!-- <span class="hover">
-                                    <h4>pisco punch</h4>
-                                    <span class="adornido"><img src="img/cuarta_vista_adorno3.png" alt=""/></span>
-                                </span> -->
-                            </a>
-                            <a href="#hidden-content-coctel-punch">
-                                <div class="name" style="padding-top: 11%;">Pisco Pounch</div>
-                            </a>
-                            <img src="img/cuarta_vista_adorno2.png" class="img-responsive" alt=""/>
-                        </li>
-                        <li>
-                            <!-- <div class="linea"></div> -->
-                            <a class="wow " id="pisco_sour_maracuya" href="#hidden-content-coctel-pisco_sour_maracuyas">
-                                <!-- <span class="hover">
-                                    <h4>pisco sour maracuya</h4>
-                                    <span class="adornido"><img src="img/cuarta_vista_adorno3.png" alt=""/></span>
-                                </span> -->
-                            </a>
-                            <a href="#hidden-content-coctel-pisco_sour_maracuya">
-                                <div class="name">Pisco Sour Maracuya</div>
-                            </a>
-                            <img src="img/cuarta_vista_adorno2.png" class="img-responsive" alt=""/>
-                        </li>
-                        <li>
-                            <!-- <div class="linea"></div> -->
-                            <a class="wow " id="chilcano-clasico" href="#hidden-content-coctel-chilcanos">
-                                <!-- <span class="hover">
-                                    <h4>chilcano</h4>
-                                    <span class="adornido"><img src="img/cuarta_vista_adorno3.png" alt=""/></span>
-                                </span> -->
-                            </a>
-                            <a href="#hidden-content-coctel-chilcano">
-                                <div class="name" style="padding-top: 11%;">Chilcano</div>
-                            </a>
-                            <img src="img/cuarta_vista_adorno2.png" class="img-responsive" alt=""/>
-                        </li>
-                        <li>
-                            <!-- <div class="linea"></div> -->
-                            <a class="wow " id="chilcano-frutos_rojos" href="#hidden-content-coctel-rojos">
-                                <!-- <span class="hover">
-                                    <h4>chilcano <br/>de frutos <br/> rojos</h4>
-                                    <span class="adornido"><img src="img/cuarta_vista_adorno3.png" alt=""/></span>
-                                </span> -->
-                            </a>
-                            <a href="#hidden-content-coctel-rojo">
-                                <div class="name">Chilcano Frutos Rojos</div>
-                            </a>
-                            <img src="img/cuarta_vista_adorno2.png" class="img-responsive" alt=""/>
-                        </li>
+    <section id="contenedor_bottom" class="background parallax fullscreen" style="display:none;" data-img-width="1400" data-img-height="410" data-diff="100">
+        <div class="content-a" >
+            <div class="content-b">
+                <section id="ubicanos_section" >
+                    <!-- <img class="wow fadeInDown" src="img/ubicanos2.png" alt="">
+                    <address>
+                    <ul class="list-inline wow fadeInUp">
+                        <li>Lima: (01) 255 - 7610  Ica: (056) 40 - 3565</li> <span>    |    </span>
+                        <li>Fundo Tres Esquinas S/N, Subtanjalla - Ica - Perú </li>
+                        <span>    |    </span> <li>cecilia@piscotresgeneraciones.com</li>
                     </ul>
-            </div>
-            </article>
-        </div>
-    </div>
-    </div>
-</section>
-
-
-<section id="regalos_section" class="background parallax fullscreen" style=" background-image:url('img/paisaje_fondo_regalos_corpora.png');" data-img-width="1400" data-img-height="510" data-diff="100">
-    <div class="content-a">
-        <div class="content-b">
-            <div class="container-promos">
-                <div class="row">
-                    <div class="col-md-7 col-sm-12">
-                        <div class="col-md-4 col-sm-4 col-xs-12 ">
-                            
-                            
-                            
-                            <img style="margin: 0 auto;" class="visible-xs visible-sm" src="img/adornito_regalos.png" alt=""/>
-                            <div class="titulo wow fadeInDown visible-xs visible-sm">
-                                REGALA <br/> TRES  GENERACIONES
-                            </div>
-                            
-                            <div class="navegacion_vertical">
-                                <div class="tittle active" id="corporativo" descripr="Personalizamos nuestros Piscos según el requerimiento de tu empresa. " namer="regalo_corp">
-                                    <h3>REGALOS <br/> CORPORATIVOS</h3>
-                                    <!-- <span id="adorno_regalo1" class="adornito"></span> -->
-                                    <img id="adorno_regalo1" style="" src="img/cuarta_vista_adorno3_blanco.png" alt="">
-                                    <img id="adorno_regalo2" style="display:none;" src="img/cuarta_vista_adorno3_verde.png" alt="">
-                                </div>
-
-                                <ul class="list-unstyled ">
-                                    
-                                    <li><a class="regalos regalos_gallery" href="#" descripr="El mejor regalo para compartir entre dos. Contiene un Pisco Tres Generaciones y 2 copas." namer="elegante">ELEGANTE 3G</a></li>
-                                    <li><a class="regalos regalos_gallery" href="#" descripr="Comparte la pureza del Pisco en todos tus viajes. Contiene dos Piscos Tres Generaciones." namer="tour">TOUR 3G</a></li>
-                                    <li><a class="regalos regalos_gallery" href="#" descripr="Obsequia un detalle clásico y artesanal. Contiene un Pisco Tres Generaciones y 1 copa." namer="madera">MADERA 3G</a></li>
-                                    <li><a class="regalos regalos_gallery" href="#" descripr="Despierta tus sentidos, el regalo para catar y degustar" namer="mini">MINI 3G</a></li>
-                                    <li><a class="regalos regalos_gallery" href="#" descripr="Nuestro Pisco mejor guardado para ti. Contiene un Pisco Tres Generaciones y dos copas." namer="baul">BAUL 3G</a></li>
-                                    
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-md-8 col-sm-8 col-xs-12  row">
-                            <div class="img-container" id="container_regalos">
-                                <img src="img/regalos/regalo_corp.png" class="img-responsive" alt=""/>
-
-
-                                <div class="bottom">
-                                    <div class="linea"></div>
-                                    <p id="descripcion">
-                                        Personalizamos nuestros Piscos <br/>
-                                        según el requerimiento de tu empresa.
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-5 col-sm-12">
-                    <form action="enviar_mesh.php" id="formulario">
-                        <img class="hidden-xs hidden-sm" src="img/adornito_regalos.png" alt=""/>
-
-                        <div class="titulo wow fadeInDown hidden-xs hidden-sm">
-                            REGALA <br/> TRES  GENERACIONES
-                        </div>
-
-                        <div class="form-group">
-                            <label for="nombre" class="col-sm-2 col-xs-3 control-label">Nombre:</label>
-
-                            <div class="col-sm-9 col-xs-9 col-md-offset-1">
-                                <input type="text" class="form-control" id="nombre" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="correo" class="col-sm-2 col-xs-3 control-label">Correo:</label>
-
-                            <div class="col-sm-9 col-xs-9 col-md-offset-1">
-                                <input type="email" class="form-control" id="correo" required >
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="telefono" class="col-sm-2 col-xs-3 control-label">Teléfono:</label>
-
-                            <div class="col-sm-9 col-xs-9 col-md-offset-1">
-                                <input type="text" class="form-control" id="telefono" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="mensaje" class="col-sm-2 col-xs-3 control-label">Mensaje:</label>
-
-                            <div class="col-sm-9 col-xs-9 col-md-offset-1">
-                                <textarea type="text" class="form-control" id="mensaje" required></textarea>
-                            </div>
-                        </div>
-                        <div class="clearboth"></div>
-                        <div class="form-group">
-                            <div class="col-md-12">
-                                <button type="submit" id="enviar" class="btn btn-default enviar">Enviar</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
-
-
-<section id="contenedor_bottom" class="background parallax fullscreen" style=" background-image:url('img/segunda_vista_fondo22.jpg');" data-img-width="1400" data-img-height="410" data-diff="100">
-    <div class="content-a" >
-        <div class="content-b">
-            <section id="ubicanos_section" >
-                <!-- <img class="wow fadeInDown" src="img/ubicanos2.png" alt="">
-                <address>
-                <ul class="list-inline wow fadeInUp">
-                    <li>Lima: (01) 255 - 7610  Ica: (056) 40 - 3565</li> <span>    |    </span>
-                    <li>Fundo Tres Esquinas S/N, Subtanjalla - Ica - Perú </li>
-                    <span>    |    </span> <li>cecilia@piscotresgeneraciones.com</li>
-                </ul>
-                </address>
-                    <ul class="social list-inline aa">
-                        <li><a target="_blank" href="https://www.youtube.com/channel/UCD23fGkJUDKpGl3rGWsXqaA" class="youtube" ></a></li>
-                        <li><a target="_blank" href="https://www.facebook.com/Pisco-Tres-Generaciones-947961388560264/?fref=ts" class="facebook" ></a></li>
-                    </ul>-->
-            </section>
-
-            <div id="seccion_mapa_info">
-                
-                <section id="mapa">
-                    <div  class="hidden" id="map"></div>
-                    
-                        <div class="col-md-6 mapa_right hidden-xs hidden-sm" > 
-                            <!-- 
-                            -14.008073, -75.764961
-                            -->
-                            <a target="_blank" href="https://www.google.com.pe/maps/@-14.0084033,-75.7646202,18z?hl=es-419">
-                                <img class="img_mapa img-responsive"  src="img/tres_generaciones_mapa.png" alt="" />
-                            </a>
-                        </div>
-                        <div class="col-md-6 mapa_left" > 
-                            
-                            <img class="" src="img/ubicanos.png" alt="">
-                            <address>
-                                <ul class="list-inline" >
-                                    <br>
-                                    <li>Fundo Tres Esquinas S/N, Subtanjalla - Ica - Perú </li><br>
-                                    <li class="subtitle" style="margin-top:8px;">
-                                        PARA PREGUNTAS O COMPRAS DEL PISCO TRES GENERACIONES,
-                                    </li><br>
-                                    <li class="subtitle" style="margin-top:3px;">
-                                        PORFAVOR PONGASE EN CONTACTO CON:
-                                    </li><br><br>
-                                    <li class="text-green">
-                                        <!-- <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">-->
-                                        <a href="mailto:cecilia@piscotresgeneraciones.com" target="_top">
-                                            cecilia@piscotresgeneraciones.com
-                                        </a>
-                                    </li><br><br>
-                                    <li class="text-green">
-                                        Lima: <a href="tel:(01) 255 - 7610">(01) 255 - 7610 </a>
-                                    </li><br><br>
-                                    <li class="text-green">
-                                        Ica: <a href="tel:(056) 40 - 3565">(056) 40 - 3565</a>
-                                    </li>
-                                </ul>
-                            </address>
-                        </div>
-                        <div class="col-md-6 mapa_right visible-xs visible-sm" > 
-                            <a target="_blank" href="https://www.google.com.pe/maps/@-14.0084033,-75.7646202,18z?hl=es-419">
-                                <img class="img_mapa img-responsive"  src="img/tres_generaciones_mapa.png" alt="" />
-                            </a>
-                        </div>
-                        <div class="clearboth"></div>
-                        
-                        <div class="subir margin-top-10 scrollup">
-                            <a class="" style="text-decoration:none;padding:0; " href="#generations_section">
-                                <ul>
-                                    <li><img src="img/flecha_subir.png" alt=""></li>
-                                    <li style="margin-top: -10px;">VOLVER ARRIBA</li>
-                                </ul>                                
-                            </a>
-                        </div>
-                        <div class="clearboth"></div>
-                        <div class="lineageneral"></div>
-                        
-                        <p class="danger">TOMAR BEBIDAS ALCOHOLICAS EN EXECESO ES DAÑINO</p>
+                    </address>
+                        <ul class="social list-inline aa">
+                            <li><a target="_blank" href="https://www.youtube.com/channel/UCD23fGkJUDKpGl3rGWsXqaA" class="youtube" ></a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/Pisco-Tres-Generaciones-947961388560264/?fref=ts" class="facebook" ></a></li>
+                        </ul>-->
                 </section>
+
+                <div id="seccion_mapa_info">
+                    
+                    <section id="mapa">
+                        <div  class="hidden" id="map"></div>
+                        
+                            <div class="col-md-6 mapa_right hidden-xs hidden-sm" > 
+                                <!-- 
+                                -14.008073, -75.764961
+                                -->
+                                <a target="_blank" href="https://www.google.com.pe/maps/@-14.0084033,-75.7646202,18z?hl=es-419">
+                                    <img class="img_mapa img-responsive"  src="img/tres_generaciones_mapa.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="col-md-6 mapa_left" > 
+                                
+                                <img class="" src="img/ubicanos.png" alt="">
+                                <address>
+                                    <ul class="list-inline" >
+                                        <br>
+                                        <li>Fundo Tres Esquinas S/N, Subtanjalla - Ica - Perú </li><br>
+                                        <li class="subtitle" style="margin-top:8px;">
+                                            PARA PREGUNTAS O COMPRAS DEL PISCO TRES GENERACIONES,
+                                        </li><br>
+                                        <li class="subtitle" style="margin-top:3px;">
+                                            PORFAVOR PONGASE EN CONTACTO CON:
+                                        </li><br><br>
+                                        <li class="text-green">
+                                            <!-- <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">-->
+                                            <a href="mailto:cecilia@piscotresgeneraciones.com" target="_top">
+                                                cecilia@piscotresgeneraciones.com
+                                            </a>
+                                        </li><br><br>
+                                        <li class="text-green">
+                                            Lima: <a href="tel:(01) 255 - 7610">(01) 255 - 7610 </a>
+                                        </li><br><br>
+                                        <li class="text-green">
+                                            Ica: <a href="tel:(056) 40 - 3565">(056) 40 - 3565</a>
+                                        </li>
+                                    </ul>
+                                </address>
+                            </div>
+                            <div class="col-md-6 mapa_right visible-xs visible-sm" > 
+                                <a target="_blank" href="https://www.google.com.pe/maps/@-14.0084033,-75.7646202,18z?hl=es-419">
+                                    <img class="img_mapa img-responsive"  src="img/tres_generaciones_mapa.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="clearboth"></div>
+                            
+                            <div class="subir margin-top-10 scrollup">
+                                <a class="" style="text-decoration:none;padding:0; " href="#generations_section">
+                                    <ul>
+                                        <li><img src="img/flecha_subir.png" alt=""></li>
+                                        <li style="margin-top: -10px;">VOLVER ARRIBA</li>
+                                    </ul>                                
+                                </a>
+                            </div>
+                            <div class="clearboth"></div>
+                            <div class="lineageneral"></div>
+                            
+                            <p class="danger">TOMAR BEBIDAS ALCOHOLICAS EN EXECESO ES DAÑINO</p>
+                    </section>
+                    
+                </div>
+                
+                <footer class="">
+                        <div class="pie">
+                            © Pisco Tres Generaciones. Todos los derechos reservados.
+                            <span>Desarrollado por <a target="_blank" href="http://tutamanta.pe/">Tutamanta</a></span> 
+                        </div>                    
+                </footer>
                 
             </div>
-            
-            <footer class="">
-                    <div class="pie">
-                        © Pisco Tres Generaciones. Todos los derechos reservados.
-                        <span>Desarrollado por <a target="_blank" href="http://tutamanta.pe/">Tutamanta</a></span> 
-                    </div>                    
-            </footer>
-            
         </div>
-    </div>
-</section>
+    </section>
+
+<!-- </div>  --> <!-- Fin contenedor global-->
+<script>
+        //Preloader
+        
+        
+        
+        jQuery(window).load(function() {
+
+            
+        })
+        
+</script>
 
 <script>
 function initMap() {
