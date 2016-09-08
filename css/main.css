@@ -1609,6 +1609,12 @@ header .menu aside nav .close_menu:hover {
 }
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 1280px) {
+  #generations_section .imagen_pisco{
+    right: 70px;
+  }
+}
+
 @media only screen and (max-width: 992px) {
 
   #header_desktop {
