@@ -236,6 +236,7 @@ $(window).load(function() {
             }
         }
     })
+
 });
 
 
@@ -346,8 +347,17 @@ linkInterno.on('click', function (e) {
 
 
 
+function resizeBotella(){
+    var windowH = $(window).height();
+    $('#botella_pisco').css('height', windowH * 0.92);    
+}
 
-
+function resizeResponsiveLogo(){
+    //header responsive
+    var windowW = $(window).width();
+    var leftLogoResponsive = (windowW / 2) - 140;
+    $('#header_responsive .logo').css('left', leftLogoResponsive);
+}
 //Preloader
 $(document).ready(function(){
     
@@ -358,10 +368,10 @@ $(document).ready(function(){
     });
     
 
-    function resizeBotella(){
-        var windowH = $(window).height();
-        $('#botella_pisco').css('height', windowH * 0.92);    
-    }
+    
+    
+    $(window).resize(resizeResponsiveLogo);
+    resizeResponsiveLogo();
     $(window).resize(resizeBotella);
     resizeBotella();    
 
