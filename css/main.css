@@ -1587,7 +1587,7 @@ header .menu aside nav .close_menu:hover {
   font-size: 15.5px;
   color: #e1e4e4;
   font-family: Conv_VersaillesLTStd-Roman;
-  text-align: left;
+  text-align: justify;
   letter-spacing: 1px;
 }
 /*==========  Non-Mobile First Method  ==========*/
