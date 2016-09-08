@@ -1241,6 +1241,7 @@ header .menu aside nav .close_menu:hover {
   font-size: 15px;
   margin-top:4%;
   text-transform: none;
+  letter-spacing: 0.5px;
   margin-bottom: 3em;
 }
 
