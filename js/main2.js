@@ -94,8 +94,14 @@ $(document).ready(function () {
                 mensaje : $('#mensaje').val()
             },
             success:function(data) {
-              alert(data); 
-              $('#alert_mail').fadeIn();
+                
+              var data = JSON.parse(data);  
+              console.log(data.Result);
+              if(data.Result == 'OK' ){
+                alert('Mensaje enviado.');
+              }else{
+                alert('Intente más tarde.');   
+              }
             }
         });
 

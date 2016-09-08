@@ -11,34 +11,37 @@ if(!$nombre || !$correo || !$telefono || !$mensaje){
 	exit();
 }
 
-/*
 
-echo $nombre;
+
+/*echo $nombre;
 echo $correo;
 echo $telefono;
 echo $mensaje;
-exit();
-*/
+exit();*/
+
 
 
 $to = 'j.adrian.1690@gmail.com'; // Cambiar a Cecília.
 $subject = 'MENSAJE 3G';
 
-$message .=  "Este mensaje es enviado desde el formularo de la web Tres Generaciones.\r\n\r\n";
+$message .=  "Este mensaje es enviado desde el formularo de la web Tres Generacioness.\r\n\r\n";
 $message .=  "Nombre : " . $nombre. "\r\n";
 $message .=  "Telefono : " . $telefono. "\r\n";
 $message .=  "Mensaje : " . $mensaje. "\r\n";
 
-$headers  = 'MIME-Version: 1.0' . "\r\n";
-$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-$headers .= "From: < $correo >" . "\r\n";
+//$headers  = 'MIME-Version: 1.0' . "\r\n";
+//$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+$headers .= "From: $name < $correo >" . "\r\n";
+//$headers .= "Reply-To: adrian@e-quipu.pe" . "\r\n";
 
 //$headers = "From: $name < $correo >" . "\r\n" .
     //'Reply-To: webmaster@example.com' . "\r\n" .
 //    'X-Mailer: PHP/' . phpversion();
 
- if(mail($to,$subject,$message,$headers))
+ if( mail($to,$subject,$message, $headers) )
  {
-  echo "Mensaje Enviado.";
+  	echo json_encode( array( "Result" => "OK", "Message" => "Mensaje Enviado."));
+ }else{
+ 	echo json_encode( array( "Result" => "ERROR", "Message" => "No se pudo enviar el mensaje.."));
  }
 ?>
