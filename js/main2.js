@@ -83,7 +83,7 @@ $(document).ready(function () {
     $('#formulario').submit(function(e){
 
         e.preventDefault();
-
+        $('#enviar').prop('disabled', true);
         $.ajax({
             url:"mail.php",  
             method: "POST",
@@ -99,6 +99,7 @@ $(document).ready(function () {
               console.log(data.Result);
               if(data.Result == 'OK' ){
                 alert('Mensaje enviado.');
+                $('#enviar').prop('disabled', false);
                 $('#nombre').val('');
                 $('#correo').val('');
                 $('#telefono').val('');
@@ -202,7 +203,7 @@ $(document).ready(function () {
 
 
 
-$(window).load(function() {
+$(window).load(function() { // este es load
 
     // will first fade out the loading animation
     $("#imagen-load").fadeOut("slow");
